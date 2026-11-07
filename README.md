@@ -1,30 +1,23 @@
-# TrOCR baseline
+# SCRIBE
 
-## Run
-
-```powershell
-cd C:\Users\matth\Desktop\repos\ece253-scribe
-uv run main.py
-```
-
-Requires [uv](https://docs.astral.sh/uv/getting-started/installation/). First run downloads dependencies and the model. Your sample photo is included.
-
-## New images
-
-Put these matching files in `inputs/`:
-- `photo.jpg` — page image
-- `photo.txt` — one reference sentence per line, without list numbers
-- `photo.boxes.json` — one `[left, top, right, bottom]` crop per line, using fractions from 0 to 1
-
-Copy the sample files as a starting point. Adjust crop boxes for each new photo; exclude list numbers.
+From the repo root, with [uv](https://docs.astral.sh/uv/getting-started/installation/) installed:
 
 ```powershell
-uv run main.py inputs/photo.jpg --prepare-only  # inspect crops first
-uv run main.py inputs/photo.jpg
+uv run main.py bleed
+uv run main.py blur
+uv run main.py shadow
 ```
 
-## Results
+Each command evaluates **every image** in that artifact's `inputs/` folder using
+one shared TrOCR model. First run downloads dependencies and model weights.
 
-Find crops, predictions, `comparison.csv`, and `metrics.json` in `outputs/<photo-name>/`.
+- Put individual work in `bleed/`, `blur/`, or `shadow/`.
+- Each input needs `photo.jpg`, `photo.txt` (one reference line per crop, no list numbers),
+  and `photo.boxes.json` (`[left, top, right, bottom]` fractions from 0 to 1).
+- Use `bleed/inputs/baseline.*` as the example; adjust boxes for new photos.
+- Add `--prepare-only` to inspect crops without OCR.
+- Results: `<artifact>/outputs/<photo-name>/`; combined scores: `outputs/summary.json`
+  inside that artifact. Use unique photo names. Reruns overwrite matching results.
 
-CER = character error rate; WER = word error rate. Lower is better. Normalized scores ignore case and punctuation; strict scores retain them. Reusing a photo name overwrites its results.
+CER/WER are character/word error rates; lower is better. Normalized scores ignore
+case and punctuation. Set scores count edits across all lines, not averages of image rates.

@@ -20,22 +20,21 @@ def normalize(text):
     return " ".join(text.split())
 
 
-def main():
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("image", nargs="?", type=Path, default=Path("inputs/baseline.png"))
-    parser.add_argument("--prepare-only", action="store_true", help="Save line crops without loading OCR")
-    args = parser.parse_args()
-    image_path = args.image
-    references = image_path.with_suffix(".txt").read_text(encoding="utf-8").splitlines()
-    boxes = json.loads(image_path.with_suffix(".boxes.json").read_text(encoding="utf-8"))
+def read_inputs(image_path):
+    references = image_path.with_suffix(".txt").read_text(encoding="utf-8-sig").splitlines()
+    boxes = json.loads(image_path.with_suffix(".boxes.json").read_text(encoding="utf-8-sig"))
     if not references or len(references) != len(boxes) or any(not normalize(r) for r in references):
-        parser.error("Provide one nonempty reference line per crop box.")
+        raise ValueError("Provide one nonempty reference line per crop box.")
     for box in boxes:
-        if (len(box) != 4 or not all(isinstance(v, (int, float)) for v in box)
+        if (not isinstance(box, list) or len(box) != 4
+                or not all(isinstance(v, (int, float)) for v in box)
                 or not (0 <= box[0] < box[2] <= 1 and 0 <= box[1] < box[3] <= 1)):
-            parser.error("Each box must be [left, top, right, bottom], between 0 and 1.")
+            raise ValueError("Boxes must be [left, top, right, bottom], between 0 and 1.")
+    return references, boxes
 
-    output = Path("outputs") / image_path.stem
+
+def evaluate(image_path, references, boxes, processor=None, model=None):
+    output = image_path.parent.parent / "outputs" / image_path.stem
     output.mkdir(parents=True, exist_ok=True)
     page = ImageOps.exif_transpose(Image.open(image_path)).convert("RGB")
     width, height = page.size
@@ -46,17 +45,11 @@ def main():
         crop.save(output / f"line-{i:02}.png")
         crops.append(crop)
     print(f"Saved {len(crops)} line crops in {output}", flush=True)
-    if args.prepare_only:
+    if model is None:
         return
 
     import torch
-    from transformers import TrOCRProcessor, VisionEncoderDecoderModel
 
-    # Keep CPU inference usable without oversubscribing a desktop's threads.
-    torch.set_num_threads(min(4, torch.get_num_threads()))
-    print(f"Loading {MODEL} on CPU (first run downloads the model)...", flush=True)
-    processor = TrOCRProcessor.from_pretrained(MODEL, revision=REVISION, use_fast=False)
-    model = VisionEncoderDecoderModel.from_pretrained(MODEL, revision=REVISION, use_safetensors=True).eval()
     predictions = []
     with torch.inference_mode():
         for i, crop in enumerate(crops, 1):
@@ -93,6 +86,67 @@ def main():
     print(f"Strict CER: {scores['strict_cer']:.2%} | WER: {scores['strict_wer']:.2%}")
     print(f"Exact lines (normalized): {scores['normalized_exact_lines']}/{len(references)}")
     print(f"Saved predictions, comparison.csv, and metrics.json in {output}")
+    return references, predictions
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("artifact", choices=["bleed", "blur", "shadow"])
+    parser.add_argument("--prepare-only", action="store_true", help="Save crops without loading OCR")
+    args = parser.parse_args()
+    folder = Path(__file__).resolve().parent / args.artifact
+    images = sorted(p for p in (folder / "inputs").iterdir()
+                    if p.is_file() and p.suffix.lower() in {".png", ".jpg", ".jpeg", ".tif", ".tiff", ".bmp", ".webp"})
+    if not images:
+        print(f"No images in {folder / 'inputs'}. Add a photo, matching .txt, and .boxes.json.")
+        return
+    if len({p.stem.casefold() for p in images}) != len(images):
+        parser.error("Use unique image names: photo.png and photo.jpg would share outputs.")
+    jobs = []
+    for image_path in images:
+        try:
+            references, boxes = read_inputs(image_path)
+        except (OSError, ValueError, TypeError) as error:
+            parser.error(f"{image_path.name}: {error}")
+        jobs.append((image_path, references, boxes))
+
+    processor = model = None
+    if not args.prepare_only:
+        import torch
+        from transformers import TrOCRProcessor, VisionEncoderDecoderModel
+
+        torch.set_num_threads(min(4, torch.get_num_threads()))
+        print(f"Loading {MODEL} once for {len(images)} image(s)...", flush=True)
+        processor = TrOCRProcessor.from_pretrained(MODEL, revision=REVISION, use_fast=False)
+        model = VisionEncoderDecoderModel.from_pretrained(
+            MODEL, revision=REVISION, use_safetensors=True).eval()
+
+    all_refs, all_preds = [], []
+    for image_path, references, boxes in jobs:
+        print(f"\n--- {image_path.name} ---", flush=True)
+        result = evaluate(image_path, references, boxes, processor, model)
+        if result:
+            all_refs.extend(result[0])
+            all_preds.extend(result[1])
+    if args.prepare_only:
+        return
+    refs, preds = list(map(normalize, all_refs)), list(map(normalize, all_preds))
+    summary = {
+        "artifact": args.artifact,
+        "model": MODEL,
+        "model_revision": REVISION,
+        "images": [p.name for p in images],
+        "image_count": len(images),
+        "line_count": len(all_refs),
+        "strict_cer": cer(all_refs, all_preds),
+        "strict_wer": wer(all_refs, all_preds),
+        "normalized_cer": cer(refs, preds),
+        "normalized_wer": wer(refs, preds),
+        "normalized_exact_lines": sum(a == b for a, b in zip(refs, preds)),
+    }
+    (folder / "outputs" / "summary.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
+    print(f"\nSET TOTAL: {len(images)} image(s), {len(all_refs)} lines")
+    print(f"Normalized CER: {summary['normalized_cer']:.2%} | WER: {summary['normalized_wer']:.2%}")
 
 
 if __name__ == "__main__":
