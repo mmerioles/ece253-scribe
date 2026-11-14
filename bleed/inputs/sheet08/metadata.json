@@ -1,0 +1,44 @@
+{
+  "sheet_id": "bleed-008",
+  "pairing_key": "bleed-008",
+  "artifact": "bleed_show_through",
+  "reference_image": "perfect.jpg",
+  "reference_transcription": "perfect.txt",
+  "line_boxes": "perfect.boxes.json",
+  "condition": "clean_reference",
+  "user_condition_label": "perfect",
+  "capture_type": "photograph",
+  "source_filename": "20261113_184326.jpg",
+  "sha256": "0f7796c6b4d828c0b7e51423d11cd671244af3d25dd8288219b66e1c615066b6",
+  "width": 3000,
+  "height": 4000,
+  "line_count": 10,
+  "paper": "graph paper",
+  "transcription_source": "manually transcribed from supplied image",
+  "transcription_notes": "List numbers excluded; sentence digits retained. Original spelling and punctuation transcribed.",
+  "image_processing": "Original JPEG preserved byte-for-byte; no rotation needed.",
+  "split": null,
+  "distorted_slots": [
+    {
+      "directory": "distorted-01",
+      "status": "pending",
+      "reference_image": "../perfect.jpg",
+      "severity": null
+    },
+    {
+      "directory": "distorted-02",
+      "status": "pending",
+      "reference_image": "../perfect.jpg",
+      "severity": null
+    },
+    {
+      "directory": "distorted-03",
+      "status": "pending",
+      "reference_image": "../perfect.jpg",
+      "severity": null
+    }
+  ],
+  "notes": "User-designated clean reference; not asserted to be an artifact-free scanner acquisition. Keep all variants of this physical sheet in one dataset split.",
+  "source_sha256": "0f7796c6b4d828c0b7e51423d11cd671244af3d25dd8288219b66e1c615066b6",
+  "rotation_degrees_counterclockwise": 0
+}

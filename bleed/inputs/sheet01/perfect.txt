@@ -1,5 +1,5 @@
 It looks sharp on my screen
-That blur is a feature
+That blur is a feature.
 It worked before filtering
 My signal has trust issues
 The shadow passed every test

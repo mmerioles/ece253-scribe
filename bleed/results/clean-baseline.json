@@ -1,0 +1,150 @@
+{
+  "dataset": "Ten clean-reference bleed sheets supplied 2026-11-13.",
+  "model": "microsoft/trocr-base-handwritten",
+  "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+  "method": "Manual line crops from original photos; sheets 09 and 10 rotated 90 degrees counterclockwise without interpolation; no restoration.",
+  "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace; list numbers excluded from crops/references, sentence digits retained.",
+  "decoding": {
+    "num_beams": 1,
+    "do_sample": false,
+    "max_new_tokens": 128
+  },
+  "versions": {
+    "torch": "2.15.0+cpu",
+    "transformers": "4.57.6",
+    "pillow": "12.3.0",
+    "jiwer": "4.0.0"
+  },
+  "image_count": 10,
+  "line_count": 100,
+  "reference_word_count": 468,
+  "reference_character_count": 2566,
+  "strict_cer": 0.06455309396485867,
+  "strict_wer": 0.3055555555555556,
+  "normalized_cer": 0.009742790335151987,
+  "normalized_wer": 0.03418803418803419,
+  "normalized_exact_lines": 87,
+  "normalized_exact_line_accuracy": 0.87,
+  "per_sheet": [
+    {
+      "sheet_id": "bleed-001",
+      "directory": "sheet01",
+      "source_filename": "20261113_182742.jpg",
+      "sha256": "b25eba5e99765b842911d44024bded2bdafe61eb9d9c227dcef7dd430431a6dd",
+      "boxes_sha256": "0cbd68b1ba570c7b6a9b452bbd60b6c74f158014cdb9ecd88772c1d4adf133f7",
+      "transcript_sha256": "381508b0dbdadf33fc8b2a3dc8f5611a834a79e709d9e01256c6f45ca47c3a92",
+      "normalized_cer": 0.011764705882352941,
+      "normalized_wer": 0.04081632653061224,
+      "normalized_exact_lines": 8,
+      "line_count": 10
+    },
+    {
+      "sheet_id": "bleed-002",
+      "directory": "sheet02",
+      "source_filename": "20261113_182758.jpg",
+      "sha256": "bbceb0c2ff0072c442c3f01922b1fe3a398c1c1bc09c9452ac9dcd96cb89b11b",
+      "boxes_sha256": "62fc1b22bbe2e7a55a2de4a23b976eccb266b0134bc28802006abe5a557f6ba4",
+      "transcript_sha256": "4aa2faf388676559e636981cfd5165efe71c993df7dcb39e8976ed70bca6fa24",
+      "normalized_cer": 0.00390625,
+      "normalized_wer": 0.02127659574468085,
+      "normalized_exact_lines": 9,
+      "line_count": 10
+    },
+    {
+      "sheet_id": "bleed-003",
+      "directory": "sheet03",
+      "source_filename": "20261113_182811.jpg",
+      "sha256": "1d9d6190efc1f036158e3bcd76dc9c179c4710cec081c9966f7501bc58bce4b6",
+      "boxes_sha256": "6726f8b34c5bad7477baec8674620d5874d44688209a1e12175ba1e1445c5703",
+      "transcript_sha256": "a6ee23102fba024f3bee8f0caf3f44e5cefff250f73d644aaadedb236d1519cc",
+      "normalized_cer": 0.008438818565400843,
+      "normalized_wer": 0.022727272727272728,
+      "normalized_exact_lines": 9,
+      "line_count": 10
+    },
+    {
+      "sheet_id": "bleed-004",
+      "directory": "sheet04",
+      "source_filename": "20261113_182824.jpg",
+      "sha256": "0dfb1bb92637e9dad76c1f6d7d95da63cf50015322d124f1dbec02d0773a68b6",
+      "boxes_sha256": "304120a75ff2c126caa0601cd1bbf2997691a330265de7dd55f1dd16a17e0a65",
+      "transcript_sha256": "66e5a1eb464ca848423452bd98835303c5f4b560f667ecef7d37e43d1b5415fe",
+      "normalized_cer": 0.03137254901960784,
+      "normalized_wer": 0.10869565217391304,
+      "normalized_exact_lines": 7,
+      "line_count": 10
+    },
+    {
+      "sheet_id": "bleed-005",
+      "directory": "sheet05",
+      "source_filename": "20261113_182837.jpg",
+      "sha256": "81b57640af20da0ba1824b75d3818d9aecb068451fced9f7ca36cbfcf1a2cd09",
+      "boxes_sha256": "9185b73db4067ff8aaad75c0e47c25c03da74f33fd3af759d73309827031b633",
+      "transcript_sha256": "fe4a0437c29967075b4c38b5983d9bb645168131ac5864094be5f5422b420fb4",
+      "normalized_cer": 0.007722007722007722,
+      "normalized_wer": 0.02127659574468085,
+      "normalized_exact_lines": 9,
+      "line_count": 10
+    },
+    {
+      "sheet_id": "bleed-006",
+      "directory": "sheet06",
+      "source_filename": "20261113_182846.jpg",
+      "sha256": "862c5825c3935e6f8f7f4537776cde22e99b0a2cad6040cf01db7ec7ecca9b42",
+      "boxes_sha256": "b3edb0c080c23da326ce5044b1b827f105c3bb6a70cc2ddbb2dac83a1c3664f1",
+      "transcript_sha256": "d270c9e8d8f508dd518bfb4dc945264abb9c44b5c008b434537096c21ec29226",
+      "normalized_cer": 0.0,
+      "normalized_wer": 0.0,
+      "normalized_exact_lines": 10,
+      "line_count": 10
+    },
+    {
+      "sheet_id": "bleed-007",
+      "directory": "sheet07",
+      "source_filename": "20261113_182853.jpg",
+      "sha256": "a7b00a1a697e0d9f2f4ede8eafba8b9fdbe617340112106eaa4f8e0058597fb8",
+      "boxes_sha256": "9cdd2c6bd6cf739bf79996f57923f2d262bbb3fc1337bb1db009c3e7b83c2a55",
+      "transcript_sha256": "316d508de79b998be24b4ec5f2f62d228201547e336b7dfed5eee80d34b64ee1",
+      "normalized_cer": 0.0,
+      "normalized_wer": 0.0,
+      "normalized_exact_lines": 10,
+      "line_count": 10
+    },
+    {
+      "sheet_id": "bleed-008",
+      "directory": "sheet08",
+      "source_filename": "20261113_184326.jpg",
+      "sha256": "0f7796c6b4d828c0b7e51423d11cd671244af3d25dd8288219b66e1c615066b6",
+      "boxes_sha256": "964e1d3262503184f1f8753501e5a576c547053746bba361304512678f46add1",
+      "transcript_sha256": "367ddef1b319cc124bac72dcf55d1d370d2130e8cbe035c6182a2b6c98c6ee68",
+      "normalized_cer": 0.015625,
+      "normalized_wer": 0.022222222222222223,
+      "normalized_exact_lines": 9,
+      "line_count": 10
+    },
+    {
+      "sheet_id": "bleed-009",
+      "directory": "sheet09",
+      "source_filename": "20261113_184342.jpg",
+      "sha256": "da32288ed212c3efd043d999629c35aa4c9368ea450081dc50392745f6399096",
+      "boxes_sha256": "46ad177d04ca8beecef060dd801068217370c1559843718ec26c2f04db18e46e",
+      "transcript_sha256": "9b343b5767b5507f5acfeffe2d551911e135d7ba5196941c647f7708502b4e00",
+      "normalized_cer": 0.007462686567164179,
+      "normalized_wer": 0.06382978723404255,
+      "normalized_exact_lines": 8,
+      "line_count": 10
+    },
+    {
+      "sheet_id": "bleed-010",
+      "directory": "sheet10",
+      "source_filename": "20261113_184351.jpg",
+      "sha256": "ae677a48a2cbaeeebdc2863852fb05b3da940da7bb99d21e0135f9c9f89b0550",
+      "boxes_sha256": "72f754a640923967c5b5db765743902416bc9b06025bebf8fd103a2a32aa5e14",
+      "transcript_sha256": "f907023f32a856729b37305beacde2a153404484bfd0ac4bf9a120aa7a5fdfe7",
+      "normalized_cer": 0.011494252873563218,
+      "normalized_wer": 0.0392156862745098,
+      "normalized_exact_lines": 8,
+      "line_count": 10
+    }
+  ]
+}

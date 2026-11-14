@@ -14,7 +14,7 @@ one shared TrOCR model. First run downloads dependencies and model weights.
 - Put individual work in `bleed/`, `blur/`, or `shadow/`.
 - Each input needs `photo.jpg`, `photo.txt` (one reference line per crop, no list numbers),
   and `photo.boxes.json` (`[left, top, right, bottom]` fractions from 0 to 1).
-- Use `bleed/inputs/baseline.*` as the example; adjust boxes for new photos.
+- Use `bleed/inputs/sheet01/perfect.*` as the example; adjust boxes for new photos.
 - Add `--prepare-only` to inspect crops without OCR.
 - Results: `<artifact>/outputs/<photo-name>/`; combined scores: `outputs/summary.json`
   inside that artifact. Use unique photo names. Reruns overwrite matching results.
