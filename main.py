@@ -33,8 +33,9 @@ def read_inputs(image_path):
     return references, boxes
 
 
-def evaluate(image_path, references, boxes, processor=None, model=None):
-    output = image_path.parent.parent / "outputs" / image_path.stem
+def evaluate(image_path, references, boxes, processor=None, model=None, output=None):
+    if output is None:
+        output = image_path.parent.parent / "outputs" / image_path.stem
     output.mkdir(parents=True, exist_ok=True)
     page = ImageOps.exif_transpose(Image.open(image_path)).convert("RGB")
     width, height = page.size
@@ -95,12 +96,12 @@ def main():
     parser.add_argument("--prepare-only", action="store_true", help="Save crops without loading OCR")
     args = parser.parse_args()
     folder = Path(__file__).resolve().parent / args.artifact
-    images = sorted(p for p in (folder / "inputs").iterdir()
+    images = sorted(p for p in (folder / "inputs").rglob("*")
                     if p.is_file() and p.suffix.lower() in {".png", ".jpg", ".jpeg", ".tif", ".tiff", ".bmp", ".webp"})
     if not images:
         print(f"No images in {folder / 'inputs'}. Add a photo, matching .txt, and .boxes.json.")
         return
-    if len({p.stem.casefold() for p in images}) != len(images):
+    if len({p.relative_to(folder / "inputs").with_suffix("").as_posix().casefold() for p in images}) != len(images):
         parser.error("Use unique image names: photo.png and photo.jpg would share outputs.")
     jobs = []
     for image_path in images:
@@ -123,8 +124,9 @@ def main():
 
     all_refs, all_preds = [], []
     for image_path, references, boxes in jobs:
-        print(f"\n--- {image_path.name} ---", flush=True)
-        result = evaluate(image_path, references, boxes, processor, model)
+        print(f"\n--- {image_path.relative_to(folder / 'inputs')} ---", flush=True)
+        output = folder / "outputs" / image_path.relative_to(folder / "inputs").with_suffix("")
+        result = evaluate(image_path, references, boxes, processor, model, output)
         if result:
             all_refs.extend(result[0])
             all_preds.extend(result[1])
@@ -135,7 +137,7 @@ def main():
         "artifact": args.artifact,
         "model": MODEL,
         "model_revision": REVISION,
-        "images": [p.name for p in images],
+        "images": [p.relative_to(folder / "inputs").as_posix() for p in images],
         "image_count": len(images),
         "line_count": len(all_refs),
         "strict_cer": cer(all_refs, all_preds),

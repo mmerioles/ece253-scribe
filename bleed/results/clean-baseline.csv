@@ -1,0 +1,101 @@
+sheet_id,line,reference,prediction,normalized_cer,normalized_wer
+bleed-001,1,It looks sharp on my screen,It looks sharp on my screen .,0.0,0.0
+bleed-001,2,That blur is a feature.,That blue is a feature .,0.045454545454545456,0.2
+bleed-001,3,It worked before filtering,It worked before filtering,0.0,0.0
+bleed-001,4,My signal has trust issues,My signal has trust issues ...,0.0,0.0
+bleed-001,5,The shadow passed every test,The shadow passed every test,0.0,0.0
+bleed-001,6,"No bugs, just extra pixels","No boys , just extra pixels",0.08,0.2
+bleed-001,7,Have you tried more light?,Have you tried more light ?,0.0,0.0
+bleed-001,8,The noise is intentional,The noise is intentional ...,0.0,0.0
+bleed-001,9,My ink ignores boundaries,My ink ignores boundaries,0.0,0.0
+bleed-001,10,It reads fine on my machine.,It reads fine on my machine .,0.0,0.0
+bleed-002,1,It worked before lunch.,It worked before lunch .,0.0,0.0
+bleed-002,2,My laptop needs a vacation.,My laptop needs a vacation .,0.0,0.0
+bleed-002,3,The fix broke something else.,The Six broke something else .,0.03571428571428571,0.2
+bleed-002,4,I saved the wrong version.,I saved the wrong version .,0.0,0.0
+bleed-002,5,This meeting could be a comment.,This meeting could be a comment .,0.0,0.0
+bleed-002,6,My backup needs a backup.,My backup needs a backup .,0.0,0.0
+bleed-002,7,The deadline moved closer,The deadline moved closer,0.0,0.0
+bleed-002,8,That warning looks familiar,That warning looks familiar ...,0.0,0.0
+bleed-002,9,I forgot why this works.,I forgot why this works .,0.0,0.0
+bleed-002,10,The coffee finished first,the coffee finished first,0.0,0.0
+bleed-003,1,My mouse has other plans,My more has other plans,0.08333333333333333,0.2
+bleed-003,2,The folder contains more folders,The folder contains more folders .,0.0,0.0
+bleed-003,3,The printer chose violence.,The printer chose violence ...,0.0,0.0
+bleed-003,4,I clicked save twice.,I clicked save twice .,0.0,0.0
+bleed-003,5,My password needs a hint.,My password needs a hint .,0.0,0.0
+bleed-003,6,The update can wait.,The update can wait .,0.0,0.0
+bleed-003,7,That tab was important,That tab was important ...,0.0,0.0
+bleed-003,8,My browser collects tabs.,My browser collects tabs .,0.0,0.0
+bleed-003,9,The cable was unplugged.,The cable was unplugged .,0.0,0.0
+bleed-003,10,I blamed the wrong file.,I blamed the wrong file .,0.0,0.0
+bleed-004,1,This button does nothing.,This button does nothing .,0.0,0.0
+bleed-004,2,My notes need subtitles.,My notes need subtitles ...,0.0,0.0
+bleed-004,3,The answer was on page 2.,The answer was on page 2 .,0.0,0.0
+bleed-004,4,We tested everything except that.,We tested everything except that .,0.0,0.0
+bleed-004,5,The demo worked at home.,The demo worked at home .,0.0,0.0
+bleed-004,6,My keyboard ordered lunch.,My keyboard ordered lunch .,0.0,0.0
+bleed-004,7,The cursor knows too much,The minor knows too much .,0.16,0.2
+bleed-004,8,I restarted my confidence,I restarted my confidence,0.0,0.0
+bleed-004,9,The loading bar stopped caring,The loading bar stopped caving,0.03333333333333333,0.2
+bleed-004,10,My code prefers weekends,my-code preiors weekends .,0.125,0.75
+bleed-005,1,That error has good timing,That error has good timing,0.0,0.0
+bleed-005,2,The comments are optimistic,The comments are optimistic ...,0.0,0.0
+bleed-005,3,This loop needs an exit.,This loop needs an exit .,0.0,0.0
+bleed-005,4,I found 3 new problems,I found 3 new problems ...,0.0,0.0
+bleed-005,5,The bug brought a friend,The boy brought a friend,0.08333333333333333,0.2
+bleed-005,6,My function needs boundaries,My function needs boundaries ...,0.0,0.0
+bleed-005,7,That variable changed its mind,That variable changed its mind,0.0,0.0
+bleed-005,8,The test passed by accident,The test passed by accident ...,0.0,0.0
+bleed-005,9,I trust the default settings,I trust the default settings,0.0,0.0
+bleed-005,10,The shortcut took longer,The shortcut took longer,0.0,0.0
+bleed-006,1,My desktop hides everything,My desktop hides everything,0.0,0.0
+bleed-006,2,The file is somewhere safe,The file is somewhere safe ...,0.0,0.0
+bleed-006,3,I named it final again,I named it final again .,0.0,0.0
+bleed-006,4,The clock runs faster here.,The clock runs faster here .,0.0,0.0
+bleed-006,5,My charger stayed home.,My charger stayed home .,0.0,0.0
+bleed-006,6,This battery has commitment issues.,This battery has commitment issues .,0.0,0.0
+bleed-006,7,This fan sounds concerned,This fan sounds concerned,0.0,0.0
+bleed-006,8,I opened the wrong window,I opened the wrong window .,0.0,0.0
+bleed-006,9,My screen needs personal space,My screen needs personal space .,0.0,0.0
+bleed-006,10,That notification can wait.,That notification can wait .,0.0,0.0
+bleed-007,1,We need another whiteboard,We need another whiteboard ...,0.0,0.0
+bleed-007,2,The marker gave up first.,The marker gave up first .,0.0,0.0
+bleed-007,3,My diagram needs directions,My diagram needs directions .,0.0,0.0
+bleed-007,4,I erased the useful part,I erased the useful part ...,0.0,0.0
+bleed-007,5,The solution barely fits.,The solution barely fits ...,0.0,0.0
+bleed-007,6,We skipped the easy step,We skipped the easy step,0.0,0.0
+bleed-007,7,That assumption did some lifting,That assumption did some lifting,0.0,0.0
+bleed-007,8,My calculator wants a raise,My calculator wants a raise,0.0,0.0
+bleed-007,9,The units went missing,The units went missing,0.0,0.0
+bleed-007,10,I rounded away the problem,I rounded away the problem .,0.0,0.0
+bleed-008,1,This graph looks suspicious.,This graph looks suspicious .,0.0,0.0
+bleed-008,2,The trend took a detour.,The trend took a detour .,0.0,0.0
+bleed-008,3,My data arrived late.,My data arrived late .000,0.2,0.25
+bleed-008,4,We measured it twice.,We measured it twice .,0.0,0.0
+bleed-008,5,The average seems unusually happy,The average seems unusually happy,0.0,0.0
+bleed-008,6,I misplaced a decimal point.,I misplaced a decimal point .,0.0,0.0
+bleed-008,7,The result needs context.,The result needs context .,0.0,0.0
+bleed-008,8,That sample has an attitude,That sample has an attitude ...,0.0,0.0
+bleed-008,9,My spreadsheet grew overnight,My spreadsheet grew overnight .,0.0,0.0
+bleed-008,10,We sorted the wrong column.,We sorted the wrong column .,0.0,0.0
+bleed-009,1,The network took a break.,The network took a break ...,0.0,0.0
+bleed-009,2,My request is still pending,My request is still pending,0.0,0.0
+bleed-009,3,The server needs encouragement,the server needs encouragement .,0.0,0.0
+bleed-009,4,I refreshed out of habit.,I refreshed out of habit .,0.0,0.0
+bleed-009,5,The download reached 99 percent.,The download reached 99 per cent.,0.03225806451612903,0.4
+bleed-009,6,This connection feels one sided,This connection feels one sided ...,0.0,0.0
+bleed-009,7,My message found the void.,My message found the void .,0.0,0.0
+bleed-009,8,The attachment missed the email.,The attachment missed the email .,0.0,0.0
+bleed-009,9,We replied to everyone.,We replied to everyone .,0.0,0.0
+bleed-009,10,That link leads nowhere.,That link heads nowhere .,0.043478260869565216,0.25
+bleed-010,1,My alarm lost the argument.,My alarm lost the argument .,0.0,0.0
+bleed-010,2,The snack budget is gone.,The snack budget is gone .,0.0,0.0
+bleed-010,3,I studied the wrong chapter,I studied the wrong chapter .,0.0,0.0
+bleed-010,4,This chair knows my schedule,This chair knows my schedule ...,0.0,0.0
+bleed-010,5,The group chat went quiet.,The group chat went quite,0.08,0.2
+bleed-010,6,We have 5 minutes left.,We have 5 minutes left .,0.0,0.0
+bleed-010,7,My plan needs a plan.,My plan needs a plan .,0.0,0.0
+bleed-010,8,The instructions skipped that part,The instructions shipped that part ...,0.029411764705882353,0.2
+bleed-010,9,I will remember this later.,I will remember this later .,0.0,0.0
+bleed-010,10,At least the title looks good.,At least the title looks good .,0.0,0.0

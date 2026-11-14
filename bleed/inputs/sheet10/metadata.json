@@ -1,0 +1,45 @@
+{
+  "sheet_id": "bleed-010",
+  "pairing_key": "bleed-010",
+  "artifact": "bleed_show_through",
+  "reference_image": "perfect.png",
+  "reference_transcription": "perfect.txt",
+  "line_boxes": "perfect.boxes.json",
+  "condition": "clean_reference",
+  "user_condition_label": "perfect",
+  "capture_type": "photograph",
+  "source_filename": "20261113_184351.jpg",
+  "sha256": "ae677a48a2cbaeeebdc2863852fb05b3da940da7bb99d21e0135f9c9f89b0550",
+  "width": 3000,
+  "height": 4000,
+  "line_count": 10,
+  "paper": "graph paper",
+  "transcription_source": "manually transcribed from supplied image",
+  "transcription_notes": "List numbers excluded; sentence digits retained. Original spelling and punctuation transcribed.",
+  "image_processing": "90-degree counterclockwise pixel transpose, saved as lossless PNG. Original JPEG archived under bleed/originals. No enhancement.",
+  "split": null,
+  "distorted_slots": [
+    {
+      "directory": "distorted-01",
+      "status": "pending",
+      "reference_image": "../perfect.png",
+      "severity": null
+    },
+    {
+      "directory": "distorted-02",
+      "status": "pending",
+      "reference_image": "../perfect.png",
+      "severity": null
+    },
+    {
+      "directory": "distorted-03",
+      "status": "pending",
+      "reference_image": "../perfect.png",
+      "severity": null
+    }
+  ],
+  "notes": "User-designated clean reference; not asserted to be an artifact-free scanner acquisition. Keep all variants of this physical sheet in one dataset split.",
+  "source_sha256": "42a68005985177ffc36facf583b137a67faf3e3029fe17345b1b67dc9b0830fe",
+  "rotation_degrees_counterclockwise": 90,
+  "original_image": "../../originals/sheet10/20261113_184351.jpg"
+}
