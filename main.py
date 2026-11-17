@@ -97,7 +97,8 @@ def main():
     args = parser.parse_args()
     folder = Path(__file__).resolve().parent / args.artifact
     images = sorted(p for p in (folder / "inputs").rglob("*")
-                    if p.is_file() and p.suffix.lower() in {".png", ".jpg", ".jpeg", ".tif", ".tiff", ".bmp", ".webp"})
+                    if p.is_file() and p.suffix.lower() in {".png", ".jpg", ".jpeg", ".tif", ".tiff", ".bmp", ".webp"}
+                    and not p.stem.lower().endswith(".overlay"))  # box-overlay previews, not inputs
     if not images:
         print(f"No images in {folder / 'inputs'}. Add a photo, matching .txt, and .boxes.json.")
         return
