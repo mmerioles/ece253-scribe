@@ -1,0 +1,25 @@
+{
+  "sheet_id": "bleed-008",
+  "experiment": "pencil-sheet08",
+  "role": "development",
+  "front": {
+    "file": "front.jpg",
+    "source_filename": "20261116_220102.jpg",
+    "material": "pencil with mirrored Sharpie bleed-through",
+    "sha256": "700de9b96e8f97082753fe5170e4bc8c92af4bd81298d3bad7d48b6429d530fc"
+  },
+  "back": {
+    "file": "back.jpg",
+    "source_filename": "20261116_220112.jpg",
+    "material": "Sharpie",
+    "sha256": "d822549ddeb48f16ef791a2169013be967c5494b67813ca2fe87fcb6c552c95b"
+  },
+  "processing": "Original JPEGs copied byte-for-byte; EXIF orientation applied at load; reverse mirrored during registration only.",
+  "transcription": "front.txt: intended sheet08 labels, checked against visible pencil; obscured strokes not independently verified.",
+  "line_boxes": "front.boxes.json: manual fractional pencil-line bounds; list numbers excluded; identical across methods.",
+  "clean_pencil_reference": null,
+  "foreground_mask": null,
+  "split": null,
+  "split_constraint": "Keep with sheet08 and all other captures of this physical sheet.",
+  "notes": "Sharpie back and existing sheet08 perfect.jpg are not clean pixel ground truth for pencil."
+}

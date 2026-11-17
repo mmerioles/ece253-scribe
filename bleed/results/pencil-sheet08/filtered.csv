@@ -1,0 +1,11 @@
+line,reference,prediction,normalized_cer,normalized_wer
+1,This graph looks suspicious.,This graphical basis ( campaign is still,0.7777777777777778,1.25
+2,The trend took a detour.,The biggest stock market are,0.6086956521739131,0.8
+3,My data arrived late.,My data received a quiet,0.5,0.75
+4,We measured it twice.,We managed to it raises a,0.65,1.0
+5,The average seems unusually happy,"the "" unlawful state-man-gate photography",0.7878787878787878,0.8
+6,I misplaced a decimal point.,""" you'll find it in a "" Alexandria , with it",1.0740740740740742,1.4
+7,The result needs context.,"the current interests , and first",0.7916666666666666,1.0
+8,That sample has an attitude,British samples than in an attitude,0.4444444444444444,0.8
+9,My spreadsheet grew overnight,appropriation against the rights,0.7931034482758621,1.0
+10,We sorted the wrong column.,What looked with a very similar,0.8076923076923077,1.2

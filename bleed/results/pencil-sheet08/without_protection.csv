@@ -1,0 +1,11 @@
+line,reference,prediction,normalized_cer,normalized_wer
+1,This graph looks suspicious.,This graphical basis ( campaign is still,0.7777777777777778,1.25
+2,The trend took a detour.,The first look mark the,0.5652173913043478,0.8
+3,My data arrived late.,My data received a brief,0.5,0.75
+4,We measured it twice.,We managed to it raises a,0.65,1.0
+5,The average seems unusually happy,the unlawful state-municipatory,0.7575757575757576,0.8
+6,I misplaced a decimal point.,""" Springfield is a "" eleventh person .",0.8888888888888888,0.8
+7,The result needs context.,the first it is best a contestant .,0.75,1.5
+8,That sample has an attitude,British sample than in a little,0.48148148148148145,1.0
+9,My spreadsheet grew overnight,appropriation against the rights,0.7931034482758621,1.0
+10,We sorted the wrong column.,Not logged inTalkContributionsCreate accountLog in,1.3846153846153846,1.0
