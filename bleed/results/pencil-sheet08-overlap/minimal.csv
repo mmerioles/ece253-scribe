@@ -1,0 +1,11 @@
+line,reference,prediction,normalized_cer,normalized_wer
+1,This graph looks suspicious.,"this geographic factor occupies 1st , 1",0.8148148148148148,1.25
+2,The trend took a detour.,They stunned to shook a selective,0.6956521739130435,1.0
+3,My data arrived late.,My data received a solicitor in,0.8,1.0
+4,We measured it twice.,We find a good of his crew .,0.85,1.5
+5,The average seems unusually happy,the Intelligence Security university therapy,0.7878787878787878,0.8
+6,I misplaced a decimal point.,# knowledgeable in the criminals' point of,0.8888888888888888,1.0
+7,The result needs context.,The aforesight is released as given talent ... .,1.0,1.5
+8,That sample has an attitude,That's Sample has can institute de,0.2962962962962963,0.8
+9,My spreadsheet grew overnight,the splendid she acts a greater sense ring that,0.9655172413793104,2.25
+10,We sorted the wrong column.,"What started another evening , column ,",0.5384615384615384,0.8

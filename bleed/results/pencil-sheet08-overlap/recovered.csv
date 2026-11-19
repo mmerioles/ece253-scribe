@@ -1,0 +1,11 @@
+line,reference,prediction,normalized_cer,normalized_wer
+1,This graph looks suspicious.,This geographic factor is surprising to,0.7407407407407407,1.25
+2,The trend took a detour.,They thought shook a gesture,0.5652173913043478,0.8
+3,My data arrived late.,My data received a midfielder,0.75,0.75
+4,We measured it twice.,We prepared with the first time to,1.05,1.5
+5,The average seems unusually happy,"the college , secret himself happy",0.48484848484848486,0.6
+6,I misplaced a decimal point.,# employed to alleviate points .,0.5925925925925926,1.0
+7,The result needs context.,The aircraft is used as a small set up,1.0833333333333333,2.0
+8,That sample has an attitude,That's simple than an institute,0.2962962962962963,0.8
+9,My spreadsheet grew overnight,Upon spread there are a greater wave ring kit,0.8620689655172413,2.25
+10,We sorted the wrong column.,Week started another wrong colours .,0.4230769230769231,0.8

@@ -22,7 +22,9 @@ def main():
     refs = (args.sample/'front.txt').read_text(encoding='utf-8-sig').splitlines()
     boxes = json.loads((args.sample/'front.boxes.json').read_text(encoding='utf-8-sig'))
     summary = {}
-    for name in ['input','without_protection','filtered','strong_removal']:
+    for name in ['input','rowley_brooke','without_protection','filtered','strong_removal','recovered','filtered_clean','recovered_clean_nogap','recovered_clean_diffusion','recovered_clean','minimal_protection_off','minimal_protection_on','minimal']:
+        if not (args.output/f'{name}.png').exists():
+            continue
         directory = args.output/'ocr'/name
         evaluate(args.output/f'{name}.png',refs,boxes,processor,model,directory)
         summary[name] = json.loads((directory/'metrics.json').read_text())
