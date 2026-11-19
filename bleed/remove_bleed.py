@@ -1,7 +1,7 @@
 """Paired bleed removal following Rowley-Brooke et al. (CVPR 2013).
 
 One pipeline: register -> detrend -> joint histogram MRF -> components -> restore.
-See bleed/METHOD.md for reproduction differences and limits on pencil recovery.
+See bleed/README.md for an overview and limits.
 """
 import argparse
 import hashlib
@@ -447,7 +447,7 @@ def run(front_path, back_path, output, max_side=4000, already_mirrored=False):
     thumb_size = (600,round(front.shape[0]*600/front.shape[1]))
     thumbs = [np.array(Image.fromarray(a).resize(thumb_size)) for a in (front,cleaned,strong)]
     Image.fromarray(np.concatenate(thumbs,axis=1)).save(output/'comparison.png')
-    report = dict(method='Rowley-Brooke structure; ICM/Telea approximations (see METHOD.md)',
+    report = dict(method='Rowley-Brooke structure; ICM/Telea approximations (see README.md)',
         front_sha256=hashlib.sha256(Path(front_path).read_bytes()).hexdigest(),
         back_sha256=hashlib.sha256(Path(back_path).read_bytes()).hexdigest(),
         max_side=max_side, mirrored_back=not already_mirrored, working_size=list(front.shape[1::-1]),

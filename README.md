@@ -22,4 +22,4 @@ one shared TrOCR model. First run downloads dependencies and model weights.
 CER/WER are character/word error rates; lower is better. Normalized scores ignore
 case and punctuation. Set scores count edits across all lines, not averages of image rates.
 
-Pencil/Sharpie restoration and agent handoff: see [bleed/README.md](bleed/README.md).
+Pencil/Sharpie bleed removal: see [bleed/README.md](bleed/README.md).
