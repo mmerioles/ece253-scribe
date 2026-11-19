@@ -1,0 +1,11 @@
+line,reference,prediction,normalized_cer,normalized_wer
+1,This graph looks suspicious.,This appropriations assumption,0.6296296296296297,0.75
+2,The trend took a detour.,"They , followed to block as a shootout",0.8695652173913043,1.2
+3,My data arrived late.,My data submitted to sitchers so .,0.9,1.0
+4,We measured it twice.,We'll mean good with his idea on,0.9,1.75
+5,The average seems unusually happy,"They then had good success in regular sites ,",0.8484848484848485,1.6
+6,I misplaced a decimal point.,a b Principle to consumers to operate from,1.2222222222222223,1.6
+7,The result needs context.,the straits moved a bracket that,0.8333333333333334,1.25
+8,That sample has an attitude,stat-ticket application in the thirtable,1.0,1.0
+9,My spreadsheet grew overnight,"dimensional hearing , who has signed",0.8620689655172413,1.25
+10,We sorted the wrong column.,National party policemen and the state are,1.3076923076923077,1.2

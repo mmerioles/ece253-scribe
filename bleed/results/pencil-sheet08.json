@@ -1,0 +1,152 @@
+{
+  "scope": "Single development pair, not held-out evaluation",
+  "run": {
+    "method": "Rowley-Brooke structure; ICM/Telea approximations (see METHOD.md)",
+    "front_sha256": "700de9b96e8f97082753fe5170e4bc8c92af4bd81298d3bad7d48b6429d530fc",
+    "back_sha256": "d822549ddeb48f16ef791a2169013be967c5494b67813ca2fe87fcb6c552c95b",
+    "max_side": 4000,
+    "mirrored_back": true,
+    "working_size": [
+      3000,
+      4000
+    ],
+    "registration": {
+      "homography": [
+        [
+          0.9897217067763062,
+          -0.008280854197607422,
+          57.907639845624196
+        ],
+        [
+          0.02028573594530878,
+          0.9408891722716113,
+          46.32456543943091
+        ],
+        [
+          1.5000603926774004e-05,
+          -1.1758376779018389e-05,
+          1.0
+        ]
+      ],
+      "matches": 341,
+      "inliers": 106,
+      "median_error_pixels": 1.6537792682647705,
+      "coverage": [
+        0.8318135579427083,
+        0.7773486328125
+      ]
+    },
+    "classification": {
+      "front_seed_threshold": 146.0,
+      "back_seed_threshold": 182.0,
+      "overlap_seed_threshold": 214.0,
+      "centers": [
+        [
+          133.6477061281564,
+          139.76407809982092
+        ],
+        [
+          158.2342473807947,
+          145.19661758162752
+        ],
+        [
+          179.89444169900923,
+          224.00445815153196
+        ],
+        [
+          223.93205703768683,
+          231.299998279925
+        ]
+      ],
+      "histogram_bins": 19190,
+      "alpha": 0.008840155499999999,
+      "icm_changes": [
+        73,
+        1,
+        1,
+        0
+      ]
+    },
+    "removed_fraction": 0.08161033563373997,
+    "elapsed_seconds": 16.4418239000006,
+    "ground_truth": "No clean pencil image or pixel mask supplied; no PSNR/SSIM/F1 claimed."
+  },
+  "dependencies": {
+    "opencv": "5.0.0",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  },
+  "implementation_sha256": "9b9551855cce4acdd5a03cf1464d873773f7778477f6d5f75a85859c27625d36",
+  "tests": "4 unittest invariants passed: mirror exactly once, blank registration rejected, dark ink remains valid, foreground/invalid pixels preserved.",
+  "recognition": {
+    "input": {
+      "model": "microsoft/trocr-base-handwritten",
+      "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+      "line_count": 10,
+      "strict_cer": 0.9657794676806084,
+      "strict_wer": 1.3777777777777778,
+      "normalized_cer": 0.9375,
+      "normalized_wer": 1.2666666666666666,
+      "normalized_exact_lines": 0,
+      "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+      "decoding": {
+        "num_beams": 1,
+        "do_sample": false,
+        "max_new_tokens": 128
+      }
+    },
+    "without_protection": {
+      "model": "microsoft/trocr-base-handwritten",
+      "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+      "line_count": 10,
+      "strict_cer": 0.7946768060836502,
+      "strict_wer": 1.1333333333333333,
+      "normalized_cer": 0.765625,
+      "normalized_wer": 0.9777777777777777,
+      "normalized_exact_lines": 0,
+      "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+      "decoding": {
+        "num_beams": 1,
+        "do_sample": false,
+        "max_new_tokens": 128
+      }
+    },
+    "filtered": {
+      "model": "microsoft/trocr-base-handwritten",
+      "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+      "line_count": 10,
+      "strict_cer": 0.7756653992395437,
+      "strict_wer": 1.1555555555555554,
+      "normalized_cer": 0.734375,
+      "normalized_wer": 1.0,
+      "normalized_exact_lines": 0,
+      "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+      "decoding": {
+        "num_beams": 1,
+        "do_sample": false,
+        "max_new_tokens": 128
+      }
+    },
+    "strong_removal": {
+      "model": "microsoft/trocr-base-handwritten",
+      "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+      "line_count": 10,
+      "strict_cer": 0.8631178707224335,
+      "strict_wer": 1.1777777777777778,
+      "normalized_cer": 0.80859375,
+      "normalized_wer": 0.9777777777777777,
+      "normalized_exact_lines": 0,
+      "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+      "decoding": {
+        "num_beams": 1,
+        "do_sample": false,
+        "max_new_tokens": 128
+      }
+    }
+  },
+  "image_metrics": null,
+  "reason": "No clean pencil image or manually annotated foreground mask.",
+  "visual_assessment": "Most mirrored ink removed; grid remains; pencil is missing/broken at some overlaps. Strong removal erases more pencil. Not pencil-only recovery.",
+  "reference": "https://www.cv-foundation.org/openaccess/content_cvpr_2013/papers/Rowley-Brooke_A_Non-parametric_Framework_2013_CVPR_paper.pdf",
+  "fidelity": "Modified prototype: ICM with normalized empirical neighbours instead of QPBO; Telea instead of exemplar synthesis. See METHOD.md."
+}

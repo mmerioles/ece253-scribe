@@ -1,0 +1,28 @@
+{
+  "tune": {
+    "pencil_f1": 0.7907862833391063,
+    "pencil_precision": 0.9520433694745621,
+    "pencil_recall": 0.6762440758293838,
+    "pencil_density_retained": 0.6937803030014038,
+    "pencil_density_mae": 0.11774512075511577,
+    "bleed_leak_pixels": 0.06208109609331605,
+    "bleed_leak_density": 0.01996464468538761,
+    "front_only_pencil_altered": 0.0029503487363966925,
+    "objective": 0.7257548385093936,
+    "pastes": 12,
+    "bleed_pixels": 54010
+  },
+  "test": {
+    "pencil_f1": 0.6649202506880657,
+    "pencil_precision": 0.7697504798464492,
+    "pencil_recall": 0.585220639738501,
+    "pencil_density_retained": 0.6306291222572327,
+    "pencil_density_mae": 0.13513528457345902,
+    "bleed_leak_pixels": 0.02254663185987837,
+    "bleed_leak_density": 0.009319900535047054,
+    "front_only_pencil_altered": 0.0029877619184301854,
+    "objective": 0.6393858569097571,
+    "pastes": 12,
+    "bleed_pixels": 68569
+  }
+}

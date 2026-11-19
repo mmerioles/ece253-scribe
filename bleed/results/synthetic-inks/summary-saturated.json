@@ -1,0 +1,146 @@
+{
+  "rows": [
+    {
+      "sheet": "sheet01",
+      "ink": "black_marker",
+      "input": {
+        "untouched_identical": true,
+        "stroke_pixels": 116364,
+        "stroke_mae_rgb": 26.609254837036133,
+        "stroke_density_ratio": 1.2652496099472046,
+        "bleed_left_visible": 0.9999947791584003,
+        "psnr_touched": 24.79287338256836
+      },
+      "off": {
+        "untouched_identical": true,
+        "stroke_pixels": 116364,
+        "stroke_mae_rgb": 44.230194091796875,
+        "stroke_density_ratio": 0.8404446244239807,
+        "bleed_left_visible": 0.03264592252271066,
+        "psnr_touched": 20.672800064086914
+      },
+      "on": {
+        "untouched_identical": true,
+        "stroke_pixels": 116364,
+        "stroke_mae_rgb": 15.4576416015625,
+        "stroke_density_ratio": 1.0663787126541138,
+        "bleed_left_visible": 0.07051007622428736,
+        "psnr_touched": 23.930191040039062
+      },
+      "divide": {
+        "untouched_identical": true,
+        "stroke_pixels": 116364,
+        "stroke_mae_rgb": 10.799760818481445,
+        "stroke_density_ratio": 0.9352719783782959,
+        "bleed_left_visible": 0.07004281090111726,
+        "psnr_touched": 28.988872528076172
+      }
+    },
+    {
+      "sheet": "sheet01",
+      "ink": "blue_pen",
+      "input": {
+        "untouched_identical": true,
+        "stroke_pixels": 53970,
+        "stroke_mae_rgb": 27.659156799316406,
+        "stroke_density_ratio": 1.373775839805603,
+        "bleed_left_visible": 0.9999964605528616,
+        "psnr_touched": 24.53156280517578
+      },
+      "off": {
+        "untouched_identical": true,
+        "stroke_pixels": 53970,
+        "stroke_mae_rgb": 51.45822525024414,
+        "stroke_density_ratio": 0.49264994263648987,
+        "bleed_left_visible": 0.0272714402010406,
+        "psnr_touched": 24.148880004882812
+      },
+      "on": {
+        "untouched_identical": true,
+        "stroke_pixels": 53970,
+        "stroke_mae_rgb": 27.575868606567383,
+        "stroke_density_ratio": 1.3625792264938354,
+        "bleed_left_visible": 0.048515201925459245,
+        "psnr_touched": 25.951160430908203
+      },
+      "divide": {
+        "untouched_identical": true,
+        "stroke_pixels": 53970,
+        "stroke_mae_rgb": 9.254474639892578,
+        "stroke_density_ratio": 0.9667268991470337,
+        "bleed_left_visible": 0.04831168371500372,
+        "psnr_touched": 32.204620361328125
+      }
+    }
+  ],
+  "summary": {
+    "black_marker": {
+      "input": {
+        "untouched_identical": 1.0,
+        "stroke_pixels": 116364.0,
+        "stroke_mae_rgb": 26.609254837036133,
+        "stroke_density_ratio": 1.2652496099472046,
+        "bleed_left_visible": 0.9999947791584003,
+        "psnr_touched": 24.79287338256836
+      },
+      "off": {
+        "untouched_identical": 1.0,
+        "stroke_pixels": 116364.0,
+        "stroke_mae_rgb": 44.230194091796875,
+        "stroke_density_ratio": 0.8404446244239807,
+        "bleed_left_visible": 0.03264592252271066,
+        "psnr_touched": 20.672800064086914
+      },
+      "on": {
+        "untouched_identical": 1.0,
+        "stroke_pixels": 116364.0,
+        "stroke_mae_rgb": 15.4576416015625,
+        "stroke_density_ratio": 1.0663787126541138,
+        "bleed_left_visible": 0.07051007622428736,
+        "psnr_touched": 23.930191040039062
+      },
+      "divide": {
+        "untouched_identical": 1.0,
+        "stroke_pixels": 116364.0,
+        "stroke_mae_rgb": 10.799760818481445,
+        "stroke_density_ratio": 0.9352719783782959,
+        "bleed_left_visible": 0.07004281090111726,
+        "psnr_touched": 28.988872528076172
+      }
+    },
+    "blue_pen": {
+      "input": {
+        "untouched_identical": 1.0,
+        "stroke_pixels": 53970.0,
+        "stroke_mae_rgb": 27.659156799316406,
+        "stroke_density_ratio": 1.373775839805603,
+        "bleed_left_visible": 0.9999964605528616,
+        "psnr_touched": 24.53156280517578
+      },
+      "off": {
+        "untouched_identical": 1.0,
+        "stroke_pixels": 53970.0,
+        "stroke_mae_rgb": 51.45822525024414,
+        "stroke_density_ratio": 0.49264994263648987,
+        "bleed_left_visible": 0.0272714402010406,
+        "psnr_touched": 24.148880004882812
+      },
+      "on": {
+        "untouched_identical": 1.0,
+        "stroke_pixels": 53970.0,
+        "stroke_mae_rgb": 27.575868606567383,
+        "stroke_density_ratio": 1.3625792264938354,
+        "bleed_left_visible": 0.048515201925459245,
+        "psnr_touched": 25.951160430908203
+      },
+      "divide": {
+        "untouched_identical": 1.0,
+        "stroke_pixels": 53970.0,
+        "stroke_mae_rgb": 9.254474639892578,
+        "stroke_density_ratio": 0.9667268991470337,
+        "bleed_left_visible": 0.04831168371500372,
+        "psnr_touched": 32.204620361328125
+      }
+    }
+  }
+}

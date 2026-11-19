@@ -1,0 +1,99 @@
+{
+  "method": "Rowley-Brooke stages + dense registration + overlap decomposition (recover_overlap.py)",
+  "params": {
+    "back_floor": 0.25,
+    "back_span": 3.5,
+    "back_sigma": 2.5,
+    "gain_sigma": 1.5,
+    "lam0": 0.15,
+    "lam_ink": 0.5,
+    "lam_edge": 0.0,
+    "iterations": 6,
+    "region_dilate": 5,
+    "hyst_low": 0.0,
+    "min_area": 700,
+    "scales": [],
+    "ridge": 0.01,
+    "penalty": "l1"
+  },
+  "registration": {
+    "homography": [
+      [
+        0.9884546157951569,
+        -0.008503884230723381,
+        58.82177532031735
+      ],
+      [
+        0.01993657735732214,
+        0.9401727590706717,
+        47.426296208670664
+      ],
+      [
+        1.4631320743372933e-05,
+        -1.1801538767696395e-05,
+        1.0
+      ]
+    ],
+    "matches": 340,
+    "inliers": 113,
+    "median_error_pixels": 1.7012522220611572,
+    "coverage": [
+      0.8318136393229166,
+      0.7826012573242187
+    ]
+  },
+  "dense_registration": {
+    "tiles": 605,
+    "max_shift_pixels": 10.511393547058105,
+    "median_shift_pixels": 1.6924388408660889
+  },
+  "classification": {
+    "front_seed_threshold": 145.0,
+    "back_seed_threshold": 181.0,
+    "overlap_seed_threshold": 215.0,
+    "centers": [
+      [
+        133.53637561298234,
+        138.5519603754071
+      ],
+      [
+        156.78749884076788,
+        143.9970191173938
+      ],
+      [
+        183.41034395006008,
+        222.5736466432829
+      ],
+      [
+        224.98082465899284,
+        230.33804226101964
+      ]
+    ],
+    "histogram_bins": 18217,
+    "alpha": 0.008267593649999998,
+    "icm_changes": [
+      55,
+      2,
+      0
+    ]
+  },
+  "region_fraction": 0.12459402661295009,
+  "objective_history": [
+    0.035558588802814484,
+    0.03539927303791046,
+    0.03540109097957611,
+    0.03540148586034775,
+    0.03540158271789551,
+    0.035401612520217896
+  ],
+  "elapsed_seconds": 23.363602917001117,
+  "minimal": {
+    "touched_fraction": 0.09167851401344206,
+    "front_ink_in_bleed_fraction": 0.028475372368242654,
+    "bleed_rgb_ratio": [
+      0.9664997458457947,
+      1.016714096069336,
+      0.9634010195732117
+    ]
+  }
+}

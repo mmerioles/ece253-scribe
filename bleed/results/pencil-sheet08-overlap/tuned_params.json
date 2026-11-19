@@ -1,0 +1,14 @@
+{
+  "back_floor": 0.25,
+  "back_span": 3.5,
+  "back_sigma": 2.5,
+  "gain_sigma": 1.5,
+  "lam0": 0.15,
+  "lam_ink": 0.5,
+  "lam_edge": 0,
+  "iterations": 6,
+  "region_dilate": 5,
+  "hyst_low": 0.0,
+  "min_area": 700,
+  "penalty": "l1"
+}

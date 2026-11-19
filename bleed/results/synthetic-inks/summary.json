@@ -1,0 +1,351 @@
+{
+  "note": "sheet01 only (run stopped early); values rounded to 3 dp from log",
+  "rows": [
+    {
+      "sheet": "sheet01",
+      "ink": "black_marker",
+      "input": {
+        "untouched_identical": true,
+        "stroke_pixels": 116384,
+        "stroke_mae_rgb": 29.434,
+        "stroke_density_ratio": 1.381,
+        "bleed_left_visible": 1.0,
+        "psnr_touched": 24.809
+      },
+      "rowley_brooke": {
+        "untouched_identical": true,
+        "stroke_pixels": 116384,
+        "stroke_mae_rgb": 15.105,
+        "stroke_density_ratio": 0.958,
+        "bleed_left_visible": 0.213,
+        "psnr_touched": 29.179
+      },
+      "off": {
+        "untouched_identical": true,
+        "stroke_pixels": 116384,
+        "stroke_mae_rgb": 43.603,
+        "stroke_density_ratio": 0.854,
+        "bleed_left_visible": 0.113,
+        "psnr_touched": 20.37
+      },
+      "on": {
+        "untouched_identical": true,
+        "stroke_pixels": 116384,
+        "stroke_mae_rgb": 18.017,
+        "stroke_density_ratio": 1.185,
+        "bleed_left_visible": 0.147,
+        "psnr_touched": 23.315
+      },
+      "divide": {
+        "untouched_identical": true,
+        "stroke_pixels": 116384,
+        "stroke_mae_rgb": 5.808,
+        "stroke_density_ratio": 1.0,
+        "bleed_left_visible": 0.147,
+        "psnr_touched": 28.125
+      }
+    },
+    {
+      "sheet": "sheet01",
+      "ink": "blue_pen",
+      "input": {
+        "untouched_identical": true,
+        "stroke_pixels": 53970,
+        "stroke_mae_rgb": 29.046,
+        "stroke_density_ratio": 1.413,
+        "bleed_left_visible": 1.0,
+        "psnr_touched": 24.535
+      },
+      "rowley_brooke": {
+        "untouched_identical": true,
+        "stroke_pixels": 53970,
+        "stroke_mae_rgb": 43.981,
+        "stroke_density_ratio": 0.505,
+        "bleed_left_visible": 0.113,
+        "psnr_touched": 24.867
+      },
+      "off": {
+        "untouched_identical": true,
+        "stroke_pixels": 53970,
+        "stroke_mae_rgb": 51.443,
+        "stroke_density_ratio": 0.491,
+        "bleed_left_visible": 0.03,
+        "psnr_touched": 23.134
+      },
+      "on": {
+        "untouched_identical": true,
+        "stroke_pixels": 53970,
+        "stroke_mae_rgb": 28.924,
+        "stroke_density_ratio": 1.4,
+        "bleed_left_visible": 0.051,
+        "psnr_touched": 24.881
+      },
+      "divide": {
+        "untouched_identical": true,
+        "stroke_pixels": 53970,
+        "stroke_mae_rgb": 8.051,
+        "stroke_density_ratio": 1.0,
+        "bleed_left_visible": 0.051,
+        "psnr_touched": 29.001
+      }
+    },
+    {
+      "sheet": "sheet01",
+      "ink": "red_pen",
+      "input": {
+        "untouched_identical": true,
+        "stroke_pixels": 53821,
+        "stroke_mae_rgb": 29.853,
+        "stroke_density_ratio": 1.451,
+        "bleed_left_visible": 1.0,
+        "psnr_touched": 24.51
+      },
+      "rowley_brooke": {
+        "untouched_identical": true,
+        "stroke_pixels": 53821,
+        "stroke_mae_rgb": 43.941,
+        "stroke_density_ratio": 0.545,
+        "bleed_left_visible": 0.095,
+        "psnr_touched": 24.857
+      },
+      "off": {
+        "untouched_identical": true,
+        "stroke_pixels": 53821,
+        "stroke_mae_rgb": 49.546,
+        "stroke_density_ratio": 0.538,
+        "bleed_left_visible": 0.016,
+        "psnr_touched": 23.286
+      },
+      "on": {
+        "untouched_identical": true,
+        "stroke_pixels": 53821,
+        "stroke_mae_rgb": 29.932,
+        "stroke_density_ratio": 1.434,
+        "bleed_left_visible": 0.035,
+        "psnr_touched": 24.84
+      },
+      "divide": {
+        "untouched_identical": true,
+        "stroke_pixels": 53821,
+        "stroke_mae_rgb": 8.472,
+        "stroke_density_ratio": 1.0,
+        "bleed_left_visible": 0.035,
+        "psnr_touched": 28.801
+      }
+    },
+    {
+      "sheet": "sheet01",
+      "ink": "pencil",
+      "input": {
+        "untouched_identical": true,
+        "stroke_pixels": 52068,
+        "stroke_mae_rgb": 31.659,
+        "stroke_density_ratio": 1.499,
+        "bleed_left_visible": 1.0,
+        "psnr_touched": 24.473
+      },
+      "rowley_brooke": {
+        "untouched_identical": true,
+        "stroke_pixels": 52068,
+        "stroke_mae_rgb": 40.621,
+        "stroke_density_ratio": 0.599,
+        "bleed_left_visible": 0.074,
+        "psnr_touched": 26.065
+      },
+      "off": {
+        "untouched_identical": true,
+        "stroke_pixels": 52068,
+        "stroke_mae_rgb": 45.661,
+        "stroke_density_ratio": 0.592,
+        "bleed_left_visible": 0.003,
+        "psnr_touched": 24.497
+      },
+      "on": {
+        "untouched_identical": true,
+        "stroke_pixels": 52068,
+        "stroke_mae_rgb": 32.644,
+        "stroke_density_ratio": 1.475,
+        "bleed_left_visible": 0.019,
+        "psnr_touched": 25.102
+      },
+      "divide": {
+        "untouched_identical": true,
+        "stroke_pixels": 52068,
+        "stroke_mae_rgb": 10.513,
+        "stroke_density_ratio": 1.0,
+        "bleed_left_visible": 0.019,
+        "psnr_touched": 28.657
+      }
+    }
+  ],
+  "summary": {
+    "black_marker": {
+      "input": {
+        "untouched_identical": true,
+        "stroke_pixels": 116384,
+        "stroke_mae_rgb": 29.434,
+        "stroke_density_ratio": 1.381,
+        "bleed_left_visible": 1.0,
+        "psnr_touched": 24.809
+      },
+      "rowley_brooke": {
+        "untouched_identical": true,
+        "stroke_pixels": 116384,
+        "stroke_mae_rgb": 15.105,
+        "stroke_density_ratio": 0.958,
+        "bleed_left_visible": 0.213,
+        "psnr_touched": 29.179
+      },
+      "off": {
+        "untouched_identical": true,
+        "stroke_pixels": 116384,
+        "stroke_mae_rgb": 43.603,
+        "stroke_density_ratio": 0.854,
+        "bleed_left_visible": 0.113,
+        "psnr_touched": 20.37
+      },
+      "on": {
+        "untouched_identical": true,
+        "stroke_pixels": 116384,
+        "stroke_mae_rgb": 18.017,
+        "stroke_density_ratio": 1.185,
+        "bleed_left_visible": 0.147,
+        "psnr_touched": 23.315
+      },
+      "divide": {
+        "untouched_identical": true,
+        "stroke_pixels": 116384,
+        "stroke_mae_rgb": 5.808,
+        "stroke_density_ratio": 1.0,
+        "bleed_left_visible": 0.147,
+        "psnr_touched": 28.125
+      }
+    },
+    "blue_pen": {
+      "input": {
+        "untouched_identical": true,
+        "stroke_pixels": 53970,
+        "stroke_mae_rgb": 29.046,
+        "stroke_density_ratio": 1.413,
+        "bleed_left_visible": 1.0,
+        "psnr_touched": 24.535
+      },
+      "rowley_brooke": {
+        "untouched_identical": true,
+        "stroke_pixels": 53970,
+        "stroke_mae_rgb": 43.981,
+        "stroke_density_ratio": 0.505,
+        "bleed_left_visible": 0.113,
+        "psnr_touched": 24.867
+      },
+      "off": {
+        "untouched_identical": true,
+        "stroke_pixels": 53970,
+        "stroke_mae_rgb": 51.443,
+        "stroke_density_ratio": 0.491,
+        "bleed_left_visible": 0.03,
+        "psnr_touched": 23.134
+      },
+      "on": {
+        "untouched_identical": true,
+        "stroke_pixels": 53970,
+        "stroke_mae_rgb": 28.924,
+        "stroke_density_ratio": 1.4,
+        "bleed_left_visible": 0.051,
+        "psnr_touched": 24.881
+      },
+      "divide": {
+        "untouched_identical": true,
+        "stroke_pixels": 53970,
+        "stroke_mae_rgb": 8.051,
+        "stroke_density_ratio": 1.0,
+        "bleed_left_visible": 0.051,
+        "psnr_touched": 29.001
+      }
+    },
+    "red_pen": {
+      "input": {
+        "untouched_identical": true,
+        "stroke_pixels": 53821,
+        "stroke_mae_rgb": 29.853,
+        "stroke_density_ratio": 1.451,
+        "bleed_left_visible": 1.0,
+        "psnr_touched": 24.51
+      },
+      "rowley_brooke": {
+        "untouched_identical": true,
+        "stroke_pixels": 53821,
+        "stroke_mae_rgb": 43.941,
+        "stroke_density_ratio": 0.545,
+        "bleed_left_visible": 0.095,
+        "psnr_touched": 24.857
+      },
+      "off": {
+        "untouched_identical": true,
+        "stroke_pixels": 53821,
+        "stroke_mae_rgb": 49.546,
+        "stroke_density_ratio": 0.538,
+        "bleed_left_visible": 0.016,
+        "psnr_touched": 23.286
+      },
+      "on": {
+        "untouched_identical": true,
+        "stroke_pixels": 53821,
+        "stroke_mae_rgb": 29.932,
+        "stroke_density_ratio": 1.434,
+        "bleed_left_visible": 0.035,
+        "psnr_touched": 24.84
+      },
+      "divide": {
+        "untouched_identical": true,
+        "stroke_pixels": 53821,
+        "stroke_mae_rgb": 8.472,
+        "stroke_density_ratio": 1.0,
+        "bleed_left_visible": 0.035,
+        "psnr_touched": 28.801
+      }
+    },
+    "pencil": {
+      "input": {
+        "untouched_identical": true,
+        "stroke_pixels": 52068,
+        "stroke_mae_rgb": 31.659,
+        "stroke_density_ratio": 1.499,
+        "bleed_left_visible": 1.0,
+        "psnr_touched": 24.473
+      },
+      "rowley_brooke": {
+        "untouched_identical": true,
+        "stroke_pixels": 52068,
+        "stroke_mae_rgb": 40.621,
+        "stroke_density_ratio": 0.599,
+        "bleed_left_visible": 0.074,
+        "psnr_touched": 26.065
+      },
+      "off": {
+        "untouched_identical": true,
+        "stroke_pixels": 52068,
+        "stroke_mae_rgb": 45.661,
+        "stroke_density_ratio": 0.592,
+        "bleed_left_visible": 0.003,
+        "psnr_touched": 24.497
+      },
+      "on": {
+        "untouched_identical": true,
+        "stroke_pixels": 52068,
+        "stroke_mae_rgb": 32.644,
+        "stroke_density_ratio": 1.475,
+        "bleed_left_visible": 0.019,
+        "psnr_touched": 25.102
+      },
+      "divide": {
+        "untouched_identical": true,
+        "stroke_pixels": 52068,
+        "stroke_mae_rgb": 10.513,
+        "stroke_density_ratio": 1.0,
+        "bleed_left_visible": 0.019,
+        "psnr_touched": 28.657
+      }
+    }
+  }
+}

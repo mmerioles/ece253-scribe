@@ -1,0 +1,481 @@
+{
+  "initial": {
+    "params": {
+      "back_floor": 0.25,
+      "back_span": 1.0,
+      "back_sigma": 1.5,
+      "gain_sigma": 8.0,
+      "lam0": 0.03,
+      "lam_ink": 0.1,
+      "lam_edge": 0.15,
+      "iterations": 6,
+      "region_dilate": 3,
+      "hyst_low": 0.0,
+      "min_area": 0,
+      "penalty": "l1"
+    },
+    "tune": {
+      "pencil_f1": 0.6807139981210576,
+      "pencil_precision": 0.9811393751813522,
+      "pencil_recall": 0.5211405086051888,
+      "pencil_density_retained": 0.5553603172302246,
+      "pencil_density_mae": 0.158822287699878,
+      "bleed_leak_pixels": 0.3010183299389002,
+      "bleed_leak_density": 0.0976732075214386,
+      "front_only_pencil_altered": 3.2350315092068994e-05,
+      "objective": 0.3796633178670653,
+      "pastes": 12,
+      "bleed_pixels": 54010
+    },
+    "test": {
+      "pencil_f1": 0.6099200215068217,
+      "pencil_precision": 0.8679227237949503,
+      "pencil_recall": 0.47015853279452907,
+      "pencil_density_retained": 0.5401921272277832,
+      "pencil_density_mae": 0.1526681451201624,
+      "bleed_leak_pixels": 0.3074567224255859,
+      "bleed_leak_density": 0.116798996925354,
+      "front_only_pencil_altered": 0.0,
+      "objective": 0.30246329908123576,
+      "pastes": 12,
+      "bleed_pixels": 68569
+    }
+  },
+  "tuned": {
+    "params": {
+      "back_floor": 0.25,
+      "back_span": 3.5,
+      "back_sigma": 2.5,
+      "gain_sigma": 1.5,
+      "lam0": 0.15,
+      "lam_ink": 0.5,
+      "lam_edge": 0,
+      "iterations": 6,
+      "region_dilate": 5,
+      "hyst_low": 0.0,
+      "min_area": 700,
+      "penalty": "l1"
+    },
+    "tune": {
+      "pencil_f1": 0.7927261975162626,
+      "pencil_precision": 0.933820968303727,
+      "pencil_recall": 0.6886719753403545,
+      "pencil_density_retained": 0.7195772528648376,
+      "pencil_density_mae": 0.10666597348205112,
+      "bleed_leak_pixels": 0.06161821884836141,
+      "bleed_leak_density": 0.019791336730122566,
+      "front_only_pencil_altered": 0.000291152835828621,
+      "objective": 0.7308168258320726,
+      "pastes": 12,
+      "bleed_pixels": 54010
+    },
+    "test": {
+      "pencil_f1": 0.670792220384418,
+      "pencil_precision": 0.7460669880740929,
+      "pencil_recall": 0.6093150968811523,
+      "pencil_density_retained": 0.6414695382118225,
+      "pencil_density_mae": 0.1480645094865493,
+      "bleed_leak_pixels": 0.023392495150869927,
+      "bleed_leak_density": 0.009655587375164032,
+      "front_only_pencil_altered": 0.0001891814315163218,
+      "objective": 0.6472105438020317,
+      "pastes": 12,
+      "bleed_pixels": 68569
+    }
+  },
+  "trace": [
+    {
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 1.0,
+        "back_sigma": 1.5,
+        "gain_sigma": 8.0,
+        "lam0": 0.03,
+        "lam_ink": 0.1,
+        "lam_edge": 0.15,
+        "iterations": 6,
+        "region_dilate": 3,
+        "hyst_low": 0.0,
+        "min_area": 0,
+        "penalty": "l1"
+      },
+      "objective": 0.3796633178670653
+    },
+    {
+      "params": {
+        "back_floor": 0.35,
+        "back_span": 1.0,
+        "back_sigma": 1.5,
+        "gain_sigma": 8.0,
+        "lam0": 0.03,
+        "lam_ink": 0.1,
+        "lam_edge": 0.15,
+        "iterations": 6,
+        "region_dilate": 3,
+        "hyst_low": 0.0,
+        "min_area": 0,
+        "penalty": "l1"
+      },
+      "objective": 0.39619653037310326
+    },
+    {
+      "params": {
+        "back_floor": 0.35,
+        "back_span": 1.0,
+        "back_sigma": 0,
+        "gain_sigma": 8.0,
+        "lam0": 0.03,
+        "lam_ink": 0.1,
+        "lam_edge": 0.15,
+        "iterations": 6,
+        "region_dilate": 3,
+        "hyst_low": 0.0,
+        "min_area": 0,
+        "penalty": "l1"
+      },
+      "objective": 0.41023369784932073
+    },
+    {
+      "params": {
+        "back_floor": 0.35,
+        "back_span": 1.0,
+        "back_sigma": 0,
+        "gain_sigma": 5,
+        "lam0": 0.03,
+        "lam_ink": 0.1,
+        "lam_edge": 0.15,
+        "iterations": 6,
+        "region_dilate": 3,
+        "hyst_low": 0.0,
+        "min_area": 0,
+        "penalty": "l1"
+      },
+      "objective": 0.4274348400679824
+    },
+    {
+      "params": {
+        "back_floor": 0.35,
+        "back_span": 1.0,
+        "back_sigma": 0,
+        "gain_sigma": 5,
+        "lam0": 0.06,
+        "lam_ink": 0.1,
+        "lam_edge": 0.15,
+        "iterations": 6,
+        "region_dilate": 3,
+        "hyst_low": 0.0,
+        "min_area": 0,
+        "penalty": "l1"
+      },
+      "objective": 0.4554026911140526
+    },
+    {
+      "params": {
+        "back_floor": 0.35,
+        "back_span": 1.0,
+        "back_sigma": 0,
+        "gain_sigma": 5,
+        "lam0": 0.1,
+        "lam_ink": 0.1,
+        "lam_edge": 0.15,
+        "iterations": 6,
+        "region_dilate": 3,
+        "hyst_low": 0.0,
+        "min_area": 0,
+        "penalty": "l1"
+      },
+      "objective": 0.47496817336680386
+    },
+    {
+      "params": {
+        "back_floor": 0.35,
+        "back_span": 1.0,
+        "back_sigma": 0,
+        "gain_sigma": 5,
+        "lam0": 0.1,
+        "lam_ink": 0.1,
+        "lam_edge": 0,
+        "iterations": 6,
+        "region_dilate": 3,
+        "hyst_low": 0.0,
+        "min_area": 0,
+        "penalty": "l1"
+      },
+      "objective": 0.4779564114415352
+    },
+    {
+      "params": {
+        "back_floor": 0.35,
+        "back_span": 1.0,
+        "back_sigma": 0,
+        "gain_sigma": 5,
+        "lam0": 0.1,
+        "lam_ink": 0.1,
+        "lam_edge": 0,
+        "iterations": 6,
+        "region_dilate": 3,
+        "hyst_low": 0.0,
+        "min_area": 80,
+        "penalty": "l1"
+      },
+      "objective": 0.5146312299918083
+    },
+    {
+      "params": {
+        "back_floor": 0.35,
+        "back_span": 1.0,
+        "back_sigma": 0,
+        "gain_sigma": 5,
+        "lam0": 0.1,
+        "lam_ink": 0.1,
+        "lam_edge": 0,
+        "iterations": 6,
+        "region_dilate": 3,
+        "hyst_low": 0.0,
+        "min_area": 150,
+        "penalty": "l1"
+      },
+      "objective": 0.5378441434378767
+    },
+    {
+      "params": {
+        "back_floor": 0.35,
+        "back_span": 1.0,
+        "back_sigma": 0,
+        "gain_sigma": 5,
+        "lam0": 0.1,
+        "lam_ink": 0.1,
+        "lam_edge": 0,
+        "iterations": 6,
+        "region_dilate": 3,
+        "hyst_low": 0.0,
+        "min_area": 250,
+        "penalty": "l1"
+      },
+      "objective": 0.5449573132704228
+    },
+    {
+      "params": {
+        "back_floor": 0.35,
+        "back_span": 1.0,
+        "back_sigma": 0,
+        "gain_sigma": 5,
+        "lam0": 0.1,
+        "lam_ink": 0.1,
+        "lam_edge": 0,
+        "iterations": 6,
+        "region_dilate": 3,
+        "hyst_low": 0.0,
+        "min_area": 400,
+        "penalty": "l1"
+      },
+      "objective": 0.5530623206423378
+    },
+    {
+      "params": {
+        "back_floor": 0.35,
+        "back_span": 1.0,
+        "back_sigma": 0,
+        "gain_sigma": 5,
+        "lam0": 0.1,
+        "lam_ink": 0.1,
+        "lam_edge": 0,
+        "iterations": 6,
+        "region_dilate": 3,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "penalty": "l1"
+      },
+      "objective": 0.5611923656640174
+    },
+    {
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 1.0,
+        "back_sigma": 0,
+        "gain_sigma": 5,
+        "lam0": 0.1,
+        "lam_ink": 0.1,
+        "lam_edge": 0,
+        "iterations": 6,
+        "region_dilate": 3,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "penalty": "l1"
+      },
+      "objective": 0.5615376707806283
+    },
+    {
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 1.8,
+        "back_sigma": 0,
+        "gain_sigma": 5,
+        "lam0": 0.1,
+        "lam_ink": 0.1,
+        "lam_edge": 0,
+        "iterations": 6,
+        "region_dilate": 3,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "penalty": "l1"
+      },
+      "objective": 0.56387580585547
+    },
+    {
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 2.5,
+        "back_sigma": 0,
+        "gain_sigma": 5,
+        "lam0": 0.1,
+        "lam_ink": 0.1,
+        "lam_edge": 0,
+        "iterations": 6,
+        "region_dilate": 3,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "penalty": "l1"
+      },
+      "objective": 0.6045023447813075
+    },
+    {
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 3.5,
+        "back_sigma": 0,
+        "gain_sigma": 5,
+        "lam0": 0.1,
+        "lam_ink": 0.1,
+        "lam_edge": 0,
+        "iterations": 6,
+        "region_dilate": 3,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "penalty": "l1"
+      },
+      "objective": 0.6070666194086597
+    },
+    {
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 3.5,
+        "back_sigma": 2.5,
+        "gain_sigma": 5,
+        "lam0": 0.1,
+        "lam_ink": 0.1,
+        "lam_edge": 0,
+        "iterations": 6,
+        "region_dilate": 3,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "penalty": "l1"
+      },
+      "objective": 0.6352003328060908
+    },
+    {
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 3.5,
+        "back_sigma": 2.5,
+        "gain_sigma": 1.5,
+        "lam0": 0.1,
+        "lam_ink": 0.1,
+        "lam_edge": 0,
+        "iterations": 6,
+        "region_dilate": 3,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "penalty": "l1"
+      },
+      "objective": 0.6787616437860715
+    },
+    {
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 3.5,
+        "back_sigma": 2.5,
+        "gain_sigma": 1.5,
+        "lam0": 0.15,
+        "lam_ink": 0.1,
+        "lam_edge": 0,
+        "iterations": 6,
+        "region_dilate": 3,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "penalty": "l1"
+      },
+      "objective": 0.7075035149800781
+    },
+    {
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 3.5,
+        "back_sigma": 2.5,
+        "gain_sigma": 1.5,
+        "lam0": 0.15,
+        "lam_ink": 0.2,
+        "lam_edge": 0,
+        "iterations": 6,
+        "region_dilate": 3,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "penalty": "l1"
+      },
+      "objective": 0.7109751520367522
+    },
+    {
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 3.5,
+        "back_sigma": 2.5,
+        "gain_sigma": 1.5,
+        "lam0": 0.15,
+        "lam_ink": 0.35,
+        "lam_edge": 0,
+        "iterations": 6,
+        "region_dilate": 3,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "penalty": "l1"
+      },
+      "objective": 0.7185490818052034
+    },
+    {
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 3.5,
+        "back_sigma": 2.5,
+        "gain_sigma": 1.5,
+        "lam0": 0.15,
+        "lam_ink": 0.5,
+        "lam_edge": 0,
+        "iterations": 6,
+        "region_dilate": 3,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "penalty": "l1"
+      },
+      "objective": 0.7279280630871175
+    },
+    {
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 3.5,
+        "back_sigma": 2.5,
+        "gain_sigma": 1.5,
+        "lam0": 0.15,
+        "lam_ink": 0.5,
+        "lam_edge": 0,
+        "iterations": 6,
+        "region_dilate": 5,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "penalty": "l1"
+      },
+      "objective": 0.7308168258320726
+    }
+  ],
+  "pastes": 24,
+  "clean_source_windows": 12
+}

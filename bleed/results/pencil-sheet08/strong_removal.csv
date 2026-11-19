@@ -1,0 +1,11 @@
+line,reference,prediction,normalized_cer,normalized_wer
+1,This graph looks suspicious.,"This , application is the first issue",0.8888888888888888,1.25
+2,The trend took a detour.,The first of a look of the,0.7391304347826086,1.0
+3,My data arrived late.,My date arrived quite ... .,0.2,0.5
+4,We measured it twice.,"What pre-adapting it's justice ,",0.85,1.0
+5,The average seems unusually happy,Philadelphia Slims coverage,0.7575757575757576,1.0
+6,I misplaced a decimal point.,appropriate of the political property .,0.9259259259259259,1.0
+7,The result needs context.,the possibility of the gender of interest,1.0416666666666667,1.5
+8,That sample has an attitude,"that sample the sun , "" it",0.4074074074074074,0.6
+9,My spreadsheet grew overnight,appropriation against the rights,0.7931034482758621,1.0
+10,We sorted the wrong column.,Not logged inTalkContributionsCreate accountLog in,1.3846153846153846,1.0
