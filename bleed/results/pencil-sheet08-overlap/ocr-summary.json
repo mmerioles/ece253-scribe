@@ -1,0 +1,223 @@
+{
+  "input": {
+    "model": "microsoft/trocr-base-handwritten",
+    "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+    "image": "/Users/matt/repos/ece253-scribe/bleed/outputs/pencil-sheet08/input.png",
+    "line_count": 10,
+    "strict_cer": 0.9657794676806084,
+    "strict_wer": 1.3777777777777778,
+    "normalized_cer": 0.9375,
+    "normalized_wer": 1.2666666666666666,
+    "normalized_exact_lines": 0,
+    "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+    "decoding": {
+      "num_beams": 1,
+      "do_sample": false,
+      "max_new_tokens": 128
+    }
+  },
+  "rowley_brooke": {
+    "model": "microsoft/trocr-base-handwritten",
+    "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+    "image": "/Users/matt/repos/ece253-scribe/bleed/outputs/pencil-sheet08/rowley_brooke.png",
+    "line_count": 10,
+    "strict_cer": 0.5855513307984791,
+    "strict_wer": 0.8666666666666667,
+    "normalized_cer": 0.5546875,
+    "normalized_wer": 0.7333333333333333,
+    "normalized_exact_lines": 0,
+    "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+    "decoding": {
+      "num_beams": 1,
+      "do_sample": false,
+      "max_new_tokens": 128
+    }
+  },
+  "without_protection": {
+    "model": "microsoft/trocr-base-handwritten",
+    "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+    "image": "/Users/matt/repos/ece253-scribe/bleed/outputs/pencil-sheet08/without_protection.png",
+    "line_count": 10,
+    "strict_cer": 0.7452471482889734,
+    "strict_wer": 1.2,
+    "normalized_cer": 0.7109375,
+    "normalized_wer": 1.0,
+    "normalized_exact_lines": 0,
+    "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+    "decoding": {
+      "num_beams": 1,
+      "do_sample": false,
+      "max_new_tokens": 128
+    }
+  },
+  "filtered": {
+    "model": "microsoft/trocr-base-handwritten",
+    "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+    "image": "/Users/matt/repos/ece253-scribe/bleed/outputs/pencil-sheet08/filtered.png",
+    "line_count": 10,
+    "strict_cer": 0.6692015209125475,
+    "strict_wer": 1.1333333333333333,
+    "normalized_cer": 0.62109375,
+    "normalized_wer": 0.9555555555555556,
+    "normalized_exact_lines": 0,
+    "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+    "decoding": {
+      "num_beams": 1,
+      "do_sample": false,
+      "max_new_tokens": 128
+    }
+  },
+  "strong_removal": {
+    "model": "microsoft/trocr-base-handwritten",
+    "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+    "image": "/Users/matt/repos/ece253-scribe/bleed/outputs/pencil-sheet08/strong_removal.png",
+    "line_count": 10,
+    "strict_cer": 0.935361216730038,
+    "strict_wer": 1.1111111111111112,
+    "normalized_cer": 0.9140625,
+    "normalized_wer": 1.0444444444444445,
+    "normalized_exact_lines": 0,
+    "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+    "decoding": {
+      "num_beams": 1,
+      "do_sample": false,
+      "max_new_tokens": 128
+    }
+  },
+  "recovered": {
+    "model": "microsoft/trocr-base-handwritten",
+    "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+    "image": "/Users/matt/repos/ece253-scribe/bleed/outputs/pencil-sheet08/recovered.png",
+    "line_count": 10,
+    "strict_cer": 0.7110266159695817,
+    "strict_wer": 1.3333333333333333,
+    "normalized_cer": 0.671875,
+    "normalized_wer": 1.1555555555555554,
+    "normalized_exact_lines": 0,
+    "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+    "decoding": {
+      "num_beams": 1,
+      "do_sample": false,
+      "max_new_tokens": 128
+    }
+  },
+  "filtered_clean": {
+    "model": "microsoft/trocr-base-handwritten",
+    "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+    "image": "/Users/matt/repos/ece253-scribe/bleed/outputs/pencil-sheet08/filtered_clean.png",
+    "line_count": 10,
+    "strict_cer": 0.7300380228136882,
+    "strict_wer": 1.4222222222222223,
+    "normalized_cer": 0.59375,
+    "normalized_wer": 0.9333333333333333,
+    "normalized_exact_lines": 0,
+    "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+    "decoding": {
+      "num_beams": 1,
+      "do_sample": false,
+      "max_new_tokens": 128
+    }
+  },
+  "recovered_clean_nogap": {
+    "model": "microsoft/trocr-base-handwritten",
+    "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+    "image": "/Users/matt/repos/ece253-scribe/bleed/outputs/pencil-sheet08/recovered_clean_nogap.png",
+    "line_count": 10,
+    "strict_cer": 0.688212927756654,
+    "strict_wer": 1.2444444444444445,
+    "normalized_cer": 0.5546875,
+    "normalized_wer": 0.8666666666666667,
+    "normalized_exact_lines": 0,
+    "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+    "decoding": {
+      "num_beams": 1,
+      "do_sample": false,
+      "max_new_tokens": 128
+    }
+  },
+  "recovered_clean_diffusion": {
+    "model": "microsoft/trocr-base-handwritten",
+    "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+    "image": "/Users/matt/repos/ece253-scribe/bleed/outputs/pencil-sheet08/recovered_clean_diffusion.png",
+    "line_count": 10,
+    "strict_cer": 0.7072243346007605,
+    "strict_wer": 1.2222222222222223,
+    "normalized_cer": 0.57421875,
+    "normalized_wer": 0.8444444444444444,
+    "normalized_exact_lines": 0,
+    "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+    "decoding": {
+      "num_beams": 1,
+      "do_sample": false,
+      "max_new_tokens": 128
+    }
+  },
+  "recovered_clean": {
+    "model": "microsoft/trocr-base-handwritten",
+    "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+    "image": "/Users/matt/repos/ece253-scribe/bleed/outputs/pencil-sheet08/recovered_clean.png",
+    "line_count": 10,
+    "strict_cer": 0.6768060836501901,
+    "strict_wer": 1.1777777777777778,
+    "normalized_cer": 0.53125,
+    "normalized_wer": 0.7777777777777778,
+    "normalized_exact_lines": 0,
+    "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+    "decoding": {
+      "num_beams": 1,
+      "do_sample": false,
+      "max_new_tokens": 128
+    }
+  },
+  "minimal_protection_off": {
+    "model": "microsoft/trocr-base-handwritten",
+    "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+    "image": "/Users/matt/repos/ece253-scribe/bleed/outputs/pencil-sheet08/minimal_protection_off.png",
+    "line_count": 10,
+    "strict_cer": 0.5703422053231939,
+    "strict_wer": 0.9111111111111111,
+    "normalized_cer": 0.54296875,
+    "normalized_wer": 0.7777777777777778,
+    "normalized_exact_lines": 0,
+    "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+    "decoding": {
+      "num_beams": 1,
+      "do_sample": false,
+      "max_new_tokens": 128
+    }
+  },
+  "minimal_protection_on": {
+    "model": "microsoft/trocr-base-handwritten",
+    "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+    "image": "/Users/matt/repos/ece253-scribe/bleed/outputs/pencil-sheet08/minimal_protection_on.png",
+    "line_count": 10,
+    "strict_cer": 0.5209125475285171,
+    "strict_wer": 1.0888888888888888,
+    "normalized_cer": 0.46484375,
+    "normalized_wer": 0.8666666666666667,
+    "normalized_exact_lines": 0,
+    "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+    "decoding": {
+      "num_beams": 1,
+      "do_sample": false,
+      "max_new_tokens": 128
+    }
+  },
+  "minimal": {
+    "model": "microsoft/trocr-base-handwritten",
+    "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+    "image": "/Users/matt/repos/ece253-scribe/bleed/outputs/pencil-sheet08/minimal.png",
+    "line_count": 10,
+    "strict_cer": 0.43346007604562736,
+    "strict_wer": 0.9555555555555556,
+    "normalized_cer": 0.40625,
+    "normalized_wer": 0.8,
+    "normalized_exact_lines": 0,
+    "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+    "decoding": {
+      "num_beams": 1,
+      "do_sample": false,
+      "max_new_tokens": 128
+    }
+  }
+}

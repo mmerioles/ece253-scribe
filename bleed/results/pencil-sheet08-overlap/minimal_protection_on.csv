@@ -1,0 +1,11 @@
+line,reference,prediction,normalized_cer,normalized_wer
+1,This graph looks suspicious.,This geographic place occupies by a,0.7777777777777778,1.25
+2,The trend took a detour.,They attended stock a shootout .,0.5217391304347826,0.8
+3,My data arrived late.,My data received his retirement,0.8,0.75
+4,We measured it twice.,We mean since the first of this idea : a,1.15,2.0
+5,The average seems unusually happy,the Investigator seemed it was used to be a p.,0.8484848484848485,1.8
+6,I misplaced a decimal point.,"I knowledgeable a , a televisionist's pianistist",1.1481481481481481,0.8
+7,The result needs context.,The streetscott is opened to informatient ... .,1.0,1.25
+8,That sample has an attitude,"# Sample , has been in a certificate",0.7407407407407407,1.0
+9,My spreadsheet grew overnight,A year after his death back to a greater basis came very sick .,1.6206896551724137,3.25
+10,We sorted the wrong column.,"What started another evening "" calm is a",0.8076923076923077,1.4

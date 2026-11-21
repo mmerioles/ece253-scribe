@@ -66,5 +66,27 @@ class BleedTests(unittest.TestCase):
         self.assertGreater(output[30:45,47:53].mean(),180)
         self.assertFalse(mask[~valid].any())
 
+    def test_expansion_reaches_brute_force_optimum(self):
+        import itertools
+        from scipy import sparse
+        from remove_bleed import TABLE1, alpha_expansion, mrf_energy
+        rng=np.random.default_rng(0); n=7; U=rng.random((n,4))*3
+        e=sparse.coo_matrix((np.ones(9),(rng.integers(0,n,9),rng.integers(0,n,9))),shape=(n,n))
+        e=sparse.triu(e+e.T,1).tocoo(); e.data[:]=1
+        V=-np.log(TABLE1)-np.log(TABLE1.T)
+        lab,hist=alpha_expansion(U,e,V,.3,U.argmin(1))
+        best=min(mrf_energy(U,e,V,.3,np.array(L)) for L in itertools.product(range(4),repeat=n))
+        self.assertAlmostEqual(hist[-1],best,places=6)
+
+    def test_exemplar_inpainting_fills_only_holes_and_continues_texture(self):
+        from remove_bleed import criminisi_inpaint
+        rng=np.random.default_rng(1)
+        img=np.clip(200+rng.normal(0,6,(120,160,3)),0,255).astype(np.uint8)
+        for x in range(0,160,20): img[:,x:x+2]=150
+        hole=np.zeros((120,160),bool); hole[40:80,50:110]=True
+        out=criminisi_inpaint(img,hole,~hole)
+        np.testing.assert_array_equal(out[~hole],img[~hole])
+        self.assertLess(out[50:70,60:62].mean(), out[50:70,64:68].mean()-15)   # stripe continued through the hole
+
 
 if __name__=='__main__': unittest.main()

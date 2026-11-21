@@ -1,0 +1,34 @@
+% Bleed characterization on sheet08: predicted bleed density a*m_b vs observed front density d_g.
+% Data: 2500 bleed-only pixels, 1200 pasted-pencil-over-bleed pixels (random samples).
+% Build: tectonic bleed/diagrams/bleed-model.tex
+\documentclass[border=8pt]{standalone}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+\definecolor{blockedge}{HTML}{7FA7D9}
+\definecolor{navy}{HTML}{1F3B73}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+    width=9.5cm, height=8cm,
+    xmin=0, xmax=1.1, ymin=0, ymax=2.0,
+    xtick={0,0.5,1}, ytick={0,0.5,1,1.5,2},
+    xlabel={Predicted bleed darkness,\ $a\,m_b$},
+    ylabel={Observed front darkness,\ $d_g$},
+    label style={font=\large}, tick label style={font=\normalsize, color=black!70},
+    axis lines*=left, axis line style={color=black!45},
+    clip mode=individual,
+]
+  \addplot[only marks, mark=*, mark size=0.8pt, color=black!30, opacity=0.5]
+    table[x=x, y=y] {bleed-only.dat};
+  \addplot[only marks, mark=*, mark size=0.8pt, color=navy, opacity=0.4]
+    table[x=x, y=y] {pencil-over-bleed.dat};
+  \addplot[domain=0:1.1, blockedge, line width=1.8pt] {x};
+  \node[anchor=west, color=black!65, font=\large] at (axis cs:0.72,0.42) {bleed only};
+  \node[anchor=west, color=blockedge!70!black, font=\large] at (axis cs:1.11,1.1) {$d_g = a\,m_b$};
+  \node[anchor=south, color=navy, font=\bfseries\large] at (axis cs:0.40,1.62) {pencil under bleed};
+  \draw[<->, >=stealth, navy, line width=1.1pt] (axis cs:0.95,0.95) -- (axis cs:0.95,1.45);
+  \node[anchor=west, color=navy, font=\large] at (axis cs:0.96,1.2) {$p$};
+\end{axis}
+\end{tikzpicture}
+\end{document}

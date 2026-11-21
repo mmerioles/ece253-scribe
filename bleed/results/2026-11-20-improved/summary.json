@@ -1,0 +1,5416 @@
+{
+  "method": "improved",
+  "captures": [
+    {
+      "capture": "sheet01/front-01",
+      "method": "Rowley-Brooke stages + dense registration + overlap decomposition (recover_overlap.py)",
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 3.5,
+        "back_sigma": 2.5,
+        "gain_sigma": 1.5,
+        "lam0": 0.15,
+        "lam_ink": 0.5,
+        "lam_edge": 0.0,
+        "iterations": 6,
+        "region_dilate": 5,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "texture_k": 0,
+        "texture_h": 0.3,
+        "texture_gain": 1.0,
+        "lam_var": 0.0,
+        "var_sigma": 12.0,
+        "scales": [],
+        "ridge": 0.01,
+        "penalty": "l1",
+        "single_resample": false
+      },
+      "registration": {
+        "homography": [
+          [
+            0.993241331382429,
+            -0.047063133958323594,
+            210.70246553310793
+          ],
+          [
+            0.03540509548394679,
+            0.9618272509085168,
+            -54.723523043816684
+          ],
+          [
+            3.917083715242633e-06,
+            -1.147765116566376e-05,
+            1.0
+          ]
+        ],
+        "matches": 299,
+        "inliers": 188,
+        "median_error_pixels": 1.6676222085952759,
+        "coverage": [
+          0.7443094889322917,
+          0.8652749633789063
+        ],
+        "feature_max_side": 1600,
+        "error_coordinate_system": "reduced feature image",
+        "median_error_full_resolution_pixels": 4.16905552148819
+      },
+      "dense_registration": {
+        "tiles": 608,
+        "max_shift_pixels": 12.242453575134277,
+        "median_shift_pixels": 4.1529340744018555
+      },
+      "classification": {
+        "front_seed_threshold": 143.0,
+        "back_seed_threshold": 178.0,
+        "overlap_seed_threshold": 225.0,
+        "centers": [
+          [
+            130.03290181361143,
+            130.32375879887238
+          ],
+          [
+            159.04567652327736,
+            137.037824971978
+          ],
+          [
+            189.5626381119346,
+            225.24905423136653
+          ],
+          [
+            235.79708975624573,
+            233.91458159313538
+          ]
+        ],
+        "histogram_bins": 20795,
+        "alpha": 0.009784617749999999,
+        "solver": "expansion",
+        "neighbourhood": "set",
+        "edges": 1299291,
+        "sweeps": [
+          127721.8663984263,
+          113907.69768217733,
+          113853.74260610474,
+          111979.51666602147,
+          111944.07061889152,
+          111942.87605978057,
+          111942.63476864203,
+          111942.6285258301,
+          111942.51427657827
+        ]
+      },
+      "region_fraction": 0.107928480488474,
+      "objective_history": [
+        0.05136507749557495,
+        0.05097908154129982,
+        0.05098220705986023,
+        0.05098310858011246,
+        0.05098338425159454,
+        0.050983477383852005
+      ],
+      "elapsed_seconds": 56.807858300046064,
+      "minimal": {
+        "touched_fraction": 0.08600289378391753,
+        "front_ink_in_bleed_fraction": 0.011621826883443645,
+        "bleed_rgb_ratio": [
+          0.9886167645454407,
+          1.0138530731201172,
+          0.9518814086914062
+        ]
+      },
+      "front_sha256": "9cb038ee515a7130e5c136463eaa33adf5444a19553580ca566b245e290b4cd6",
+      "back_sha256": "cdbf485d91c47ad44c916da573ffba3c80f0d9025ca67a804709cfd5a917053a"
+    },
+    {
+      "capture": "sheet01/front-02",
+      "method": "Rowley-Brooke stages + dense registration + overlap decomposition (recover_overlap.py)",
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 3.5,
+        "back_sigma": 2.5,
+        "gain_sigma": 1.5,
+        "lam0": 0.15,
+        "lam_ink": 0.5,
+        "lam_edge": 0.0,
+        "iterations": 6,
+        "region_dilate": 5,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "texture_k": 0,
+        "texture_h": 0.3,
+        "texture_gain": 1.0,
+        "lam_var": 0.0,
+        "var_sigma": 12.0,
+        "scales": [],
+        "ridge": 0.01,
+        "penalty": "l1",
+        "single_resample": false
+      },
+      "registration": {
+        "homography": [
+          [
+            0.9340980644646444,
+            -0.026381703418935643,
+            226.66417826346108
+          ],
+          [
+            0.018442877834886708,
+            0.9143838638372581,
+            17.98312121330688
+          ],
+          [
+            2.385523291120325e-06,
+            -7.5820877721999725e-06,
+            1.0
+          ]
+        ],
+        "matches": 274,
+        "inliers": 186,
+        "median_error_pixels": 1.3454210758209229,
+        "coverage": [
+          0.7451929219563802,
+          0.8001622772216797
+        ],
+        "feature_max_side": 1600,
+        "error_coordinate_system": "reduced feature image",
+        "median_error_full_resolution_pixels": 3.363552689552307
+      },
+      "dense_registration": {
+        "tiles": 534,
+        "max_shift_pixels": 16.255111694335938,
+        "median_shift_pixels": 3.2849650382995605
+      },
+      "classification": {
+        "front_seed_threshold": 124.0,
+        "back_seed_threshold": 177.0,
+        "overlap_seed_threshold": 206.0,
+        "centers": [
+          [
+            114.56870563419218,
+            128.53840989329737
+          ],
+          [
+            136.39138140844827,
+            135.44259928109958
+          ],
+          [
+            168.6897228960547,
+            223.33530075246057
+          ],
+          [
+            222.6297394181718,
+            232.43778928916115
+          ]
+        ],
+        "histogram_bins": 22546,
+        "alpha": 0.010814993699999999,
+        "solver": "expansion",
+        "neighbourhood": "set",
+        "edges": 1158974,
+        "sweeps": [
+          133379.61428700978,
+          121354.82213715414,
+          121331.66117335287,
+          119848.02086226665,
+          119839.94880661412,
+          119832.62583776248,
+          119832.07510441016,
+          119831.45388171822,
+          119831.32139175574
+        ]
+      },
+      "region_fraction": 0.11211167361345734,
+      "objective_history": [
+        0.029568322002887726,
+        0.029513664543628693,
+        0.02951464056968689,
+        0.029514823108911514,
+        0.029514864087104797,
+        0.029514871537685394
+      ],
+      "elapsed_seconds": 63.58209519996308,
+      "minimal": {
+        "touched_fraction": 0.08747202144465066,
+        "front_ink_in_bleed_fraction": 0.008507195231666922,
+        "bleed_rgb_ratio": [
+          0.9931157231330872,
+          1.012457013130188,
+          0.9487196803092957
+        ]
+      },
+      "front_sha256": "3e371c2db750c06afe590501a54a315f522ddbb0c07157f729c9a15784af9451",
+      "back_sha256": "cdbf485d91c47ad44c916da573ffba3c80f0d9025ca67a804709cfd5a917053a"
+    },
+    {
+      "capture": "sheet01/front-03",
+      "method": "Rowley-Brooke stages + dense registration + overlap decomposition (recover_overlap.py)",
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 3.5,
+        "back_sigma": 2.5,
+        "gain_sigma": 1.5,
+        "lam0": 0.15,
+        "lam_ink": 0.5,
+        "lam_edge": 0.0,
+        "iterations": 6,
+        "region_dilate": 5,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "texture_k": 0,
+        "texture_h": 0.3,
+        "texture_gain": 1.0,
+        "lam_var": 0.0,
+        "var_sigma": 12.0,
+        "scales": [],
+        "ridge": 0.01,
+        "penalty": "l1",
+        "single_resample": false
+      },
+      "registration": {
+        "homography": [
+          [
+            0.9515036815701573,
+            -0.010510693492701754,
+            157.05583394985973
+          ],
+          [
+            -0.04014635541420408,
+            0.9276124967603663,
+            125.9323623568342
+          ],
+          [
+            -8.826887661523409e-06,
+            -1.8337076925880343e-05,
+            1.0
+          ]
+        ],
+        "matches": 287,
+        "inliers": 175,
+        "median_error_pixels": 1.2018648386001587,
+        "coverage": [
+          0.6584540303548178,
+          0.8793943023681641
+        ],
+        "feature_max_side": 1600,
+        "error_coordinate_system": "reduced feature image",
+        "median_error_full_resolution_pixels": 3.0046620965003967
+      },
+      "dense_registration": {
+        "tiles": 555,
+        "max_shift_pixels": 12.767005920410156,
+        "median_shift_pixels": 3.6456003189086914
+      },
+      "classification": {
+        "front_seed_threshold": 133.0,
+        "back_seed_threshold": 177.0,
+        "overlap_seed_threshold": 206.0,
+        "centers": [
+          [
+            124.99932098002536,
+            129.07982294365178
+          ],
+          [
+            143.22367355964593,
+            134.33295615691893
+          ],
+          [
+            173.10913055465792,
+            224.32367101779684
+          ],
+          [
+            221.81023621345642,
+            234.9449607498953
+          ]
+        ],
+        "histogram_bins": 22427,
+        "alpha": 0.010744968149999999,
+        "solver": "expansion",
+        "neighbourhood": "set",
+        "edges": 1138898,
+        "sweeps": [
+          136729.3992038739,
+          123565.11666176651,
+          123536.41584070114,
+          122380.30906507195,
+          122380.23430446775,
+          122360.8575369334,
+          122353.2380971187,
+          122352.18703074707,
+          122352.15570404202,
+          122352.106255197,
+          122351.98275020561
+        ]
+      },
+      "region_fraction": 0.11414962847690723,
+      "objective_history": [
+        0.0252862386405468,
+        0.025291550904512405,
+        0.025293651968240738,
+        0.025294005870819092,
+        0.025294076651334763,
+        0.025294091552495956
+      ],
+      "elapsed_seconds": 87.15938279998954,
+      "minimal": {
+        "touched_fraction": 0.09331444142711241,
+        "front_ink_in_bleed_fraction": 0.00850622591802575,
+        "bleed_rgb_ratio": [
+          0.9874172806739807,
+          1.0106678009033203,
+          0.9690993428230286
+        ]
+      },
+      "front_sha256": "07cf0b184b30fdbdfb55e8c2755f7e343a93a7cf912d41a6f92d37af60d4600a",
+      "back_sha256": "cdbf485d91c47ad44c916da573ffba3c80f0d9025ca67a804709cfd5a917053a"
+    },
+    {
+      "capture": "sheet02/front-01",
+      "method": "Rowley-Brooke stages + dense registration + overlap decomposition (recover_overlap.py)",
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 3.5,
+        "back_sigma": 2.5,
+        "gain_sigma": 1.5,
+        "lam0": 0.15,
+        "lam_ink": 0.5,
+        "lam_edge": 0.0,
+        "iterations": 6,
+        "region_dilate": 5,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "texture_k": 0,
+        "texture_h": 0.3,
+        "texture_gain": 1.0,
+        "lam_var": 0.0,
+        "var_sigma": 12.0,
+        "scales": [],
+        "ridge": 0.01,
+        "penalty": "l1",
+        "single_resample": false
+      },
+      "registration": {
+        "homography": [
+          [
+            0.8478933519739401,
+            -0.06817534123711926,
+            271.8734576082701
+          ],
+          [
+            0.02245175602720371,
+            0.7667328350810844,
+            277.94728771816165
+          ],
+          [
+            1.869619621078676e-06,
+            -3.600426103024628e-05,
+            1.0
+          ]
+        ],
+        "matches": 263,
+        "inliers": 89,
+        "median_error_pixels": 1.8679293394088745,
+        "coverage": [
+          0.6329189453125,
+          0.7558439331054687
+        ]
+      },
+      "dense_registration": {
+        "tiles": 477,
+        "max_shift_pixels": 16.842164993286133,
+        "median_shift_pixels": 2.637626886367798
+      },
+      "classification": {
+        "front_seed_threshold": 129.0,
+        "back_seed_threshold": 171.0,
+        "overlap_seed_threshold": 204.0,
+        "centers": [
+          [
+            118.59654285049093,
+            124.29600495099812
+          ],
+          [
+            139.646329223628,
+            131.36829948720862
+          ],
+          [
+            170.9343469864128,
+            215.66861565833594
+          ],
+          [
+            218.79147333431655,
+            229.68212190999125
+          ]
+        ],
+        "histogram_bins": 20626,
+        "alpha": 0.0096851697,
+        "solver": "expansion",
+        "neighbourhood": "set",
+        "edges": 1027103,
+        "sweeps": [
+          112150.19357056497,
+          103315.20935155892,
+          103292.88181402294,
+          102059.73235784215,
+          102047.74217405425,
+          102043.83972768957,
+          102042.0805434451,
+          102041.6390805917
+        ]
+      },
+      "region_fraction": 0.11873695227200565,
+      "objective_history": [
+        0.025594502687454224,
+        0.02557409182190895,
+        0.025574274361133575,
+        0.02557430788874626,
+        0.025574317201972008,
+        0.025574319064617157
+      ],
+      "elapsed_seconds": 62.452195399964694,
+      "minimal": {
+        "touched_fraction": 0.0890408488615356,
+        "front_ink_in_bleed_fraction": 0.00846294860121718,
+        "bleed_rgb_ratio": [
+          0.9974177479743958,
+          1.0124428272247314,
+          0.9311975836753845
+        ]
+      },
+      "front_sha256": "ff2904e48265c15770451ff5fe68cff2c7d05a23dab489153926ff7f60e84d2a",
+      "back_sha256": "d31606908672a08f6fd696b0088552b1ac337e899a1078e4081a6eb2fb94e65d"
+    },
+    {
+      "capture": "sheet02/front-02",
+      "method": "Rowley-Brooke stages + dense registration + overlap decomposition (recover_overlap.py)",
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 3.5,
+        "back_sigma": 2.5,
+        "gain_sigma": 1.5,
+        "lam0": 0.15,
+        "lam_ink": 0.5,
+        "lam_edge": 0.0,
+        "iterations": 6,
+        "region_dilate": 5,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "texture_k": 0,
+        "texture_h": 0.3,
+        "texture_gain": 1.0,
+        "lam_var": 0.0,
+        "var_sigma": 12.0,
+        "scales": [],
+        "ridge": 0.01,
+        "penalty": "l1",
+        "single_resample": false
+      },
+      "registration": {
+        "homography": [
+          [
+            0.9108778364071379,
+            -0.06417822786922356,
+            183.1677068205887
+          ],
+          [
+            -0.004621026020427024,
+            0.8540975981999316,
+            42.636079564542634
+          ],
+          [
+            -1.0415192591174172e-05,
+            -3.363800917099474e-05,
+            1.0
+          ]
+        ],
+        "matches": 235,
+        "inliers": 73,
+        "median_error_pixels": 1.715985894203186,
+        "coverage": [
+          0.830055419921875,
+          0.8355626831054688
+        ]
+      },
+      "dense_registration": {
+        "tiles": 568,
+        "max_shift_pixels": 11.895673751831055,
+        "median_shift_pixels": 3.43886399269104
+      },
+      "classification": {
+        "front_seed_threshold": 127.0,
+        "back_seed_threshold": 173.0,
+        "overlap_seed_threshold": 201.0,
+        "centers": [
+          [
+            119.45062647667051,
+            125.909096284446
+          ],
+          [
+            136.09137239668047,
+            132.205989516714
+          ],
+          [
+            168.11714804437707,
+            218.31136006387385
+          ],
+          [
+            216.1838745549684,
+            231.48034102566314
+          ]
+        ],
+        "histogram_bins": 19015,
+        "alpha": 0.008737176749999999,
+        "solver": "expansion",
+        "neighbourhood": "set",
+        "edges": 1072254,
+        "sweeps": [
+          101358.6843197387,
+          94745.62613705563,
+          94729.37338704515,
+          93637.72746429872,
+          93618.43349130274,
+          93615.68995271844,
+          93615.52012589393,
+          93615.23735673897
+        ]
+      },
+      "region_fraction": 0.12092197840751645,
+      "objective_history": [
+        0.024782925844192505,
+        0.024782080203294754,
+        0.024782249704003334,
+        0.024782270193099976,
+        0.024782273918390274,
+        0.024782273918390274
+      ],
+      "elapsed_seconds": 141.83923949999735,
+      "minimal": {
+        "touched_fraction": 0.09014292089118912,
+        "front_ink_in_bleed_fraction": 0.008225059047901178,
+        "bleed_rgb_ratio": [
+          0.9953485131263733,
+          1.010470986366272,
+          0.9427981972694397
+        ]
+      },
+      "front_sha256": "2def1ccf67e8b189d98a55549974b8a7fc163872fa0d9eb81ab4c7e8d2a8cc85",
+      "back_sha256": "d31606908672a08f6fd696b0088552b1ac337e899a1078e4081a6eb2fb94e65d"
+    },
+    {
+      "capture": "sheet02/front-03",
+      "method": "Rowley-Brooke stages + dense registration + overlap decomposition (recover_overlap.py)",
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 3.5,
+        "back_sigma": 2.5,
+        "gain_sigma": 1.5,
+        "lam0": 0.15,
+        "lam_ink": 0.5,
+        "lam_edge": 0.0,
+        "iterations": 6,
+        "region_dilate": 5,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "texture_k": 0,
+        "texture_h": 0.3,
+        "texture_gain": 1.0,
+        "lam_var": 0.0,
+        "var_sigma": 12.0,
+        "scales": [],
+        "ridge": 0.01,
+        "penalty": "l1",
+        "single_resample": false
+      },
+      "registration": {
+        "homography": [
+          [
+            0.9225043381166291,
+            -0.06902751662988568,
+            206.42377795904747
+          ],
+          [
+            0.018161805287362647,
+            0.8942462488136639,
+            62.75653474148497
+          ],
+          [
+            -9.25258407909708e-06,
+            -1.9983200962493572e-05,
+            1.0
+          ]
+        ],
+        "matches": 299,
+        "inliers": 79,
+        "median_error_pixels": 1.7622401714324951,
+        "coverage": [
+          0.7024610188802083,
+          0.8154553833007813
+        ]
+      },
+      "dense_registration": {
+        "tiles": 546,
+        "max_shift_pixels": 12.568256378173828,
+        "median_shift_pixels": 3.2668867111206055
+      },
+      "classification": {
+        "front_seed_threshold": 134.0,
+        "back_seed_threshold": 173.0,
+        "overlap_seed_threshold": 214.0,
+        "centers": [
+          [
+            123.79244339648028,
+            126.20409875898862
+          ],
+          [
+            144.30496976334882,
+            133.4335880045264
+          ],
+          [
+            179.58927156487098,
+            218.15296253855232
+          ],
+          [
+            225.450393264862,
+            232.50816120041236
+          ]
+        ],
+        "histogram_bins": 16540,
+        "alpha": 0.007280762999999999,
+        "solver": "expansion",
+        "neighbourhood": "set",
+        "edges": 1059871,
+        "sweeps": [
+          82023.97054741347,
+          76762.38344807012,
+          76757.39856785582,
+          75722.28878433685,
+          75722.19845449933,
+          75699.66920401696,
+          75698.28616593248,
+          75697.71266421035,
+          75697.04066184381
+        ]
+      },
+      "region_fraction": 0.11715595276649533,
+      "objective_history": [
+        0.03036150522530079,
+        0.03034907579421997,
+        0.030349165201187134,
+        0.03034917637705803,
+        0.03034917823970318,
+        0.030349180102348328
+      ],
+      "elapsed_seconds": 85.31229620001977,
+      "minimal": {
+        "touched_fraction": 0.08927977287976742,
+        "front_ink_in_bleed_fraction": 0.010847424642530464,
+        "bleed_rgb_ratio": [
+          0.992639422416687,
+          1.0113041400909424,
+          0.9483364820480347
+        ]
+      },
+      "front_sha256": "c4674d70b5e8ccba452f729a238610e892321396c611fb866fd68895c950fb7d",
+      "back_sha256": "d31606908672a08f6fd696b0088552b1ac337e899a1078e4081a6eb2fb94e65d"
+    },
+    {
+      "capture": "sheet03/front-01",
+      "method": "Rowley-Brooke stages + dense registration + overlap decomposition (recover_overlap.py)",
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 3.5,
+        "back_sigma": 2.5,
+        "gain_sigma": 1.5,
+        "lam0": 0.15,
+        "lam_ink": 0.5,
+        "lam_edge": 0.0,
+        "iterations": 6,
+        "region_dilate": 5,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "texture_k": 0,
+        "texture_h": 0.3,
+        "texture_gain": 1.0,
+        "lam_var": 0.0,
+        "var_sigma": 12.0,
+        "scales": [],
+        "ridge": 0.01,
+        "penalty": "l1",
+        "single_resample": false
+      },
+      "registration": {
+        "homography": [
+          [
+            0.9806787589292963,
+            -0.012150853591122269,
+            43.84234062541722
+          ],
+          [
+            -0.015422374602422557,
+            0.9800535306138413,
+            25.894498666911456
+          ],
+          [
+            -8.960965949701804e-06,
+            -7.517135412757925e-06,
+            1.0
+          ]
+        ],
+        "matches": 272,
+        "inliers": 135,
+        "median_error_pixels": 1.4171327352523804,
+        "coverage": [
+          0.7100853474934896,
+          0.8209187316894532
+        ],
+        "feature_max_side": 1600,
+        "error_coordinate_system": "reduced feature image",
+        "median_error_full_resolution_pixels": 3.542831838130951
+      },
+      "dense_registration": {
+        "tiles": 492,
+        "max_shift_pixels": 15.733721733093262,
+        "median_shift_pixels": 3.7153193950653076
+      },
+      "classification": {
+        "front_seed_threshold": 142.0,
+        "back_seed_threshold": 179.0,
+        "overlap_seed_threshold": 218.0,
+        "centers": [
+          [
+            128.94554356912542,
+            133.12310933998367
+          ],
+          [
+            156.27985108516458,
+            138.59048970706016
+          ],
+          [
+            176.44169282192593,
+            225.01497182646088
+          ],
+          [
+            230.37638582933084,
+            232.57357986349356
+          ]
+        ],
+        "histogram_bins": 19903,
+        "alpha": 0.009259720349999999,
+        "solver": "expansion",
+        "neighbourhood": "set",
+        "edges": 1255912,
+        "sweeps": [
+          116179.18758093298,
+          104564.70954804937,
+          104559.76902841163,
+          102264.22589725899,
+          102252.8626102693,
+          102252.57547336216
+        ]
+      },
+      "region_fraction": 0.10939750438146242,
+      "objective_history": [
+        0.04184556007385254,
+        0.0415290892124176,
+        0.04153505340218544,
+        0.04153717681765556,
+        0.04153794050216675,
+        0.04153822362422943
+      ],
+      "elapsed_seconds": 134.64485529996455,
+      "minimal": {
+        "touched_fraction": 0.08070497189752569,
+        "front_ink_in_bleed_fraction": 0.012136532014044013,
+        "bleed_rgb_ratio": [
+          0.9932094216346741,
+          1.0124672651290894,
+          0.9486609697341919
+        ]
+      },
+      "front_sha256": "b4d90cff458c8bbbc541eea2fadb316d4f49f8f4756fce22a54d681ea6bebd70",
+      "back_sha256": "4b5c485ea4df73a8aae7561d315c854f0d100bacef6eecc7fd71f9b9f271dc9d"
+    },
+    {
+      "capture": "sheet03/front-02",
+      "method": "Rowley-Brooke stages + dense registration + overlap decomposition (recover_overlap.py)",
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 3.5,
+        "back_sigma": 2.5,
+        "gain_sigma": 1.5,
+        "lam0": 0.15,
+        "lam_ink": 0.5,
+        "lam_edge": 0.0,
+        "iterations": 6,
+        "region_dilate": 5,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "texture_k": 0,
+        "texture_h": 0.3,
+        "texture_gain": 1.0,
+        "lam_var": 0.0,
+        "var_sigma": 12.0,
+        "scales": [],
+        "ridge": 0.01,
+        "penalty": "l1",
+        "single_resample": false
+      },
+      "registration": {
+        "homography": [
+          [
+            0.8732682557112572,
+            -0.058633740777637826,
+            339.22280582499747
+          ],
+          [
+            0.0054546543303668005,
+            0.8570353163401286,
+            126.1657055815999
+          ],
+          [
+            -1.2842481983026268e-05,
+            -1.69396054256536e-05,
+            0.9999999999999999
+          ]
+        ],
+        "matches": 249,
+        "inliers": 126,
+        "median_error_pixels": 1.2527236938476562,
+        "coverage": [
+          0.637758534749349,
+          0.7563423156738281
+        ],
+        "feature_max_side": 1600,
+        "error_coordinate_system": "reduced feature image",
+        "median_error_full_resolution_pixels": 3.1318092346191406
+      },
+      "dense_registration": {
+        "tiles": 491,
+        "max_shift_pixels": 15.278608322143555,
+        "median_shift_pixels": 2.7009117603302
+      },
+      "classification": {
+        "front_seed_threshold": 139.0,
+        "back_seed_threshold": 174.0,
+        "overlap_seed_threshold": 212.0,
+        "centers": [
+          [
+            126.18246508104453,
+            127.65487876188747
+          ],
+          [
+            152.9149530384151,
+            133.54465202526885
+          ],
+          [
+            171.51478707712127,
+            219.9096227653907
+          ],
+          [
+            224.43109959274344,
+            226.13198286348972
+          ]
+        ],
+        "histogram_bins": 21723,
+        "alpha": 0.01033069935,
+        "solver": "expansion",
+        "neighbourhood": "set",
+        "edges": 1244690,
+        "sweeps": [
+          128137.55395289452,
+          111498.32626010949,
+          111482.67668164357,
+          109011.82482480863,
+          109007.14908981891,
+          109006.73352699677
+        ]
+      },
+      "region_fraction": 0.11280937875320173,
+      "objective_history": [
+        0.03782856464385986,
+        0.037502072751522064,
+        0.03750670328736305,
+        0.037508510053157806,
+        0.03750919550657272,
+        0.03750947117805481
+      ],
+      "elapsed_seconds": 63.24858030001633,
+      "minimal": {
+        "touched_fraction": 0.0808270195523036,
+        "front_ink_in_bleed_fraction": 0.009344482992625113,
+        "bleed_rgb_ratio": [
+          0.9904563426971436,
+          1.014469861984253,
+          0.9384462833404541
+        ]
+      },
+      "front_sha256": "1200724d2a793a94008ac63f5525e24ad705c1dadd01b8d4597f0b41dbdb0b5d",
+      "back_sha256": "4b5c485ea4df73a8aae7561d315c854f0d100bacef6eecc7fd71f9b9f271dc9d"
+    },
+    {
+      "capture": "sheet03/front-03",
+      "method": "Rowley-Brooke stages + dense registration + overlap decomposition (recover_overlap.py)",
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 3.5,
+        "back_sigma": 2.5,
+        "gain_sigma": 1.5,
+        "lam0": 0.15,
+        "lam_ink": 0.5,
+        "lam_edge": 0.0,
+        "iterations": 6,
+        "region_dilate": 5,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "texture_k": 0,
+        "texture_h": 0.3,
+        "texture_gain": 1.0,
+        "lam_var": 0.0,
+        "var_sigma": 12.0,
+        "scales": [],
+        "ridge": 0.01,
+        "penalty": "l1",
+        "single_resample": false
+      },
+      "registration": {
+        "homography": [
+          [
+            0.8923005622935811,
+            -0.049387434727204596,
+            131.42668960353564
+          ],
+          [
+            -0.051742823948177176,
+            0.8401856691656898,
+            309.2759558926561
+          ],
+          [
+            -1.8934767410627018e-05,
+            -3.723085593169409e-05,
+            1.0
+          ]
+        ],
+        "matches": 256,
+        "inliers": 112,
+        "median_error_pixels": 1.214663028717041,
+        "coverage": [
+          0.701704610188802,
+          0.8164051818847656
+        ],
+        "feature_max_side": 1600,
+        "error_coordinate_system": "reduced feature image",
+        "median_error_full_resolution_pixels": 3.0366575717926025
+      },
+      "dense_registration": {
+        "tiles": 523,
+        "max_shift_pixels": 16.746206283569336,
+        "median_shift_pixels": 3.6996147632598877
+      },
+      "classification": {
+        "front_seed_threshold": 134.0,
+        "back_seed_threshold": 178.0,
+        "overlap_seed_threshold": 207.0,
+        "centers": [
+          [
+            123.28708712699282,
+            131.48193068379854
+          ],
+          [
+            146.55248255217145,
+            136.89255678787913
+          ],
+          [
+            168.42265547197223,
+            222.96676904205444
+          ],
+          [
+            225.31105400775402,
+            232.45307907312235
+          ]
+        ],
+        "histogram_bins": 22041,
+        "alpha": 0.010517826449999998,
+        "solver": "expansion",
+        "neighbourhood": "set",
+        "edges": 1295702,
+        "sweeps": [
+          139838.2316544145,
+          122790.92665027181,
+          122777.68004385909,
+          120779.35784515397,
+          120768.3119480021,
+          120766.59710511393
+        ]
+      },
+      "region_fraction": 0.11313516436054397,
+      "objective_history": [
+        0.03988915681838989,
+        0.03973784297704697,
+        0.03973987326025963,
+        0.03974036127328873,
+        0.03974049538373947,
+        0.039740536361932755
+      ],
+      "elapsed_seconds": 76.1367573000025,
+      "minimal": {
+        "touched_fraction": 0.08457273237351559,
+        "front_ink_in_bleed_fraction": 0.010794376660129007,
+        "bleed_rgb_ratio": [
+          0.992585301399231,
+          1.0129976272583008,
+          0.9442737102508545
+        ]
+      },
+      "front_sha256": "001237836df02e1922fd1633b4014ee39a93d280a9b4979645241dc5f31964b3",
+      "back_sha256": "4b5c485ea4df73a8aae7561d315c854f0d100bacef6eecc7fd71f9b9f271dc9d"
+    },
+    {
+      "capture": "sheet04/front-01",
+      "method": "Rowley-Brooke stages + dense registration + overlap decomposition (recover_overlap.py)",
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 3.5,
+        "back_sigma": 2.5,
+        "gain_sigma": 1.5,
+        "lam0": 0.15,
+        "lam_ink": 0.5,
+        "lam_edge": 0.0,
+        "iterations": 6,
+        "region_dilate": 5,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "texture_k": 0,
+        "texture_h": 0.3,
+        "texture_gain": 1.0,
+        "lam_var": 0.0,
+        "var_sigma": 12.0,
+        "scales": [],
+        "ridge": 0.01,
+        "penalty": "l1",
+        "single_resample": false
+      },
+      "registration": {
+        "homography": [
+          [
+            1.0059208597391975,
+            0.029310504383628696,
+            17.72549106416229
+          ],
+          [
+            -0.014269418157048394,
+            1.0062777699415129,
+            50.251973409638126
+          ],
+          [
+            2.7581183632642206e-06,
+            2.88529026409573e-06,
+            1.0
+          ]
+        ],
+        "matches": 192,
+        "inliers": 79,
+        "median_error_pixels": 1.1981723308563232,
+        "coverage": [
+          0.8550335693359375,
+          0.8353120422363282
+        ],
+        "feature_max_side": 1600,
+        "error_coordinate_system": "reduced feature image",
+        "median_error_full_resolution_pixels": 2.995430827140808
+      },
+      "dense_registration": {
+        "tiles": 584,
+        "max_shift_pixels": 15.525577545166016,
+        "median_shift_pixels": 4.158763885498047
+      },
+      "classification": {
+        "front_seed_threshold": 140.0,
+        "back_seed_threshold": 174.0,
+        "overlap_seed_threshold": 219.0,
+        "centers": [
+          [
+            125.46227814138251,
+            123.92530052730449
+          ],
+          [
+            158.02823615164567,
+            129.70890808836646
+          ],
+          [
+            178.91928372657102,
+            223.42988861953654
+          ],
+          [
+            231.43714218492667,
+            231.76680260371737
+          ]
+        ],
+        "histogram_bins": 21901,
+        "alpha": 0.01043544345,
+        "solver": "expansion",
+        "neighbourhood": "set",
+        "edges": 1503807,
+        "sweeps": [
+          141161.82721915795,
+          124011.61925215673,
+          123998.82659968057,
+          120709.44021888738,
+          120699.15475513754,
+          120698.71108202108
+        ]
+      },
+      "region_fraction": 0.12365818564421556,
+      "objective_history": [
+        0.0501810759305954,
+        0.04984704405069351,
+        0.04985455423593521,
+        0.049857184290885925,
+        0.049858130514621735,
+        0.04985848814249039
+      ],
+      "elapsed_seconds": 112.58356579998508,
+      "minimal": {
+        "touched_fraction": 0.0944746051693035,
+        "front_ink_in_bleed_fraction": 0.018291232779356754,
+        "bleed_rgb_ratio": [
+          0.996085524559021,
+          1.0117031335830688,
+          0.9333687424659729
+        ]
+      },
+      "front_sha256": "4f96edcd183457a4731073bb4adce120c17e6dd626ddcff8b10c4f4a7bb24ada",
+      "back_sha256": "6cb6cd1c1d46d80221e10908a68139a5f0e416926a7954971c833e7bc8a31e7e"
+    },
+    {
+      "capture": "sheet04/front-02",
+      "method": "Rowley-Brooke stages + dense registration + overlap decomposition (recover_overlap.py)",
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 3.5,
+        "back_sigma": 2.5,
+        "gain_sigma": 1.5,
+        "lam0": 0.15,
+        "lam_ink": 0.5,
+        "lam_edge": 0.0,
+        "iterations": 6,
+        "region_dilate": 5,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "texture_k": 0,
+        "texture_h": 0.3,
+        "texture_gain": 1.0,
+        "lam_var": 0.0,
+        "var_sigma": 12.0,
+        "scales": [],
+        "ridge": 0.01,
+        "penalty": "l1",
+        "single_resample": false
+      },
+      "registration": {
+        "homography": [
+          [
+            0.9260270568110821,
+            0.0036143061494313504,
+            239.72102488897644
+          ],
+          [
+            0.006590256114687426,
+            0.9364002588008268,
+            -62.73277826017207
+          ],
+          [
+            -6.348846715291786e-07,
+            8.519460139973103e-06,
+            1.0
+          ]
+        ],
+        "matches": 189,
+        "inliers": 85,
+        "median_error_pixels": 1.1325021982192993,
+        "coverage": [
+          0.8194867960611979,
+          0.5740690612792969
+        ],
+        "feature_max_side": 1600,
+        "error_coordinate_system": "reduced feature image",
+        "median_error_full_resolution_pixels": 2.8312554955482483
+      },
+      "dense_registration": {
+        "tiles": 464,
+        "max_shift_pixels": 16.58481788635254,
+        "median_shift_pixels": 5.525494575500488
+      },
+      "classification": {
+        "front_seed_threshold": 156.0,
+        "back_seed_threshold": 174.0,
+        "overlap_seed_threshold": 211.0,
+        "centers": [
+          [
+            116.21365099850699,
+            124.34727517953601
+          ],
+          [
+            199.60054051244737,
+            131.07116314120887
+          ],
+          [
+            166.5682756907955,
+            222.83943416202652
+          ],
+          [
+            227.29529284038696,
+            230.18359473449527
+          ]
+        ],
+        "histogram_bins": 23884,
+        "alpha": 0.011602339799999998,
+        "solver": "expansion",
+        "neighbourhood": "set",
+        "edges": 1458973,
+        "sweeps": [
+          142387.7210988385,
+          123544.02984195304,
+          123485.03803801826,
+          120865.56109902044,
+          120861.09622535111,
+          120841.81717267376,
+          120839.93405664561,
+          120839.5620168006,
+          120839.43623162716
+        ]
+      },
+      "region_fraction": 0.1255347627356274,
+      "objective_history": [
+        0.040546733886003494,
+        0.04017433524131775,
+        0.04018402099609375,
+        0.040187425911426544,
+        0.04018865525722504,
+        0.04018911346793175
+      ],
+      "elapsed_seconds": 73.08329779998166,
+      "minimal": {
+        "touched_fraction": 0.09428921631590353,
+        "front_ink_in_bleed_fraction": 0.014668021532171251,
+        "bleed_rgb_ratio": [
+          1.0012580156326294,
+          1.017401933670044,
+          0.9108807444572449
+        ]
+      },
+      "front_sha256": "3f6265ea1aa00bad4bd68e9e96d586bd67f03ad88719fc18eb1d7d0b3b445bb9",
+      "back_sha256": "6cb6cd1c1d46d80221e10908a68139a5f0e416926a7954971c833e7bc8a31e7e"
+    },
+    {
+      "capture": "sheet04/front-03",
+      "method": "Rowley-Brooke stages + dense registration + overlap decomposition (recover_overlap.py)",
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 3.5,
+        "back_sigma": 2.5,
+        "gain_sigma": 1.5,
+        "lam0": 0.15,
+        "lam_ink": 0.5,
+        "lam_edge": 0.0,
+        "iterations": 6,
+        "region_dilate": 5,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "texture_k": 0,
+        "texture_h": 0.3,
+        "texture_gain": 1.0,
+        "lam_var": 0.0,
+        "var_sigma": 12.0,
+        "scales": [],
+        "ridge": 0.01,
+        "penalty": "l1",
+        "single_resample": false
+      },
+      "registration": {
+        "homography": [
+          [
+            0.9638307615736503,
+            0.02563263418067518,
+            29.454603212099848
+          ],
+          [
+            -0.03222105290899623,
+            0.9537511652937462,
+            65.92885790143865
+          ],
+          [
+            -3.6210353206716177e-07,
+            -3.7422193093664883e-06,
+            1.0
+          ]
+        ],
+        "matches": 204,
+        "inliers": 86,
+        "median_error_pixels": 1.2388274669647217,
+        "coverage": [
+          0.8367947387695313,
+          0.804676513671875
+        ],
+        "feature_max_side": 1600,
+        "error_coordinate_system": "reduced feature image",
+        "median_error_full_resolution_pixels": 3.097068667411804
+      },
+      "dense_registration": {
+        "tiles": 587,
+        "max_shift_pixels": 15.830644607543945,
+        "median_shift_pixels": 4.928586959838867
+      },
+      "classification": {
+        "front_seed_threshold": 164.0,
+        "back_seed_threshold": 175.0,
+        "overlap_seed_threshold": 220.0,
+        "centers": [
+          [
+            125.9326193203595,
+            125.49540939646324
+          ],
+          [
+            205.97146400526637,
+            133.24317016974655
+          ],
+          [
+            179.82511778246584,
+            224.43716383215786
+          ],
+          [
+            232.9479625296668,
+            231.06075930258888
+          ]
+        ],
+        "histogram_bins": 21519,
+        "alpha": 0.01021065555,
+        "solver": "expansion",
+        "neighbourhood": "set",
+        "edges": 1479898,
+        "sweeps": [
+          125088.84798418952,
+          109482.85097658017,
+          109399.37603745816,
+          107156.64682052768,
+          107136.05652688138,
+          107127.45767937429,
+          107126.29816234655,
+          107125.35385188594
+        ]
+      },
+      "region_fraction": 0.12428630289640058,
+      "objective_history": [
+        0.05499058961868286,
+        0.05462134629487991,
+        0.05462820082902908,
+        0.0546305850148201,
+        0.05463143438100815,
+        0.054631758481264114
+      ],
+      "elapsed_seconds": 86.66972050000913,
+      "minimal": {
+        "touched_fraction": 0.09579043396505918,
+        "front_ink_in_bleed_fraction": 0.018735246848008386,
+        "bleed_rgb_ratio": [
+          0.998941957950592,
+          1.0147572755813599,
+          0.9339882135391235
+        ]
+      },
+      "front_sha256": "2e54241b6569a256bc07e2edc25cd85aaa2cb47ceff5ee144d322d9bc95f3e56",
+      "back_sha256": "6cb6cd1c1d46d80221e10908a68139a5f0e416926a7954971c833e7bc8a31e7e"
+    },
+    {
+      "capture": "sheet06/front-01",
+      "method": "Rowley-Brooke stages + dense registration + overlap decomposition (recover_overlap.py)",
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 3.5,
+        "back_sigma": 2.5,
+        "gain_sigma": 1.5,
+        "lam0": 0.15,
+        "lam_ink": 0.5,
+        "lam_edge": 0.0,
+        "iterations": 6,
+        "region_dilate": 5,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "texture_k": 0,
+        "texture_h": 0.3,
+        "texture_gain": 1.0,
+        "lam_var": 0.0,
+        "var_sigma": 12.0,
+        "scales": [],
+        "ridge": 0.01,
+        "penalty": "l1",
+        "single_resample": false
+      },
+      "registration": {
+        "homography": [
+          [
+            1.0128256140669392,
+            -0.033891927114432584,
+            42.26183011182228
+          ],
+          [
+            0.01990834854803947,
+            1.015186233953885,
+            -42.38263545415008
+          ],
+          [
+            -5.082602422105505e-06,
+            -2.268751505906232e-06,
+            1.0
+          ]
+        ],
+        "matches": 425,
+        "inliers": 169,
+        "median_error_pixels": 1.685045838356018,
+        "coverage": [
+          0.6078192545572917,
+          0.7983027954101563
+        ]
+      },
+      "dense_registration": {
+        "tiles": 524,
+        "max_shift_pixels": 14.546937942504883,
+        "median_shift_pixels": 2.317080497741699
+      },
+      "classification": {
+        "front_seed_threshold": 135.0,
+        "back_seed_threshold": 173.0,
+        "overlap_seed_threshold": 222.0,
+        "centers": [
+          [
+            121.48037626876005,
+            124.66541093923556
+          ],
+          [
+            150.09767985255723,
+            129.79353899849383
+          ],
+          [
+            184.29854279504974,
+            221.2442700536996
+          ],
+          [
+            232.80154856084835,
+            231.10353896650395
+          ]
+        ],
+        "histogram_bins": 20692,
+        "alpha": 0.0097240074,
+        "solver": "expansion",
+        "neighbourhood": "set",
+        "edges": 1318081,
+        "sweeps": [
+          125601.07699667019,
+          111324.37236399864,
+          111321.26296967329,
+          108810.90614848118,
+          108805.41280085366,
+          108804.9410442269
+        ]
+      },
+      "region_fraction": 0.10454555055657648,
+      "objective_history": [
+        0.052197009325027466,
+        0.05181841552257538,
+        0.05182456970214844,
+        0.05182673782110214,
+        0.05182752013206482,
+        0.051827821880578995
+      ],
+      "elapsed_seconds": 69.91401579999365,
+      "minimal": {
+        "touched_fraction": 0.0795911245315179,
+        "front_ink_in_bleed_fraction": 0.012727376252308546,
+        "bleed_rgb_ratio": [
+          0.9735171794891357,
+          1.0288035869598389,
+          0.9353730082511902
+        ]
+      },
+      "front_sha256": "52a41218c4dc73d372c70439410c3b0b072e0d68405e93edbed1c195da6f7de2",
+      "back_sha256": "ae5941c604c9efb0de2a75f04649ad81de52249e9eacf5a366fab34f74a456d3"
+    },
+    {
+      "capture": "sheet06/front-02",
+      "method": "Rowley-Brooke stages + dense registration + overlap decomposition (recover_overlap.py)",
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 3.5,
+        "back_sigma": 2.5,
+        "gain_sigma": 1.5,
+        "lam0": 0.15,
+        "lam_ink": 0.5,
+        "lam_edge": 0.0,
+        "iterations": 6,
+        "region_dilate": 5,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "texture_k": 0,
+        "texture_h": 0.3,
+        "texture_gain": 1.0,
+        "lam_var": 0.0,
+        "var_sigma": 12.0,
+        "scales": [],
+        "ridge": 0.01,
+        "penalty": "l1",
+        "single_resample": false
+      },
+      "registration": {
+        "homography": [
+          [
+            0.9033152224642024,
+            -0.027730432813280557,
+            213.93426200293013
+          ],
+          [
+            0.012903219154871373,
+            0.9141508317128986,
+            40.461137651012756
+          ],
+          [
+            -7.424898128215016e-06,
+            5.020729394235196e-07,
+            1.0
+          ]
+        ],
+        "matches": 442,
+        "inliers": 191,
+        "median_error_pixels": 1.5785534381866455,
+        "coverage": [
+          0.6297548828125,
+          0.7334017333984375
+        ]
+      },
+      "dense_registration": {
+        "tiles": 478,
+        "max_shift_pixels": 14.210525512695312,
+        "median_shift_pixels": 1.9161419868469238
+      },
+      "classification": {
+        "front_seed_threshold": 132.0,
+        "back_seed_threshold": 169.0,
+        "overlap_seed_threshold": 215.0,
+        "centers": [
+          [
+            118.25853512527841,
+            119.91526157601416
+          ],
+          [
+            146.8562747677592,
+            125.73299532494897
+          ],
+          [
+            178.07923313674127,
+            216.65332969083568
+          ],
+          [
+            226.01183656436132,
+            225.27989175107805
+          ]
+        ],
+        "histogram_bins": 20112,
+        "alpha": 0.0093827064,
+        "solver": "expansion",
+        "neighbourhood": "set",
+        "edges": 1173430,
+        "sweeps": [
+          114567.58291929553,
+          101095.48011086526,
+          101086.45165977771,
+          98755.92552426911,
+          98755.8327436677,
+          98753.64501170046,
+          98753.41458635568
+        ]
+      },
+      "region_fraction": 0.10977206353631555,
+      "objective_history": [
+        0.040168989449739456,
+        0.03975199908018112,
+        0.03975508734583855,
+        0.03975612670183182,
+        0.03975648805499077,
+        0.03975661098957062
+      ],
+      "elapsed_seconds": 57.98066539998399,
+      "minimal": {
+        "touched_fraction": 0.08101146720347009,
+        "front_ink_in_bleed_fraction": 0.010944020568353835,
+        "bleed_rgb_ratio": [
+          0.9688827991485596,
+          1.0352733135223389,
+          0.9228171110153198
+        ]
+      },
+      "front_sha256": "34b8badb3c6c999027651a7e74a705427d2d86f585a232e409b582f651015973",
+      "back_sha256": "ae5941c604c9efb0de2a75f04649ad81de52249e9eacf5a366fab34f74a456d3"
+    },
+    {
+      "capture": "sheet06/front-03",
+      "method": "Rowley-Brooke stages + dense registration + overlap decomposition (recover_overlap.py)",
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 3.5,
+        "back_sigma": 2.5,
+        "gain_sigma": 1.5,
+        "lam0": 0.15,
+        "lam_ink": 0.5,
+        "lam_edge": 0.0,
+        "iterations": 6,
+        "region_dilate": 5,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "texture_k": 0,
+        "texture_h": 0.3,
+        "texture_gain": 1.0,
+        "lam_var": 0.0,
+        "var_sigma": 12.0,
+        "scales": [],
+        "ridge": 0.01,
+        "penalty": "l1",
+        "single_resample": false
+      },
+      "registration": {
+        "homography": [
+          [
+            0.8690527602479144,
+            -0.049474954918407914,
+            181.49061635255214
+          ],
+          [
+            0.0019977005103626326,
+            0.8213179724855627,
+            269.22449919362145
+          ],
+          [
+            -4.8316794282924264e-06,
+            -2.420476180269551e-05,
+            1.0
+          ]
+        ],
+        "matches": 416,
+        "inliers": 173,
+        "median_error_pixels": 1.600963830947876,
+        "coverage": [
+          0.5482237141927083,
+          0.7353547973632812
+        ]
+      },
+      "dense_registration": {
+        "tiles": 479,
+        "max_shift_pixels": 17.156187057495117,
+        "median_shift_pixels": 1.8450782299041748
+      },
+      "classification": {
+        "front_seed_threshold": 130.0,
+        "back_seed_threshold": 169.0,
+        "overlap_seed_threshold": 215.0,
+        "centers": [
+          [
+            117.72731172136513,
+            120.27165779342457
+          ],
+          [
+            144.01689007902678,
+            125.64654473564468
+          ],
+          [
+            177.5723793604683,
+            217.1060961019206
+          ],
+          [
+            228.00265496653248,
+            225.64981863961012
+          ]
+        ],
+        "histogram_bins": 20563,
+        "alpha": 0.009648097349999999,
+        "solver": "expansion",
+        "neighbourhood": "set",
+        "edges": 1203847,
+        "sweeps": [
+          119660.34418660456,
+          105465.64353779526,
+          105458.22634505952,
+          103008.67031422578,
+          103007.35144919054
+        ]
+      },
+      "region_fraction": 0.11123632722134434,
+      "objective_history": [
+        0.04418399930000305,
+        0.04373185709118843,
+        0.04373595118522644,
+        0.043737370520830154,
+        0.043737877160310745,
+        0.04373806715011597
+      ],
+      "elapsed_seconds": 58.95302760001505,
+      "minimal": {
+        "touched_fraction": 0.0815358517121866,
+        "front_ink_in_bleed_fraction": 0.011670265287467623,
+        "bleed_rgb_ratio": [
+          0.970807671546936,
+          1.0358749628067017,
+          0.9159706234931946
+        ]
+      },
+      "front_sha256": "26b133005c574411b71f8b3191b9a1cc1305af90df986ded633f1c5d60b27ab4",
+      "back_sha256": "ae5941c604c9efb0de2a75f04649ad81de52249e9eacf5a366fab34f74a456d3"
+    },
+    {
+      "capture": "sheet06/front-04",
+      "method": "Rowley-Brooke stages + dense registration + overlap decomposition (recover_overlap.py)",
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 3.5,
+        "back_sigma": 2.5,
+        "gain_sigma": 1.5,
+        "lam0": 0.15,
+        "lam_ink": 0.5,
+        "lam_edge": 0.0,
+        "iterations": 6,
+        "region_dilate": 5,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "texture_k": 0,
+        "texture_h": 0.3,
+        "texture_gain": 1.0,
+        "lam_var": 0.0,
+        "var_sigma": 12.0,
+        "scales": [],
+        "ridge": 0.01,
+        "penalty": "l1",
+        "single_resample": false
+      },
+      "registration": {
+        "homography": [
+          [
+            0.8748596039026674,
+            0.0012194111325642867,
+            85.12682466434731
+          ],
+          [
+            0.0031365221274300306,
+            0.9141315761157043,
+            482.0339175451376
+          ],
+          [
+            -6.120856300819688e-06,
+            1.4047070376110107e-05,
+            1.0
+          ]
+        ],
+        "matches": 422,
+        "inliers": 169,
+        "median_error_pixels": 1.655826449394226,
+        "coverage": [
+          0.589577392578125,
+          0.6925300903320313
+        ]
+      },
+      "dense_registration": {
+        "tiles": 427,
+        "max_shift_pixels": 16.063451766967773,
+        "median_shift_pixels": 2.153632879257202
+      },
+      "classification": {
+        "front_seed_threshold": 135.0,
+        "back_seed_threshold": 171.0,
+        "overlap_seed_threshold": 218.0,
+        "centers": [
+          [
+            122.59021975678321,
+            121.9509297897363
+          ],
+          [
+            148.88628006940453,
+            127.86650964848288
+          ],
+          [
+            181.21090541118437,
+            218.52210072500523
+          ],
+          [
+            228.70873007918212,
+            227.98376265410445
+          ]
+        ],
+        "histogram_bins": 19566,
+        "alpha": 0.009061412699999999,
+        "solver": "expansion",
+        "neighbourhood": "set",
+        "edges": 1097789,
+        "sweeps": [
+          107571.79040131271,
+          95903.9928142846,
+          95900.23428024842,
+          93632.86106548176,
+          93630.3610950654,
+          93630.1659144111
+        ]
+      },
+      "region_fraction": 0.11374937376608366,
+      "objective_history": [
+        0.043781571090221405,
+        0.043280553072690964,
+        0.04328532516956329,
+        0.04328718036413193,
+        0.04328789561986923,
+        0.043288182467222214
+      ],
+      "elapsed_seconds": 55.19757109996863,
+      "minimal": {
+        "touched_fraction": 0.08212678717028994,
+        "front_ink_in_bleed_fraction": 0.010868659034764791,
+        "bleed_rgb_ratio": [
+          0.9650906324386597,
+          1.0361219644546509,
+          0.921880841255188
+        ]
+      },
+      "front_sha256": "d811ce79f91d54dffca637fc589841712483850ed422ccb48631384586738bad",
+      "back_sha256": "ae5941c604c9efb0de2a75f04649ad81de52249e9eacf5a366fab34f74a456d3"
+    },
+    {
+      "capture": "sheet07/front-01",
+      "method": "Rowley-Brooke stages + dense registration + overlap decomposition (recover_overlap.py)",
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 3.5,
+        "back_sigma": 2.5,
+        "gain_sigma": 1.5,
+        "lam0": 0.15,
+        "lam_ink": 0.5,
+        "lam_edge": 0.0,
+        "iterations": 6,
+        "region_dilate": 5,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "texture_k": 0,
+        "texture_h": 0.3,
+        "texture_gain": 1.0,
+        "lam_var": 0.0,
+        "var_sigma": 12.0,
+        "scales": [],
+        "ridge": 0.01,
+        "penalty": "l1",
+        "single_resample": false
+      },
+      "registration": {
+        "homography": [
+          [
+            0.9389250223562695,
+            0.042945433361922906,
+            -47.82418603449166
+          ],
+          [
+            -0.11997044720170236,
+            0.9996320847932744,
+            34.237952946068326
+          ],
+          [
+            -3.853109465294255e-05,
+            1.1982655941786047e-06,
+            1.0
+          ]
+        ],
+        "matches": 279,
+        "inliers": 123,
+        "median_error_pixels": 1.1393259763717651,
+        "coverage": [
+          0.7409829711914062,
+          0.8425034332275391
+        ],
+        "feature_max_side": 1600,
+        "error_coordinate_system": "reduced feature image",
+        "median_error_full_resolution_pixels": 2.848314940929413
+      },
+      "dense_registration": {
+        "tiles": 544,
+        "max_shift_pixels": 16.16005516052246,
+        "median_shift_pixels": 4.156964302062988
+      },
+      "classification": {
+        "front_seed_threshold": 162.0,
+        "back_seed_threshold": 177.0,
+        "overlap_seed_threshold": 215.0,
+        "centers": [
+          [
+            127.30106553989634,
+            129.62536175041598
+          ],
+          [
+            199.223155713531,
+            133.70270866351743
+          ],
+          [
+            171.84268670952181,
+            223.38490400949067
+          ],
+          [
+            227.67245849618823,
+            231.43659301110637
+          ]
+        ],
+        "histogram_bins": 21283,
+        "alpha": 0.01007178135,
+        "solver": "expansion",
+        "neighbourhood": "set",
+        "edges": 1413516,
+        "sweeps": [
+          127563.61873471079,
+          110614.3282459247,
+          110607.44392702234,
+          107702.57672737651,
+          107695.84274378963,
+          107695.41135685069
+        ]
+      },
+      "region_fraction": 0.12355810082527266,
+      "objective_history": [
+        0.04116092994809151,
+        0.04086381569504738,
+        0.04087283834815025,
+        0.04087596386671066,
+        0.04087711125612259,
+        0.040877558290958405
+      ],
+      "elapsed_seconds": 100.39229270000942,
+      "minimal": {
+        "touched_fraction": 0.09068835033548256,
+        "front_ink_in_bleed_fraction": 0.013656965721380874,
+        "bleed_rgb_ratio": [
+          0.9988927841186523,
+          1.014837384223938,
+          0.9386261701583862
+        ]
+      },
+      "front_sha256": "1645ac613df6ee810aef1349321d51a3e9a35a512525f93b25b24ed75cc7f170",
+      "back_sha256": "d7ebccc30e15a5aafda63fe726e42781639c0d0d89bbc09165867d8ecbe6d66e"
+    },
+    {
+      "capture": "sheet07/front-02",
+      "method": "Rowley-Brooke stages + dense registration + overlap decomposition (recover_overlap.py)",
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 3.5,
+        "back_sigma": 2.5,
+        "gain_sigma": 1.5,
+        "lam0": 0.15,
+        "lam_ink": 0.5,
+        "lam_edge": 0.0,
+        "iterations": 6,
+        "region_dilate": 5,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "texture_k": 0,
+        "texture_h": 0.3,
+        "texture_gain": 1.0,
+        "lam_var": 0.0,
+        "var_sigma": 12.0,
+        "scales": [],
+        "ridge": 0.01,
+        "penalty": "l1",
+        "single_resample": false
+      },
+      "registration": {
+        "homography": [
+          [
+            0.9032615304864976,
+            0.036060969484351516,
+            78.37828628829021
+          ],
+          [
+            -0.07289951306146679,
+            0.9513287333778774,
+            91.01189592603974
+          ],
+          [
+            -2.430804319863522e-05,
+            5.84200717029011e-06,
+            1.0
+          ]
+        ],
+        "matches": 263,
+        "inliers": 137,
+        "median_error_pixels": 1.264133095741272,
+        "coverage": [
+          0.7125079345703125,
+          0.7767640686035157
+        ],
+        "feature_max_side": 1600,
+        "error_coordinate_system": "reduced feature image",
+        "median_error_full_resolution_pixels": 3.16033273935318
+      },
+      "dense_registration": {
+        "tiles": 519,
+        "max_shift_pixels": 12.849448204040527,
+        "median_shift_pixels": 3.7774291038513184
+      },
+      "classification": {
+        "front_seed_threshold": 138.0,
+        "back_seed_threshold": 175.0,
+        "overlap_seed_threshold": 213.0,
+        "centers": [
+          [
+            124.67113268021663,
+            127.20045612200674
+          ],
+          [
+            152.80783482989088,
+            131.74686652213262
+          ],
+          [
+            173.0211388093577,
+            221.3025818609981
+          ],
+          [
+            226.1215344521662,
+            229.89606128936862
+          ]
+        ],
+        "histogram_bins": 20063,
+        "alpha": 0.009353872349999999,
+        "solver": "expansion",
+        "neighbourhood": "set",
+        "edges": 1265287,
+        "sweeps": [
+          121400.91220368618,
+          108074.81181893629,
+          108071.00379987879,
+          105556.01005068971,
+          105551.73090194356,
+          105551.60191845987
+        ]
+      },
+      "region_fraction": 0.12555214069267023,
+      "objective_history": [
+        0.036436378955841064,
+        0.036110393702983856,
+        0.036120280623435974,
+        0.03612421080470085,
+        0.03612576425075531,
+        0.03612639755010605
+      ],
+      "elapsed_seconds": 83.58425899996655,
+      "minimal": {
+        "touched_fraction": 0.09175013085897381,
+        "front_ink_in_bleed_fraction": 0.011192432958578965,
+        "bleed_rgb_ratio": [
+          0.9959619045257568,
+          1.0156488418579102,
+          0.9304126501083374
+        ]
+      },
+      "front_sha256": "97ff19e9e5de36cb647c2dc134341063711d9536ab334fc1990c7e34ae3d72ac",
+      "back_sha256": "d7ebccc30e15a5aafda63fe726e42781639c0d0d89bbc09165867d8ecbe6d66e"
+    },
+    {
+      "capture": "sheet07/front-03",
+      "method": "Rowley-Brooke stages + dense registration + overlap decomposition (recover_overlap.py)",
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 3.5,
+        "back_sigma": 2.5,
+        "gain_sigma": 1.5,
+        "lam0": 0.15,
+        "lam_ink": 0.5,
+        "lam_edge": 0.0,
+        "iterations": 6,
+        "region_dilate": 5,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "texture_k": 0,
+        "texture_h": 0.3,
+        "texture_gain": 1.0,
+        "lam_var": 0.0,
+        "var_sigma": 12.0,
+        "scales": [],
+        "ridge": 0.01,
+        "penalty": "l1",
+        "single_resample": false
+      },
+      "registration": {
+        "homography": [
+          [
+            0.911557450811934,
+            0.07097692116297623,
+            -12.373550568852067
+          ],
+          [
+            -0.08998088287201966,
+            1.0104428415945197,
+            189.69589160982022
+          ],
+          [
+            -3.1217461775199285e-05,
+            2.6072774907401413e-05,
+            1.0
+          ]
+        ],
+        "matches": 260,
+        "inliers": 113,
+        "median_error_pixels": 1.3058487176895142,
+        "coverage": [
+          0.6950626627604166,
+          0.75973876953125
+        ],
+        "feature_max_side": 1600,
+        "error_coordinate_system": "reduced feature image",
+        "median_error_full_resolution_pixels": 3.2646217942237854
+      },
+      "dense_registration": {
+        "tiles": 485,
+        "max_shift_pixels": 15.033827781677246,
+        "median_shift_pixels": 3.879265308380127
+      },
+      "classification": {
+        "front_seed_threshold": 135.0,
+        "back_seed_threshold": 176.0,
+        "overlap_seed_threshold": 210.0,
+        "centers": [
+          [
+            120.89094561308517,
+            128.50676235575435
+          ],
+          [
+            150.19991844594213,
+            133.00581185931924
+          ],
+          [
+            168.00227364278015,
+            223.16373730828082
+          ],
+          [
+            223.93203313487876,
+            231.28612316414242
+          ]
+        ],
+        "histogram_bins": 21474,
+        "alpha": 0.010184175299999999,
+        "solver": "expansion",
+        "neighbourhood": "set",
+        "edges": 1271106,
+        "sweeps": [
+          129902.5553188968,
+          114587.08385153179,
+          114585.09882086451,
+          111812.57090678297,
+          111810.78562687055,
+          111810.7194308614
+        ]
+      },
+      "region_fraction": 0.1267411084203018,
+      "objective_history": [
+        0.034763459116220474,
+        0.0344403013586998,
+        0.03444983810186386,
+        0.03445366770029068,
+        0.03445516526699066,
+        0.03445577248930931
+      ],
+      "elapsed_seconds": 71.49520070001017,
+      "minimal": {
+        "touched_fraction": 0.0905869217508096,
+        "front_ink_in_bleed_fraction": 0.010774698074992914,
+        "bleed_rgb_ratio": [
+          0.9908609390258789,
+          1.016697645187378,
+          0.9346263408660889
+        ]
+      },
+      "front_sha256": "6d333377afbceb769b3512824fd4f1b1e236799502ecb8a65e9d9975195883b2",
+      "back_sha256": "d7ebccc30e15a5aafda63fe726e42781639c0d0d89bbc09165867d8ecbe6d66e"
+    },
+    {
+      "capture": "sheet08/front-01",
+      "method": "Rowley-Brooke stages + dense registration + overlap decomposition (recover_overlap.py)",
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 3.5,
+        "back_sigma": 2.5,
+        "gain_sigma": 1.5,
+        "lam0": 0.15,
+        "lam_ink": 0.5,
+        "lam_edge": 0.0,
+        "iterations": 6,
+        "region_dilate": 5,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "texture_k": 0,
+        "texture_h": 0.3,
+        "texture_gain": 1.0,
+        "lam_var": 0.0,
+        "var_sigma": 12.0,
+        "scales": [],
+        "ridge": 0.01,
+        "penalty": "l1",
+        "single_resample": false
+      },
+      "registration": {
+        "homography": [
+          [
+            0.9869035524301545,
+            -0.04512618005490741,
+            108.75546710631767
+          ],
+          [
+            0.04976133035381087,
+            0.9587672028173807,
+            6.9851008341157685
+          ],
+          [
+            8.316191130775303e-06,
+            -8.279873852714554e-06,
+            1.0
+          ]
+        ],
+        "matches": 272,
+        "inliers": 72,
+        "median_error_pixels": 1.4528359174728394,
+        "coverage": [
+          0.822962646484375,
+          0.7938970336914063
+        ]
+      },
+      "dense_registration": {
+        "tiles": 613,
+        "max_shift_pixels": 15.13211441040039,
+        "median_shift_pixels": 3.5626726150512695
+      },
+      "classification": {
+        "front_seed_threshold": 133.0,
+        "back_seed_threshold": 176.0,
+        "overlap_seed_threshold": 212.0,
+        "centers": [
+          [
+            119.95158445554566,
+            127.60783049699783
+          ],
+          [
+            146.03648974016096,
+            133.46349133689685
+          ],
+          [
+            173.3419311037158,
+            222.65949782831345
+          ],
+          [
+            223.7676537204657,
+            231.838761711339
+          ]
+        ],
+        "histogram_bins": 18780,
+        "alpha": 0.008598890999999999,
+        "solver": "expansion",
+        "neighbourhood": "set",
+        "edges": 1282352,
+        "sweeps": [
+          115181.79085517797,
+          102413.56650709973,
+          102412.25506193998,
+          100146.12008744731,
+          100134.17781095019,
+          100133.88860298239
+        ]
+      },
+      "region_fraction": 0.12638534818130742,
+      "objective_history": [
+        0.03432871773838997,
+        0.03411754220724106,
+        0.03412142023444176,
+        0.03412250801920891,
+        0.03412284702062607,
+        0.03412296995520592
+      ],
+      "elapsed_seconds": 123.03697700001067,
+      "minimal": {
+        "touched_fraction": 0.09226747820014546,
+        "front_ink_in_bleed_fraction": 0.010500657440585358,
+        "bleed_rgb_ratio": [
+          0.9917887449264526,
+          1.0156034231185913,
+          0.938402533531189
+        ]
+      },
+      "front_sha256": "6f9b589a5555ca3932af02718c31bdebeab271095ad7ca224defdfb76296f8ea",
+      "back_sha256": "16139cae77461556b955873b6cf51eb58b6f54e4fc8dad3daf55bbfd1d733d0e"
+    },
+    {
+      "capture": "sheet08/front-02",
+      "method": "Rowley-Brooke stages + dense registration + overlap decomposition (recover_overlap.py)",
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 3.5,
+        "back_sigma": 2.5,
+        "gain_sigma": 1.5,
+        "lam0": 0.15,
+        "lam_ink": 0.5,
+        "lam_edge": 0.0,
+        "iterations": 6,
+        "region_dilate": 5,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "texture_k": 0,
+        "texture_h": 0.3,
+        "texture_gain": 1.0,
+        "lam_var": 0.0,
+        "var_sigma": 12.0,
+        "scales": [],
+        "ridge": 0.01,
+        "penalty": "l1",
+        "single_resample": false
+      },
+      "registration": {
+        "homography": [
+          [
+            0.9657873318405636,
+            -0.045640815421719154,
+            100.30692160158932
+          ],
+          [
+            0.11815010943228672,
+            0.8339776660465266,
+            219.3407573841331
+          ],
+          [
+            5.254290214290622e-05,
+            -3.065843502239058e-05,
+            1.0
+          ]
+        ],
+        "matches": 241,
+        "inliers": 152,
+        "median_error_pixels": 1.3986679315567017,
+        "coverage": [
+          0.7598789469401042,
+          0.7107673645019531
+        ],
+        "feature_max_side": 1600,
+        "error_coordinate_system": "reduced feature image",
+        "median_error_full_resolution_pixels": 3.496669828891754
+      },
+      "dense_registration": {
+        "tiles": 514,
+        "max_shift_pixels": 11.560120582580566,
+        "median_shift_pixels": 2.6235973834991455
+      },
+      "classification": {
+        "front_seed_threshold": 130.0,
+        "back_seed_threshold": 174.0,
+        "overlap_seed_threshold": 207.0,
+        "centers": [
+          [
+            117.46897469442128,
+            125.57819564767688
+          ],
+          [
+            142.7131919039457,
+            131.42521553378188
+          ],
+          [
+            167.63029187021982,
+            221.339790861743
+          ],
+          [
+            219.71312376109626,
+            229.01946694820305
+          ]
+        ],
+        "histogram_bins": 19075,
+        "alpha": 0.008772483749999999,
+        "solver": "expansion",
+        "neighbourhood": "set",
+        "edges": 1163764,
+        "sweeps": [
+          110931.29216615457,
+          98375.10513132889,
+          98372.19111924162,
+          96017.35286370138,
+          96016.44038087061
+        ]
+      },
+      "region_fraction": 0.13228088318210773,
+      "objective_history": [
+        0.028872087597846985,
+        0.028690636157989502,
+        0.02869514375925064,
+        0.028696350753307343,
+        0.028696715831756592,
+        0.02869683876633644
+      ],
+      "elapsed_seconds": 73.82451339997351,
+      "minimal": {
+        "touched_fraction": 0.09305031242334975,
+        "front_ink_in_bleed_fraction": 0.00756793635062256,
+        "bleed_rgb_ratio": [
+          0.9889591932296753,
+          1.0185855627059937,
+          0.9270001649856567
+        ]
+      },
+      "front_sha256": "8aaf230c1eda9a504fb32b40107c08a7523f4f557f0fc6c4545b287c15342a82",
+      "back_sha256": "16139cae77461556b955873b6cf51eb58b6f54e4fc8dad3daf55bbfd1d733d0e"
+    },
+    {
+      "capture": "sheet08/front-03",
+      "method": "Rowley-Brooke stages + dense registration + overlap decomposition (recover_overlap.py)",
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 3.5,
+        "back_sigma": 2.5,
+        "gain_sigma": 1.5,
+        "lam0": 0.15,
+        "lam_ink": 0.5,
+        "lam_edge": 0.0,
+        "iterations": 6,
+        "region_dilate": 5,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "texture_k": 0,
+        "texture_h": 0.3,
+        "texture_gain": 1.0,
+        "lam_var": 0.0,
+        "var_sigma": 12.0,
+        "scales": [],
+        "ridge": 0.01,
+        "penalty": "l1",
+        "single_resample": false
+      },
+      "registration": {
+        "homography": [
+          [
+            0.8109681270461269,
+            -0.08636159475504702,
+            223.14432850461054
+          ],
+          [
+            -0.0156660117779607,
+            0.7782021678664865,
+            394.70787404154527
+          ],
+          [
+            -2.200858970476534e-05,
+            -3.297514683913581e-05,
+            1.0
+          ]
+        ],
+        "matches": 271,
+        "inliers": 160,
+        "median_error_pixels": 1.374467134475708,
+        "coverage": [
+          0.830126698811849,
+          0.7915423583984375
+        ],
+        "feature_max_side": 1600,
+        "error_coordinate_system": "reduced feature image",
+        "median_error_full_resolution_pixels": 3.43616783618927
+      },
+      "dense_registration": {
+        "tiles": 551,
+        "max_shift_pixels": 14.963844299316406,
+        "median_shift_pixels": 2.493893623352051
+      },
+      "classification": {
+        "front_seed_threshold": 130.0,
+        "back_seed_threshold": 176.0,
+        "overlap_seed_threshold": 209.0,
+        "centers": [
+          [
+            117.89902019124534,
+            127.84094652797081
+          ],
+          [
+            142.67577702833444,
+            133.45627319003296
+          ],
+          [
+            171.2773548668568,
+            223.80896346888048
+          ],
+          [
+            221.13602854819766,
+            231.84885716866927
+          ]
+        ],
+        "histogram_bins": 19261,
+        "alpha": 0.00888193545,
+        "solver": "expansion",
+        "neighbourhood": "set",
+        "edges": 1246540,
+        "sweeps": [
+          118202.65822492243,
+          104803.83799213669,
+          104801.22805595593,
+          102564.3951171368,
+          102556.9996934905,
+          102556.3984266939
+        ]
+      },
+      "region_fraction": 0.1291731416440298,
+      "objective_history": [
+        0.03729613125324249,
+        0.037063177675008774,
+        0.03706761822104454,
+        0.03706890344619751,
+        0.03706932067871094,
+        0.037069469690322876
+      ],
+      "elapsed_seconds": 71.03644490003353,
+      "minimal": {
+        "touched_fraction": 0.09547154865654267,
+        "front_ink_in_bleed_fraction": 0.012142575118593247,
+        "bleed_rgb_ratio": [
+          1.0023740530014038,
+          1.016486406326294,
+          0.9277493953704834
+        ]
+      },
+      "front_sha256": "e376de9c85804ea337ceb1e81f2372b2dabfc4a28b87041b959f9997942fca9c",
+      "back_sha256": "16139cae77461556b955873b6cf51eb58b6f54e4fc8dad3daf55bbfd1d733d0e"
+    },
+    {
+      "capture": "sheet09/front-01",
+      "method": "Rowley-Brooke stages + dense registration + overlap decomposition (recover_overlap.py)",
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 3.5,
+        "back_sigma": 2.5,
+        "gain_sigma": 1.5,
+        "lam0": 0.15,
+        "lam_ink": 0.5,
+        "lam_edge": 0.0,
+        "iterations": 6,
+        "region_dilate": 5,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "texture_k": 0,
+        "texture_h": 0.3,
+        "texture_gain": 1.0,
+        "lam_var": 0.0,
+        "var_sigma": 12.0,
+        "scales": [],
+        "ridge": 0.01,
+        "penalty": "l1",
+        "single_resample": false
+      },
+      "registration": {
+        "homography": [
+          [
+            0.9542692288395744,
+            0.013750493377111062,
+            26.936388930686604
+          ],
+          [
+            -0.05286844803761253,
+            0.9410222218601428,
+            37.05405909946797
+          ],
+          [
+            -8.887315431309171e-06,
+            -1.4245886666666855e-05,
+            1.0
+          ]
+        ],
+        "matches": 262,
+        "inliers": 94,
+        "median_error_pixels": 1.3603880405426025,
+        "coverage": [
+          0.726785634358724,
+          0.7595925140380859
+        ],
+        "feature_max_side": 1600,
+        "error_coordinate_system": "reduced feature image",
+        "median_error_full_resolution_pixels": 3.4009701013565063
+      },
+      "dense_registration": {
+        "tiles": 444,
+        "max_shift_pixels": 16.95210075378418,
+        "median_shift_pixels": 5.3115339279174805
+      },
+      "classification": {
+        "front_seed_threshold": 159.0,
+        "back_seed_threshold": 175.0,
+        "overlap_seed_threshold": 216.0,
+        "centers": [
+          [
+            127.93214775956409,
+            125.90627164667161
+          ],
+          [
+            193.00680326009055,
+            129.71717309957106
+          ],
+          [
+            167.90275351307673,
+            223.90635794153215
+          ],
+          [
+            228.57044435680538,
+            232.8667412492857
+          ]
+        ],
+        "histogram_bins": 22474,
+        "alpha": 0.0107726253,
+        "solver": "expansion",
+        "neighbourhood": "set",
+        "edges": 1539595,
+        "sweeps": [
+          138306.9964943788,
+          120257.48506234854,
+          120236.63999544506,
+          116890.23778151281,
+          116875.57173435431,
+          116872.15179912867,
+          116871.47634918214
+        ]
+      },
+      "region_fraction": 0.12743948860521448,
+      "objective_history": [
+        0.036118440330028534,
+        0.03586091101169586,
+        0.03588630259037018,
+        0.035896942019462585,
+        0.0359017476439476,
+        0.03590412437915802
+      ],
+      "elapsed_seconds": 102.90243239997653,
+      "minimal": {
+        "touched_fraction": 0.09086574536840832,
+        "front_ink_in_bleed_fraction": 0.012721290097299501,
+        "bleed_rgb_ratio": [
+          0.9947232604026794,
+          1.0146899223327637,
+          0.9288786053657532
+        ]
+      },
+      "front_sha256": "c4d65b27579b88a830d5abe00f43654c8aa18dde4adf8824f535ee88173061a2",
+      "back_sha256": "aee1731057387e2a489cc47bde2aa8016a4858573988e4b395ccf0435ec92498"
+    },
+    {
+      "capture": "sheet09/front-02",
+      "method": "Rowley-Brooke stages + dense registration + overlap decomposition (recover_overlap.py)",
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 3.5,
+        "back_sigma": 2.5,
+        "gain_sigma": 1.5,
+        "lam0": 0.15,
+        "lam_ink": 0.5,
+        "lam_edge": 0.0,
+        "iterations": 6,
+        "region_dilate": 5,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "texture_k": 0,
+        "texture_h": 0.3,
+        "texture_gain": 1.0,
+        "lam_var": 0.0,
+        "var_sigma": 12.0,
+        "scales": [],
+        "ridge": 0.01,
+        "penalty": "l1",
+        "single_resample": false
+      },
+      "registration": {
+        "homography": [
+          [
+            0.8692276664555161,
+            0.009195075161884522,
+            276.9844984443455
+          ],
+          [
+            -0.015882804275796997,
+            0.7952630607954234,
+            282.8477169927988
+          ],
+          [
+            1.3176219476290726e-05,
+            -2.761368681883643e-05,
+            1.0
+          ]
+        ],
+        "matches": 206,
+        "inliers": 105,
+        "median_error_pixels": 1.6043009757995605,
+        "coverage": [
+          0.705174560546875,
+          0.7450663757324218
+        ],
+        "feature_max_side": 1600,
+        "error_coordinate_system": "reduced feature image",
+        "median_error_full_resolution_pixels": 4.010752439498901
+      },
+      "dense_registration": {
+        "tiles": 411,
+        "max_shift_pixels": 14.503032684326172,
+        "median_shift_pixels": 4.371315956115723
+      },
+      "classification": {
+        "front_seed_threshold": 156.0,
+        "back_seed_threshold": 174.0,
+        "overlap_seed_threshold": 208.0,
+        "centers": [
+          [
+            121.11237725240741,
+            124.03741604714749
+          ],
+          [
+            193.4588848643034,
+            129.42823661011533
+          ],
+          [
+            163.05150148142414,
+            223.13348124115896
+          ],
+          [
+            222.85835546475997,
+            229.82995914198162
+          ]
+        ],
+        "histogram_bins": 23473,
+        "alpha": 0.011360486849999999,
+        "solver": "expansion",
+        "neighbourhood": "set",
+        "edges": 1400725,
+        "sweeps": [
+          136598.48118762,
+          116709.86911890614,
+          116677.21117141482,
+          113169.74612989978,
+          113168.73757277407,
+          113152.49063114781,
+          113148.79415451
+        ]
+      },
+      "region_fraction": 0.133808356769552,
+      "objective_history": [
+        0.03379430994391441,
+        0.03343421220779419,
+        0.03345411643385887,
+        0.033462125808000565,
+        0.033465415239334106,
+        0.03346685320138931
+      ],
+      "elapsed_seconds": 65.02786909998395,
+      "minimal": {
+        "touched_fraction": 0.09209459827093654,
+        "front_ink_in_bleed_fraction": 0.011644295243115544,
+        "bleed_rgb_ratio": [
+          0.9956210255622864,
+          1.019667625427246,
+          0.9192664623260498
+        ]
+      },
+      "front_sha256": "98bcf84d51c2decf67cee42809d3cdfa5412264b859961b138aa587d1bf0124e",
+      "back_sha256": "aee1731057387e2a489cc47bde2aa8016a4858573988e4b395ccf0435ec92498"
+    },
+    {
+      "capture": "sheet09/front-03",
+      "method": "Rowley-Brooke stages + dense registration + overlap decomposition (recover_overlap.py)",
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 3.5,
+        "back_sigma": 2.5,
+        "gain_sigma": 1.5,
+        "lam0": 0.15,
+        "lam_ink": 0.5,
+        "lam_edge": 0.0,
+        "iterations": 6,
+        "region_dilate": 5,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "texture_k": 0,
+        "texture_h": 0.3,
+        "texture_gain": 1.0,
+        "lam_var": 0.0,
+        "var_sigma": 12.0,
+        "scales": [],
+        "ridge": 0.01,
+        "penalty": "l1",
+        "single_resample": false
+      },
+      "registration": {
+        "homography": [
+          [
+            0.7533453059589598,
+            -0.024086848182348172,
+            307.5603653064509
+          ],
+          [
+            -0.04845226514254122,
+            0.7236996224494585,
+            533.1937820340354
+          ],
+          [
+            -1.6414634017669585e-05,
+            -2.61092000238741e-05,
+            0.9999999999999999
+          ]
+        ],
+        "matches": 217,
+        "inliers": 94,
+        "median_error_pixels": 1.4808709621429443,
+        "coverage": [
+          0.6810445658365886,
+          0.6433528137207031
+        ],
+        "feature_max_side": 1600,
+        "error_coordinate_system": "reduced feature image",
+        "median_error_full_resolution_pixels": 3.702177405357361
+      },
+      "dense_registration": {
+        "tiles": 418,
+        "max_shift_pixels": 12.097960472106934,
+        "median_shift_pixels": 4.46721076965332
+      },
+      "classification": {
+        "front_seed_threshold": 136.0,
+        "back_seed_threshold": 174.0,
+        "overlap_seed_threshold": 211.0,
+        "centers": [
+          [
+            122.05545331808634,
+            123.52300006906377
+          ],
+          [
+            151.54768871074594,
+            128.86685710248744
+          ],
+          [
+            167.54887319483507,
+            222.9988644816996
+          ],
+          [
+            223.82589589090745,
+            230.36542382095774
+          ]
+        ],
+        "histogram_bins": 23120,
+        "alpha": 0.011152763999999999,
+        "solver": "expansion",
+        "neighbourhood": "set",
+        "edges": 1330020,
+        "sweeps": [
+          142294.5460990277,
+          124409.11409279107,
+          124404.56955241004,
+          120850.59280370685,
+          120841.12386172026,
+          120841.00049888782,
+          120840.77856375003
+        ]
+      },
+      "region_fraction": 0.1370516621880358,
+      "objective_history": [
+        0.031220324337482452,
+        0.03085874579846859,
+        0.030873585492372513,
+        0.030879180878400803,
+        0.030881324782967567,
+        0.030882181599736214
+      ],
+      "elapsed_seconds": 64.28197299997555,
+      "minimal": {
+        "touched_fraction": 0.09429768440847842,
+        "front_ink_in_bleed_fraction": 0.010258367780939246,
+        "bleed_rgb_ratio": [
+          1.0020655393600464,
+          1.0199944972991943,
+          0.9180108308792114
+        ]
+      },
+      "front_sha256": "8727f35a434499bb9a1c0c9221c039a2eb107e0a2071d5efbaba92f6d6f37038",
+      "back_sha256": "aee1731057387e2a489cc47bde2aa8016a4858573988e4b395ccf0435ec92498"
+    },
+    {
+      "capture": "sheet10/front-01",
+      "method": "Rowley-Brooke stages + dense registration + overlap decomposition (recover_overlap.py)",
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 3.5,
+        "back_sigma": 2.5,
+        "gain_sigma": 1.5,
+        "lam0": 0.15,
+        "lam_ink": 0.5,
+        "lam_edge": 0.0,
+        "iterations": 6,
+        "region_dilate": 5,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "texture_k": 0,
+        "texture_h": 0.3,
+        "texture_gain": 1.0,
+        "lam_var": 0.0,
+        "var_sigma": 12.0,
+        "scales": [],
+        "ridge": 0.01,
+        "penalty": "l1",
+        "single_resample": false
+      },
+      "registration": {
+        "homography": [
+          [
+            1.0027814859868893,
+            0.03464595222801347,
+            -33.91566637851958
+          ],
+          [
+            -0.05797785624499348,
+            1.0798877605857127,
+            51.43786854406079
+          ],
+          [
+            -2.3443089403994332e-05,
+            1.7882614224583985e-05,
+            1.0
+          ]
+        ],
+        "matches": 260,
+        "inliers": 143,
+        "median_error_pixels": 1.3985451459884644,
+        "coverage": [
+          0.7428053792317708,
+          0.8607807159423828
+        ],
+        "feature_max_side": 1600,
+        "error_coordinate_system": "reduced feature image",
+        "median_error_full_resolution_pixels": 3.496362864971161
+      },
+      "dense_registration": {
+        "tiles": 585,
+        "max_shift_pixels": 14.590049743652344,
+        "median_shift_pixels": 3.794853448867798
+      },
+      "classification": {
+        "front_seed_threshold": 142.0,
+        "back_seed_threshold": 175.0,
+        "overlap_seed_threshold": 218.0,
+        "centers": [
+          [
+            129.04531258124783,
+            126.22616116652962
+          ],
+          [
+            156.01625592376882,
+            131.59824512322288
+          ],
+          [
+            180.69023286796747,
+            222.12010463793055
+          ],
+          [
+            230.95315754630153,
+            230.794650498135
+          ]
+        ],
+        "histogram_bins": 20042,
+        "alpha": 0.009341514899999999,
+        "solver": "expansion",
+        "neighbourhood": "set",
+        "edges": 1356870,
+        "sweeps": [
+          126481.23513527113,
+          112534.12103461774,
+          112532.25026733615,
+          110025.19986058734,
+          110014.03248333719,
+          110014.0320978555,
+          110012.6965208398,
+          110012.41312899039
+        ]
+      },
+      "region_fraction": 0.11929128094748118,
+      "objective_history": [
+        0.04140946641564369,
+        0.04108753055334091,
+        0.041092399507761,
+        0.04109390079975128,
+        0.04109438136219978,
+        0.041094545274972916
+      ],
+      "elapsed_seconds": 91.43796479998855,
+      "minimal": {
+        "touched_fraction": 0.09146857254011621,
+        "front_ink_in_bleed_fraction": 0.011726872446373684,
+        "bleed_rgb_ratio": [
+          0.9910447001457214,
+          1.0148674249649048,
+          0.9438429474830627
+        ]
+      },
+      "front_sha256": "618caf43e0e547987d5508deda80e2d896467d5e991de1ca28094fc86c21d244",
+      "back_sha256": "55800a873284921dc2df5b4977651113e9d7ee2c1ba3081678a1e207182044c7"
+    },
+    {
+      "capture": "sheet10/front-02",
+      "method": "Rowley-Brooke stages + dense registration + overlap decomposition (recover_overlap.py)",
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 3.5,
+        "back_sigma": 2.5,
+        "gain_sigma": 1.5,
+        "lam0": 0.15,
+        "lam_ink": 0.5,
+        "lam_edge": 0.0,
+        "iterations": 6,
+        "region_dilate": 5,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "texture_k": 0,
+        "texture_h": 0.3,
+        "texture_gain": 1.0,
+        "lam_var": 0.0,
+        "var_sigma": 12.0,
+        "scales": [],
+        "ridge": 0.01,
+        "penalty": "l1",
+        "single_resample": false
+      },
+      "registration": {
+        "homography": [
+          [
+            0.963840941443133,
+            0.006296051661213733,
+            192.07124475431226
+          ],
+          [
+            0.017490978411705865,
+            0.9725743053143374,
+            150.6043690287085
+          ],
+          [
+            5.974071326596603e-06,
+            6.767189547767478e-06,
+            1.0
+          ]
+        ],
+        "matches": 271,
+        "inliers": 154,
+        "median_error_pixels": 1.1902704238891602,
+        "coverage": [
+          0.8698049926757813,
+          0.7583366394042969
+        ],
+        "feature_max_side": 1600,
+        "error_coordinate_system": "reduced feature image",
+        "median_error_full_resolution_pixels": 2.9756760597229004
+      },
+      "dense_registration": {
+        "tiles": 458,
+        "max_shift_pixels": 15.948126792907715,
+        "median_shift_pixels": 3.537357807159424
+      },
+      "classification": {
+        "front_seed_threshold": 134.0,
+        "back_seed_threshold": 174.0,
+        "overlap_seed_threshold": 210.0,
+        "centers": [
+          [
+            119.66635793280487,
+            126.42221349284853
+          ],
+          [
+            148.61791579057117,
+            131.1322652208919
+          ],
+          [
+            171.0432890814823,
+            221.3434492270886
+          ],
+          [
+            223.79678812097578,
+            230.0842395088975
+          ]
+        ],
+        "histogram_bins": 19499,
+        "alpha": 0.00902198655,
+        "solver": "expansion",
+        "neighbourhood": "set",
+        "edges": 1255940,
+        "sweeps": [
+          115507.35095735459,
+          102647.36284063735,
+          102645.80858104612,
+          100481.9949922217,
+          100481.29237422017,
+          100472.27292662472,
+          100472.01660595238
+        ]
+      },
+      "region_fraction": 0.11801338868271696,
+      "objective_history": [
+        0.03328605741262436,
+        0.03293842077255249,
+        0.03295176476240158,
+        0.03295686095952988,
+        0.03295888751745224,
+        0.032959744334220886
+      ],
+      "elapsed_seconds": 65.85901170002762,
+      "minimal": {
+        "touched_fraction": 0.0898407406064887,
+        "front_ink_in_bleed_fraction": 0.00982290100528997,
+        "bleed_rgb_ratio": [
+          0.9875109791755676,
+          1.018701434135437,
+          0.9241243600845337
+        ]
+      },
+      "front_sha256": "174418bf26cf0d05adbbde5d6f0fbda5cb8508b202bc5dfc8d912b0a4fc0c2e3",
+      "back_sha256": "55800a873284921dc2df5b4977651113e9d7ee2c1ba3081678a1e207182044c7"
+    },
+    {
+      "capture": "sheet10/front-03",
+      "method": "Rowley-Brooke stages + dense registration + overlap decomposition (recover_overlap.py)",
+      "params": {
+        "back_floor": 0.25,
+        "back_span": 3.5,
+        "back_sigma": 2.5,
+        "gain_sigma": 1.5,
+        "lam0": 0.15,
+        "lam_ink": 0.5,
+        "lam_edge": 0.0,
+        "iterations": 6,
+        "region_dilate": 5,
+        "hyst_low": 0.0,
+        "min_area": 700,
+        "texture_k": 0,
+        "texture_h": 0.3,
+        "texture_gain": 1.0,
+        "lam_var": 0.0,
+        "var_sigma": 12.0,
+        "scales": [],
+        "ridge": 0.01,
+        "penalty": "l1",
+        "single_resample": false
+      },
+      "registration": {
+        "homography": [
+          [
+            0.7932541623970925,
+            0.04132368192330984,
+            35.74184337599012
+          ],
+          [
+            -0.06875285531796106,
+            0.8619375711169468,
+            715.4456431080106
+          ],
+          [
+            -1.968779803676025e-05,
+            1.4507631820503563e-05,
+            1.0
+          ]
+        ],
+        "matches": 311,
+        "inliers": 95,
+        "median_error_pixels": 1.6565150022506714,
+        "coverage": [
+          0.5128421223958334,
+          0.6712842407226562
+        ]
+      },
+      "dense_registration": {
+        "tiles": 399,
+        "max_shift_pixels": 15.788893699645996,
+        "median_shift_pixels": 4.5114545822143555
+      },
+      "classification": {
+        "front_seed_threshold": 130.0,
+        "back_seed_threshold": 172.0,
+        "overlap_seed_threshold": 208.0,
+        "centers": [
+          [
+            117.47190335339272,
+            124.42160046135916
+          ],
+          [
+            143.3593829813004,
+            129.42133103735182
+          ],
+          [
+            168.88040738539723,
+            219.3848894899941
+          ],
+          [
+            221.88306172323215,
+            228.76181079209084
+          ]
+        ],
+        "histogram_bins": 20856,
+        "alpha": 0.009820513199999999,
+        "solver": "expansion",
+        "neighbourhood": "set",
+        "edges": 1143887,
+        "sweeps": [
+          123137.57731328563,
+          108510.09920702923,
+          108507.58613528506,
+          106278.08703707354,
+          106277.52396916915,
+          106275.00196995889,
+          106274.97949003553,
+          106274.74019890121
+        ]
+      },
+      "region_fraction": 0.1260232078854772,
+      "objective_history": [
+        0.031695809215307236,
+        0.03125536069273949,
+        0.03127185255289078,
+        0.03127916529774666,
+        0.03128259629011154,
+        0.03128433600068092
+      ],
+      "elapsed_seconds": 55.130895300011616,
+      "minimal": {
+        "touched_fraction": 0.09351792080141991,
+        "front_ink_in_bleed_fraction": 0.008199277892548628,
+        "bleed_rgb_ratio": [
+          0.9849003553390503,
+          1.0194034576416016,
+          0.9255239963531494
+        ]
+      },
+      "front_sha256": "e37bb56157c6a346ff66eb446c951e5339d2c2f21f1b878a61feee1417ea29f2",
+      "back_sha256": "55800a873284921dc2df5b4977651113e9d7ee2c1ba3081678a1e207182044c7"
+    }
+  ],
+  "failures": [
+    {
+      "capture": "sheet05/front-01",
+      "error": "Unreliable registration; do not use reverse-side guidance."
+    },
+    {
+      "capture": "sheet05/front-02",
+      "error": "Unreliable registration; do not use reverse-side guidance."
+    },
+    {
+      "capture": "sheet05/front-03",
+      "error": "Unreliable registration; do not use reverse-side guidance."
+    }
+  ],
+  "scores": {
+    "input": {
+      "line_count": 280,
+      "normalized_cer": 0.98714545200503,
+      "normalized_wer": 1.224006116207951,
+      "exact_lines": 0
+    },
+    "rowley_brooke": {
+      "line_count": 280,
+      "normalized_cer": 0.5358390387033674,
+      "normalized_wer": 0.7897553516819572,
+      "exact_lines": 3
+    },
+    "minimal_protection_off": {
+      "line_count": 280,
+      "normalized_cer": 0.5689534721251921,
+      "normalized_wer": 0.831039755351682,
+      "exact_lines": 4
+    },
+    "minimal": {
+      "line_count": 280,
+      "normalized_cer": 0.26784965767779795,
+      "normalized_wer": 0.4533639143730887,
+      "exact_lines": 47
+    }
+  },
+  "source_sha256": {
+    "recover_overlap.py": "8fe47d13bc4325e45ffc0c5f33b969f78964d54fbd41820a23a09874c5430bd1",
+    "remove_bleed.py": "abe8c4423fb26249280472fa8b5091b58cea8e504bc0f84fe7edd82fdd02f242"
+  },
+  "model": "microsoft/trocr-base-handwritten",
+  "revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+  "per_capture": [
+    {
+      "capture": "sheet01/front-01",
+      "metrics": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet01\\front-01\\input.png",
+          "line_count": 10,
+          "strict_cer": 0.8210116731517509,
+          "strict_wer": 1.3061224489795917,
+          "normalized_cer": 0.7803921568627451,
+          "normalized_wer": 1.1020408163265305,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "rowley_brooke": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet01\\front-01\\rowley_brooke.png",
+          "line_count": 10,
+          "strict_cer": 0.35019455252918286,
+          "strict_wer": 0.673469387755102,
+          "normalized_cer": 0.3215686274509804,
+          "normalized_wer": 0.5102040816326531,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal_protection_off": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet01\\front-01\\minimal_protection_off.png",
+          "line_count": 10,
+          "strict_cer": 0.5525291828793775,
+          "strict_wer": 0.9591836734693877,
+          "normalized_cer": 0.5176470588235295,
+          "normalized_wer": 0.7551020408163265,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet01\\front-01\\minimal.png",
+          "line_count": 10,
+          "strict_cer": 0.1517509727626459,
+          "strict_wer": 0.40816326530612246,
+          "normalized_cer": 0.11372549019607843,
+          "normalized_wer": 0.2857142857142857,
+          "normalized_exact_lines": 3,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet01/front-02",
+      "metrics": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet01\\front-02\\input.png",
+          "line_count": 10,
+          "strict_cer": 0.7782101167315175,
+          "strict_wer": 1.0408163265306123,
+          "normalized_cer": 0.7098039215686275,
+          "normalized_wer": 0.8979591836734694,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "rowley_brooke": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet01\\front-02\\rowley_brooke.png",
+          "line_count": 10,
+          "strict_cer": 0.4785992217898833,
+          "strict_wer": 0.7959183673469388,
+          "normalized_cer": 0.43529411764705883,
+          "normalized_wer": 0.6530612244897959,
+          "normalized_exact_lines": 1,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal_protection_off": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet01\\front-02\\minimal_protection_off.png",
+          "line_count": 10,
+          "strict_cer": 0.5797665369649806,
+          "strict_wer": 1.0,
+          "normalized_cer": 0.5450980392156862,
+          "normalized_wer": 0.7755102040816326,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet01\\front-02\\minimal.png",
+          "line_count": 10,
+          "strict_cer": 0.2607003891050584,
+          "strict_wer": 0.5918367346938775,
+          "normalized_cer": 0.19607843137254902,
+          "normalized_wer": 0.3673469387755102,
+          "normalized_exact_lines": 1,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet01/front-03",
+      "metrics": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet01\\front-03\\input.png",
+          "line_count": 10,
+          "strict_cer": 0.8482490272373541,
+          "strict_wer": 1.0408163265306123,
+          "normalized_cer": 0.796078431372549,
+          "normalized_wer": 0.8979591836734694,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "rowley_brooke": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet01\\front-03\\rowley_brooke.png",
+          "line_count": 10,
+          "strict_cer": 0.7392996108949417,
+          "strict_wer": 0.9795918367346939,
+          "normalized_cer": 0.7215686274509804,
+          "normalized_wer": 0.8571428571428571,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal_protection_off": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet01\\front-03\\minimal_protection_off.png",
+          "line_count": 10,
+          "strict_cer": 0.6770428015564203,
+          "strict_wer": 0.9591836734693877,
+          "normalized_cer": 0.6549019607843137,
+          "normalized_wer": 0.8775510204081632,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet01\\front-03\\minimal.png",
+          "line_count": 10,
+          "strict_cer": 0.5447470817120622,
+          "strict_wer": 0.8163265306122449,
+          "normalized_cer": 0.4745098039215686,
+          "normalized_wer": 0.6326530612244898,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet02/front-01",
+      "metrics": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet02\\front-01\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.01953125,
+          "strict_wer": 1.2127659574468086,
+          "normalized_cer": 0.9765625,
+          "normalized_wer": 1.0638297872340425,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "rowley_brooke": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet02\\front-01\\rowley_brooke.png",
+          "line_count": 10,
+          "strict_cer": 0.609375,
+          "strict_wer": 0.8936170212765957,
+          "normalized_cer": 0.59375,
+          "normalized_wer": 0.8297872340425532,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal_protection_off": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet02\\front-01\\minimal_protection_off.png",
+          "line_count": 10,
+          "strict_cer": 0.58984375,
+          "strict_wer": 0.9148936170212766,
+          "normalized_cer": 0.5703125,
+          "normalized_wer": 0.8297872340425532,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet02\\front-01\\minimal.png",
+          "line_count": 10,
+          "strict_cer": 0.42578125,
+          "strict_wer": 0.7659574468085106,
+          "normalized_cer": 0.37109375,
+          "normalized_wer": 0.574468085106383,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet02/front-02",
+      "metrics": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet02\\front-02\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.046875,
+          "strict_wer": 1.1063829787234043,
+          "normalized_cer": 1.0,
+          "normalized_wer": 1.0638297872340425,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "rowley_brooke": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet02\\front-02\\rowley_brooke.png",
+          "line_count": 10,
+          "strict_cer": 0.8671875,
+          "strict_wer": 1.0851063829787233,
+          "normalized_cer": 0.8046875,
+          "normalized_wer": 0.9361702127659575,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal_protection_off": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet02\\front-02\\minimal_protection_off.png",
+          "line_count": 10,
+          "strict_cer": 0.90625,
+          "strict_wer": 1.2553191489361701,
+          "normalized_cer": 0.8828125,
+          "normalized_wer": 1.1702127659574468,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet02\\front-02\\minimal.png",
+          "line_count": 10,
+          "strict_cer": 0.84375,
+          "strict_wer": 1.0638297872340425,
+          "normalized_cer": 0.796875,
+          "normalized_wer": 0.9574468085106383,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet02/front-03",
+      "metrics": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet02\\front-03\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.0703125,
+          "strict_wer": 1.1702127659574468,
+          "normalized_cer": 1.0234375,
+          "normalized_wer": 1.0851063829787233,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "rowley_brooke": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet02\\front-03\\rowley_brooke.png",
+          "line_count": 10,
+          "strict_cer": 0.65625,
+          "strict_wer": 0.9787234042553191,
+          "normalized_cer": 0.6171875,
+          "normalized_wer": 0.851063829787234,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal_protection_off": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet02\\front-03\\minimal_protection_off.png",
+          "line_count": 10,
+          "strict_cer": 0.67578125,
+          "strict_wer": 1.0638297872340425,
+          "normalized_cer": 0.65234375,
+          "normalized_wer": 0.9574468085106383,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet02\\front-03\\minimal.png",
+          "line_count": 10,
+          "strict_cer": 0.5625,
+          "strict_wer": 0.7872340425531915,
+          "normalized_cer": 0.484375,
+          "normalized_wer": 0.6170212765957447,
+          "normalized_exact_lines": 1,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet03/front-01",
+      "metrics": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet03\\front-01\\input.png",
+          "line_count": 10,
+          "strict_cer": 0.869198312236287,
+          "strict_wer": 1.0681818181818181,
+          "normalized_cer": 0.7805907172995781,
+          "normalized_wer": 0.9318181818181818,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "rowley_brooke": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet03\\front-01\\rowley_brooke.png",
+          "line_count": 10,
+          "strict_cer": 0.4345991561181435,
+          "strict_wer": 0.75,
+          "normalized_cer": 0.41350210970464135,
+          "normalized_wer": 0.7045454545454546,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal_protection_off": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet03\\front-01\\minimal_protection_off.png",
+          "line_count": 10,
+          "strict_cer": 0.48523206751054854,
+          "strict_wer": 0.9545454545454546,
+          "normalized_cer": 0.45569620253164556,
+          "normalized_wer": 0.8181818181818182,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet03\\front-01\\minimal.png",
+          "line_count": 10,
+          "strict_cer": 0.26582278481012656,
+          "strict_wer": 0.5681818181818182,
+          "normalized_cer": 0.1729957805907173,
+          "normalized_wer": 0.29545454545454547,
+          "normalized_exact_lines": 2,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet03/front-02",
+      "metrics": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet03\\front-02\\input.png",
+          "line_count": 10,
+          "strict_cer": 0.919831223628692,
+          "strict_wer": 1.1363636363636365,
+          "normalized_cer": 0.8565400843881856,
+          "normalized_wer": 1.0227272727272727,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "rowley_brooke": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet03\\front-02\\rowley_brooke.png",
+          "line_count": 10,
+          "strict_cer": 0.45569620253164556,
+          "strict_wer": 0.8863636363636364,
+          "normalized_cer": 0.43037974683544306,
+          "normalized_wer": 0.8181818181818182,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal_protection_off": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet03\\front-02\\minimal_protection_off.png",
+          "line_count": 10,
+          "strict_cer": 0.6160337552742616,
+          "strict_wer": 1.0681818181818181,
+          "normalized_cer": 0.5864978902953587,
+          "normalized_wer": 1.0,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet03\\front-02\\minimal.png",
+          "line_count": 10,
+          "strict_cer": 0.24472573839662448,
+          "strict_wer": 0.5681818181818182,
+          "normalized_cer": 0.18143459915611815,
+          "normalized_wer": 0.38636363636363635,
+          "normalized_exact_lines": 2,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet03/front-03",
+      "metrics": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet03\\front-03\\input.png",
+          "line_count": 10,
+          "strict_cer": 0.919831223628692,
+          "strict_wer": 1.0909090909090908,
+          "normalized_cer": 0.810126582278481,
+          "normalized_wer": 0.9090909090909091,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "rowley_brooke": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet03\\front-03\\rowley_brooke.png",
+          "line_count": 10,
+          "strict_cer": 0.5063291139240507,
+          "strict_wer": 0.9545454545454546,
+          "normalized_cer": 0.4641350210970464,
+          "normalized_wer": 0.8181818181818182,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal_protection_off": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet03\\front-03\\minimal_protection_off.png",
+          "line_count": 10,
+          "strict_cer": 0.4936708860759494,
+          "strict_wer": 0.7954545454545454,
+          "normalized_cer": 0.45147679324894513,
+          "normalized_wer": 0.7272727272727273,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet03\\front-03\\minimal.png",
+          "line_count": 10,
+          "strict_cer": 0.25316455696202533,
+          "strict_wer": 0.6136363636363636,
+          "normalized_cer": 0.15611814345991562,
+          "normalized_wer": 0.3409090909090909,
+          "normalized_exact_lines": 1,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet04/front-01",
+      "metrics": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet04\\front-01\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.1215686274509804,
+          "strict_wer": 1.4130434782608696,
+          "normalized_cer": 1.0823529411764705,
+          "normalized_wer": 1.3478260869565217,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "rowley_brooke": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet04\\front-01\\rowley_brooke.png",
+          "line_count": 10,
+          "strict_cer": 0.6627450980392157,
+          "strict_wer": 1.2173913043478262,
+          "normalized_cer": 0.6274509803921569,
+          "normalized_wer": 0.9565217391304348,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal_protection_off": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet04\\front-01\\minimal_protection_off.png",
+          "line_count": 10,
+          "strict_cer": 0.6862745098039216,
+          "strict_wer": 1.108695652173913,
+          "normalized_cer": 0.6588235294117647,
+          "normalized_wer": 0.9782608695652174,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet04\\front-01\\minimal.png",
+          "line_count": 10,
+          "strict_cer": 0.25882352941176473,
+          "strict_wer": 0.6521739130434783,
+          "normalized_cer": 0.17254901960784313,
+          "normalized_wer": 0.41304347826086957,
+          "normalized_exact_lines": 1,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet04/front-02",
+      "metrics": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet04\\front-02\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.0666666666666667,
+          "strict_wer": 1.3043478260869565,
+          "normalized_cer": 1.0431372549019609,
+          "normalized_wer": 1.2391304347826086,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "rowley_brooke": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet04\\front-02\\rowley_brooke.png",
+          "line_count": 10,
+          "strict_cer": 0.5843137254901961,
+          "strict_wer": 1.0217391304347827,
+          "normalized_cer": 0.5254901960784314,
+          "normalized_wer": 0.8260869565217391,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal_protection_off": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet04\\front-02\\minimal_protection_off.png",
+          "line_count": 10,
+          "strict_cer": 0.5529411764705883,
+          "strict_wer": 1.0434782608695652,
+          "normalized_cer": 0.5215686274509804,
+          "normalized_wer": 0.8478260869565217,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet04\\front-02\\minimal.png",
+          "line_count": 10,
+          "strict_cer": 0.22745098039215686,
+          "strict_wer": 0.6086956521739131,
+          "normalized_cer": 0.1568627450980392,
+          "normalized_wer": 0.41304347826086957,
+          "normalized_exact_lines": 2,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet04/front-03",
+      "metrics": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet04\\front-03\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.0235294117647058,
+          "strict_wer": 1.5,
+          "normalized_cer": 0.9686274509803922,
+          "normalized_wer": 1.4130434782608696,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "rowley_brooke": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet04\\front-03\\rowley_brooke.png",
+          "line_count": 10,
+          "strict_cer": 0.6313725490196078,
+          "strict_wer": 0.9565217391304348,
+          "normalized_cer": 0.596078431372549,
+          "normalized_wer": 0.8695652173913043,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal_protection_off": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet04\\front-03\\minimal_protection_off.png",
+          "line_count": 10,
+          "strict_cer": 0.7176470588235294,
+          "strict_wer": 1.1521739130434783,
+          "normalized_cer": 0.6862745098039216,
+          "normalized_wer": 1.0434782608695652,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet04\\front-03\\minimal.png",
+          "line_count": 10,
+          "strict_cer": 0.26666666666666666,
+          "strict_wer": 0.5434782608695652,
+          "normalized_cer": 0.20392156862745098,
+          "normalized_wer": 0.3695652173913043,
+          "normalized_exact_lines": 2,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet06/front-01",
+      "metrics": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet06\\front-01\\input.png",
+          "line_count": 10,
+          "strict_cer": 0.9803149606299213,
+          "strict_wer": 1.3333333333333333,
+          "normalized_cer": 0.9645669291338582,
+          "normalized_wer": 1.288888888888889,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "rowley_brooke": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet06\\front-01\\rowley_brooke.png",
+          "line_count": 10,
+          "strict_cer": 0.547244094488189,
+          "strict_wer": 0.9777777777777777,
+          "normalized_cer": 0.47244094488188976,
+          "normalized_wer": 0.7777777777777778,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal_protection_off": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet06\\front-01\\minimal_protection_off.png",
+          "line_count": 10,
+          "strict_cer": 0.5,
+          "strict_wer": 0.8444444444444444,
+          "normalized_cer": 0.44881889763779526,
+          "normalized_wer": 0.6666666666666666,
+          "normalized_exact_lines": 1,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet06\\front-01\\minimal.png",
+          "line_count": 10,
+          "strict_cer": 0.2874015748031496,
+          "strict_wer": 0.5111111111111111,
+          "normalized_cer": 0.21653543307086615,
+          "normalized_wer": 0.3333333333333333,
+          "normalized_exact_lines": 1,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet06/front-02",
+      "metrics": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet06\\front-02\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.0748031496062993,
+          "strict_wer": 1.4666666666666666,
+          "normalized_cer": 1.0275590551181102,
+          "normalized_wer": 1.3777777777777778,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "rowley_brooke": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet06\\front-02\\rowley_brooke.png",
+          "line_count": 10,
+          "strict_cer": 0.5,
+          "strict_wer": 0.9111111111111111,
+          "normalized_cer": 0.4330708661417323,
+          "normalized_wer": 0.6888888888888889,
+          "normalized_exact_lines": 1,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal_protection_off": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet06\\front-02\\minimal_protection_off.png",
+          "line_count": 10,
+          "strict_cer": 0.4645669291338583,
+          "strict_wer": 0.8222222222222222,
+          "normalized_cer": 0.41732283464566927,
+          "normalized_wer": 0.6666666666666666,
+          "normalized_exact_lines": 1,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet06\\front-02\\minimal.png",
+          "line_count": 10,
+          "strict_cer": 0.14960629921259844,
+          "strict_wer": 0.4222222222222222,
+          "normalized_cer": 0.0984251968503937,
+          "normalized_wer": 0.24444444444444444,
+          "normalized_exact_lines": 4,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet06/front-03",
+      "metrics": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet06\\front-03\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.1141732283464567,
+          "strict_wer": 1.3777777777777778,
+          "normalized_cer": 1.0748031496062993,
+          "normalized_wer": 1.288888888888889,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "rowley_brooke": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet06\\front-03\\rowley_brooke.png",
+          "line_count": 10,
+          "strict_cer": 0.42913385826771655,
+          "strict_wer": 0.8222222222222222,
+          "normalized_cer": 0.4015748031496063,
+          "normalized_wer": 0.6666666666666666,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal_protection_off": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet06\\front-03\\minimal_protection_off.png",
+          "line_count": 10,
+          "strict_cer": 0.5039370078740157,
+          "strict_wer": 0.8444444444444444,
+          "normalized_cer": 0.4566929133858268,
+          "normalized_wer": 0.6888888888888889,
+          "normalized_exact_lines": 1,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet06\\front-03\\minimal.png",
+          "line_count": 10,
+          "strict_cer": 0.20866141732283464,
+          "strict_wer": 0.5111111111111111,
+          "normalized_cer": 0.14173228346456693,
+          "normalized_wer": 0.28888888888888886,
+          "normalized_exact_lines": 4,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet06/front-04",
+      "metrics": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet06\\front-04\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.0433070866141732,
+          "strict_wer": 1.288888888888889,
+          "normalized_cer": 0.9960629921259843,
+          "normalized_wer": 1.1777777777777778,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "rowley_brooke": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet06\\front-04\\rowley_brooke.png",
+          "line_count": 10,
+          "strict_cer": 0.47244094488188976,
+          "strict_wer": 0.8222222222222222,
+          "normalized_cer": 0.44881889763779526,
+          "normalized_wer": 0.7111111111111111,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal_protection_off": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet06\\front-04\\minimal_protection_off.png",
+          "line_count": 10,
+          "strict_cer": 0.5551181102362205,
+          "strict_wer": 1.0,
+          "normalized_cer": 0.5,
+          "normalized_wer": 0.7555555555555555,
+          "normalized_exact_lines": 1,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet06\\front-04\\minimal.png",
+          "line_count": 10,
+          "strict_cer": 0.14173228346456693,
+          "strict_wer": 0.37777777777777777,
+          "normalized_cer": 0.08661417322834646,
+          "normalized_wer": 0.2222222222222222,
+          "normalized_exact_lines": 5,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet07/front-01",
+      "metrics": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet07\\front-01\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.1583011583011582,
+          "strict_wer": 1.3404255319148937,
+          "normalized_cer": 1.1081081081081081,
+          "normalized_wer": 1.2553191489361701,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "rowley_brooke": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet07\\front-01\\rowley_brooke.png",
+          "line_count": 10,
+          "strict_cer": 1.0115830115830116,
+          "strict_wer": 1.0212765957446808,
+          "normalized_cer": 0.7142857142857143,
+          "normalized_wer": 0.9361702127659575,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal_protection_off": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet07\\front-01\\minimal_protection_off.png",
+          "line_count": 10,
+          "strict_cer": 0.5714285714285714,
+          "strict_wer": 1.0,
+          "normalized_cer": 0.5212355212355212,
+          "normalized_wer": 0.9148936170212766,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet07\\front-01\\minimal.png",
+          "line_count": 10,
+          "strict_cer": 0.3281853281853282,
+          "strict_wer": 0.6595744680851063,
+          "normalized_cer": 0.24324324324324326,
+          "normalized_wer": 0.5106382978723404,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet07/front-02",
+      "metrics": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet07\\front-02\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.3011583011583012,
+          "strict_wer": 1.8085106382978724,
+          "normalized_cer": 1.2625482625482625,
+          "normalized_wer": 1.7659574468085106,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "rowley_brooke": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet07\\front-02\\rowley_brooke.png",
+          "line_count": 10,
+          "strict_cer": 0.5444015444015444,
+          "strict_wer": 0.9148936170212766,
+          "normalized_cer": 0.4826254826254826,
+          "normalized_wer": 0.7872340425531915,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal_protection_off": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet07\\front-02\\minimal_protection_off.png",
+          "line_count": 10,
+          "strict_cer": 0.9266409266409267,
+          "strict_wer": 0.723404255319149,
+          "normalized_cer": 0.6525096525096525,
+          "normalized_wer": 0.6808510638297872,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet07\\front-02\\minimal.png",
+          "line_count": 10,
+          "strict_cer": 0.24324324324324326,
+          "strict_wer": 0.5319148936170213,
+          "normalized_cer": 0.17374517374517376,
+          "normalized_wer": 0.3617021276595745,
+          "normalized_exact_lines": 1,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet07/front-03",
+      "metrics": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet07\\front-03\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.16988416988417,
+          "strict_wer": 1.4680851063829787,
+          "normalized_cer": 1.1274131274131274,
+          "normalized_wer": 1.3829787234042554,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "rowley_brooke": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet07\\front-03\\rowley_brooke.png",
+          "line_count": 10,
+          "strict_cer": 0.5598455598455598,
+          "strict_wer": 0.8723404255319149,
+          "normalized_cer": 0.5096525096525096,
+          "normalized_wer": 0.7659574468085106,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal_protection_off": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet07\\front-03\\minimal_protection_off.png",
+          "line_count": 10,
+          "strict_cer": 0.918918918918919,
+          "strict_wer": 0.723404255319149,
+          "normalized_cer": 0.6602316602316602,
+          "normalized_wer": 0.6808510638297872,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet07\\front-03\\minimal.png",
+          "line_count": 10,
+          "strict_cer": 0.33204633204633205,
+          "strict_wer": 0.7872340425531915,
+          "normalized_cer": 0.26640926640926643,
+          "normalized_wer": 0.6170212765957447,
+          "normalized_exact_lines": 1,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet08/front-01",
+      "metrics": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet08\\front-01\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.02734375,
+          "strict_wer": 1.4666666666666666,
+          "normalized_cer": 0.96875,
+          "normalized_wer": 1.3111111111111111,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "rowley_brooke": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet08\\front-01\\rowley_brooke.png",
+          "line_count": 10,
+          "strict_cer": 0.55859375,
+          "strict_wer": 0.8888888888888888,
+          "normalized_cer": 0.52734375,
+          "normalized_wer": 0.7333333333333333,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal_protection_off": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet08\\front-01\\minimal_protection_off.png",
+          "line_count": 10,
+          "strict_cer": 0.5390625,
+          "strict_wer": 0.8666666666666667,
+          "normalized_cer": 0.51171875,
+          "normalized_wer": 0.7333333333333333,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet08\\front-01\\minimal.png",
+          "line_count": 10,
+          "strict_cer": 0.37109375,
+          "strict_wer": 0.7111111111111111,
+          "normalized_cer": 0.30859375,
+          "normalized_wer": 0.5555555555555556,
+          "normalized_exact_lines": 2,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet08/front-02",
+      "metrics": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet08\\front-02\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.06640625,
+          "strict_wer": 1.3555555555555556,
+          "normalized_cer": 1.02734375,
+          "normalized_wer": 1.2222222222222223,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "rowley_brooke": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet08\\front-02\\rowley_brooke.png",
+          "line_count": 10,
+          "strict_cer": 0.51953125,
+          "strict_wer": 0.8,
+          "normalized_cer": 0.48046875,
+          "normalized_wer": 0.6222222222222222,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal_protection_off": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet08\\front-02\\minimal_protection_off.png",
+          "line_count": 10,
+          "strict_cer": 0.49609375,
+          "strict_wer": 0.7111111111111111,
+          "normalized_cer": 0.484375,
+          "normalized_wer": 0.6888888888888889,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet08\\front-02\\minimal.png",
+          "line_count": 10,
+          "strict_cer": 0.4296875,
+          "strict_wer": 0.7111111111111111,
+          "normalized_cer": 0.37109375,
+          "normalized_wer": 0.5111111111111111,
+          "normalized_exact_lines": 1,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet08/front-03",
+      "metrics": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet08\\front-03\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.0078125,
+          "strict_wer": 1.3555555555555556,
+          "normalized_cer": 0.953125,
+          "normalized_wer": 1.2222222222222223,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "rowley_brooke": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet08\\front-03\\rowley_brooke.png",
+          "line_count": 10,
+          "strict_cer": 0.54296875,
+          "strict_wer": 0.8444444444444444,
+          "normalized_cer": 0.50390625,
+          "normalized_wer": 0.7333333333333333,
+          "normalized_exact_lines": 1,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal_protection_off": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet08\\front-03\\minimal_protection_off.png",
+          "line_count": 10,
+          "strict_cer": 0.5859375,
+          "strict_wer": 0.9555555555555556,
+          "normalized_cer": 0.546875,
+          "normalized_wer": 0.8444444444444444,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet08\\front-03\\minimal.png",
+          "line_count": 10,
+          "strict_cer": 0.390625,
+          "strict_wer": 0.7333333333333333,
+          "normalized_cer": 0.328125,
+          "normalized_wer": 0.5333333333333333,
+          "normalized_exact_lines": 3,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet09/front-01",
+      "metrics": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet09\\front-01\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.0932835820895523,
+          "strict_wer": 1.5319148936170213,
+          "normalized_cer": 1.0485074626865671,
+          "normalized_wer": 1.4042553191489362,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "rowley_brooke": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet09\\front-01\\rowley_brooke.png",
+          "line_count": 10,
+          "strict_cer": 0.75,
+          "strict_wer": 1.1702127659574468,
+          "normalized_cer": 0.7238805970149254,
+          "normalized_wer": 1.0425531914893618,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal_protection_off": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet09\\front-01\\minimal_protection_off.png",
+          "line_count": 10,
+          "strict_cer": 0.7910447761194029,
+          "strict_wer": 1.127659574468085,
+          "normalized_cer": 0.7201492537313433,
+          "normalized_wer": 0.9787234042553191,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet09\\front-01\\minimal.png",
+          "line_count": 10,
+          "strict_cer": 0.5597014925373134,
+          "strict_wer": 0.8936170212765957,
+          "normalized_cer": 0.48507462686567165,
+          "normalized_wer": 0.6595744680851063,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet09/front-02",
+      "metrics": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet09\\front-02\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.007462686567164,
+          "strict_wer": 1.553191489361702,
+          "normalized_cer": 0.9701492537313433,
+          "normalized_wer": 1.425531914893617,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "rowley_brooke": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet09\\front-02\\rowley_brooke.png",
+          "line_count": 10,
+          "strict_cer": 0.6604477611940298,
+          "strict_wer": 1.0638297872340425,
+          "normalized_cer": 0.6417910447761194,
+          "normalized_wer": 0.9574468085106383,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal_protection_off": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet09\\front-02\\minimal_protection_off.png",
+          "line_count": 10,
+          "strict_cer": 0.5970149253731343,
+          "strict_wer": 1.0638297872340425,
+          "normalized_cer": 0.5895522388059702,
+          "normalized_wer": 0.9574468085106383,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet09\\front-02\\minimal.png",
+          "line_count": 10,
+          "strict_cer": 0.417910447761194,
+          "strict_wer": 0.7659574468085106,
+          "normalized_cer": 0.31716417910447764,
+          "normalized_wer": 0.5319148936170213,
+          "normalized_exact_lines": 2,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet09/front-03",
+      "metrics": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet09\\front-03\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.0970149253731343,
+          "strict_wer": 1.5106382978723405,
+          "normalized_cer": 1.037313432835821,
+          "normalized_wer": 1.3191489361702127,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "rowley_brooke": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet09\\front-03\\rowley_brooke.png",
+          "line_count": 10,
+          "strict_cer": 0.5671641791044776,
+          "strict_wer": 0.851063829787234,
+          "normalized_cer": 0.5597014925373134,
+          "normalized_wer": 0.8085106382978723,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal_protection_off": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet09\\front-03\\minimal_protection_off.png",
+          "line_count": 10,
+          "strict_cer": 0.6007462686567164,
+          "strict_wer": 0.9574468085106383,
+          "normalized_cer": 0.5559701492537313,
+          "normalized_wer": 0.8297872340425532,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet09\\front-03\\minimal.png",
+          "line_count": 10,
+          "strict_cer": 0.2947761194029851,
+          "strict_wer": 0.6808510638297872,
+          "normalized_cer": 0.2126865671641791,
+          "normalized_wer": 0.425531914893617,
+          "normalized_exact_lines": 2,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet10/front-01",
+      "metrics": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet10\\front-01\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.1187739463601531,
+          "strict_wer": 1.3529411764705883,
+          "normalized_cer": 1.0766283524904214,
+          "normalized_wer": 1.2352941176470589,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "rowley_brooke": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet10\\front-01\\rowley_brooke.png",
+          "line_count": 10,
+          "strict_cer": 0.5134099616858238,
+          "strict_wer": 0.803921568627451,
+          "normalized_cer": 0.4942528735632184,
+          "normalized_wer": 0.7058823529411765,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal_protection_off": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet10\\front-01\\minimal_protection_off.png",
+          "line_count": 10,
+          "strict_cer": 0.5670498084291188,
+          "strict_wer": 0.9019607843137255,
+          "normalized_cer": 0.5287356321839081,
+          "normalized_wer": 0.7843137254901961,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet10\\front-01\\minimal.png",
+          "line_count": 10,
+          "strict_cer": 0.27586206896551724,
+          "strict_wer": 0.49019607843137253,
+          "normalized_cer": 0.210727969348659,
+          "normalized_wer": 0.35294117647058826,
+          "normalized_exact_lines": 3,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet10/front-02",
+      "metrics": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet10\\front-02\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.0651340996168583,
+          "strict_wer": 1.392156862745098,
+          "normalized_cer": 1.0076628352490422,
+          "normalized_wer": 1.2352941176470589,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "rowley_brooke": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet10\\front-02\\rowley_brooke.png",
+          "line_count": 10,
+          "strict_cer": 0.5134099616858238,
+          "strict_wer": 0.8823529411764706,
+          "normalized_cer": 0.47126436781609193,
+          "normalized_wer": 0.7058823529411765,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal_protection_off": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet10\\front-02\\minimal_protection_off.png",
+          "line_count": 10,
+          "strict_cer": 0.5900383141762452,
+          "strict_wer": 0.9019607843137255,
+          "normalized_cer": 0.5517241379310345,
+          "normalized_wer": 0.7647058823529411,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet10\\front-02\\minimal.png",
+          "line_count": 10,
+          "strict_cer": 0.29118773946360155,
+          "strict_wer": 0.5686274509803921,
+          "normalized_cer": 0.2413793103448276,
+          "normalized_wer": 0.39215686274509803,
+          "normalized_exact_lines": 2,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet10/front-03",
+      "metrics": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet10\\front-03\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.1494252873563218,
+          "strict_wer": 1.5098039215686274,
+          "normalized_cer": 1.10727969348659,
+          "normalized_wer": 1.3725490196078431,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "rowley_brooke": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet10\\front-03\\rowley_brooke.png",
+          "line_count": 10,
+          "strict_cer": 0.5900383141762452,
+          "strict_wer": 1.0,
+          "normalized_cer": 0.5478927203065134,
+          "normalized_wer": 0.8431372549019608,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal_protection_off": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet10\\front-03\\minimal_protection_off.png",
+          "line_count": 10,
+          "strict_cer": 0.6015325670498084,
+          "strict_wer": 0.9803921568627451,
+          "normalized_cer": 0.5747126436781609,
+          "normalized_wer": 0.8431372549019608,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "minimal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\improved\\sheet10\\front-03\\minimal.png",
+          "line_count": 10,
+          "strict_cer": 0.32950191570881227,
+          "strict_wer": 0.6078431372549019,
+          "normalized_cer": 0.2835249042145594,
+          "normalized_wer": 0.47058823529411764,
+          "normalized_exact_lines": 1,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    }
+  ],
+  "excluding_development_sheet08": {
+    "input": {
+      "line_count": 250,
+      "normalized_cer": 0.9876349976522147,
+      "normalized_wer": 1.2208013640238704
+    },
+    "rowley_brooke": {
+      "line_count": 250,
+      "normalized_cer": 0.5396775708248552,
+      "normalized_wer": 0.8005115089514067
+    },
+    "minimal_protection_off": {
+      "line_count": 250,
+      "normalized_cer": 0.5755204257317265,
+      "normalized_wer": 0.8397271952259164
+    },
+    "minimal": {
+      "line_count": 250,
+      "normalized_cer": 0.2596650493034904,
+      "normalized_wer": 0.4441602728047741
+    }
+  },
+  "paired_image_comparison": {
+    "input": {
+      "improved": 28,
+      "worse": 0,
+      "tied": 0
+    },
+    "rowley_brooke": {
+      "improved": 28,
+      "worse": 0,
+      "tied": 0
+    },
+    "minimal_protection_off": {
+      "improved": 28,
+      "worse": 0,
+      "tied": 0
+    }
+  },
+  "interpretation": "Fixed pilot-selected settings, provisional labels, repeated captures. Baseline shares improved registration, labels and plate. No clean target for pixel preservation scores. Excluding sheet08 is a sensitivity analysis, not a preregistered held-out test."
+}

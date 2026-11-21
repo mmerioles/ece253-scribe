@@ -111,7 +111,7 @@ def page_corners(gray):
     """Corners (TL, TR, BR, BL) of the brightest large blob, in small-image pixels."""
     # bright page vs dark desk: threshold halfway between the dark and bright modes
     lo, hi = np.percentile(gray, 5), np.percentile(gray, 95)
-    thr = lo + 0.65 * (hi - lo)
+    thr = lo + 0.45 * (hi - lo)
     mask = gray > thr
     # work at a coarser grid for the flood fill, then refine corners at full small-res
     step = 4
@@ -168,11 +168,25 @@ def runs(binary):
     return list(zip(idx[::2], idx[1::2]))
 
 
+def box_mean(img, k):
+    """Mean over a k x k window (edge-replicated), via an integral image."""
+    r = k // 2
+    p = np.pad(img.astype(np.float64), r, mode="edge")
+    ii = np.zeros((p.shape[0] + 1, p.shape[1] + 1))
+    ii[1:, 1:] = p.cumsum(0).cumsum(1)
+    h, w = img.shape
+    return (ii[k:k + h, k:k + w] - ii[:h, k:k + w] - ii[k:k + h, :w] + ii[:h, :w]) / (k * k)
+
+
 def line_layout(page, n_lines, keep_numbers, pad):
     """Return n_lines boxes [x0, y0, x1, y1] in rectified-page pixels."""
     inner = page[int(0.03 * PAGE_H): int(0.97 * PAGE_H), int(0.03 * PAGE_W): int(0.97 * PAGE_W)]
     paper = np.median(inner)
-    ink = inner < paper - 0.35 * (paper - inner.min())
+    # Ink = clearly darker than the LOCAL paper brightness. A global threshold
+    # mistakes shaded blank paper (a hand or lamp shadow across the bottom of
+    # the page) for ink; a local background estimate follows the shading.
+    background = np.maximum(box_mean(inner, 61), paper * 0.5)
+    ink = inner < background - 0.35 * (paper - inner.min())
     # a row that is mostly "ink" is the desk showing past a slightly-off page
     # edge (or a ruled line), never handwriting -- drop it
     ink[ink.mean(axis=1) > 0.5] = False
@@ -181,7 +195,17 @@ def line_layout(page, n_lines, keep_numbers, pad):
     row = ink.mean(axis=1)
     k = 7
     row = np.convolve(row, np.ones(k) / k, mode="same")
-    bands = [(a, b) for a, b in runs(row > 0.004) if b - a >= 8]
+    # Threshold relative to the background level BETWEEN lines, not absolute:
+    # a shadowed page edge adds a few percent of "ink" to every row, which
+    # would otherwise fill the gaps and merge the whole page into one band,
+    # while faint pencil lines peak at only a few percent themselves. The 25th
+    # percentile of the profile sits in the inter-line gaps (text covers well
+    # under half of the rows), so 1.5x that is "clearly more than background".
+    n_rows = row.size
+    interior = row[int(0.05 * n_rows): int(0.95 * n_rows)]
+    row_peak = float(interior.max())
+    row_thr = max(0.004, 1.5 * float(np.percentile(interior, 25)))
+    bands = [(a, b) for a, b in runs(row > row_thr) if b - a >= 8]
 
     def n_word_clusters(a, b):
         cols = ink[a:b].mean(axis=0) > 0.02
@@ -192,8 +216,23 @@ def line_layout(page, n_lines, keep_numbers, pad):
     bands = [(a, b) for a, b in bands if n_word_clusters(a, b) >= 3]
     # a thin band glued to the top/bottom of the analysed area is the page edge
     # (desk/shadow showing past a slightly-off corner fit), not a text line
-    bands = [(a, b) for a, b in bands
-             if not ((a == 0 or b == ink.shape[0]) and b - a < 0.05 * PAGE_H)]
+    # (either thin, or far denser than any text row -- desk is solid black,
+    # pencil text is a few percent ink per row)
+    trimmed = []
+    for a, b in bands:
+        if a == 0 or b == ink.shape[0]:
+            if float(row[a:b].max()) > 2.0 * row_peak:
+                # desk rows are far denser than any text row: cut them off and
+                # keep the rest (the last text line may sit right next to them)
+                ok = row[a:b] <= 2.0 * row_peak
+                keep = max(runs(ok), key=lambda r: r[1] - r[0], default=(0, 0))
+                a, b = a + keep[0], a + keep[1]
+            # what is left must still look like a text line (a thin sliver of
+            # desk or shadow has few word clusters and only a handful of rows)
+            if b - a < 15 or n_word_clusters(a, b) < 3:
+                continue
+        trimmed.append((a, b))
+    bands = trimmed
     # merge bands separated by tiny gaps (dots on i, descenders), keep the n largest gaps
     while len(bands) > n_lines:
         gaps = [bands[i + 1][0] - bands[i][1] for i in range(len(bands) - 1)]
@@ -214,21 +253,37 @@ def line_layout(page, n_lines, keep_numbers, pad):
                          "check the reference photo or pass --lines")
     bands.sort()
     oy, ox = int(0.03 * PAGE_H), int(0.03 * PAGE_W)
-    boxes = []
+    spans = []          # (first-cluster start, number-column end or None, text end)
     for a, b in bands:
         cols = ink[a:b].mean(axis=0) > 0.02
         cruns = [(c0, c1) for c0, c1 in runs(cols) if c1 - c0 >= 2]
         if not cruns:
             raise ValueError("empty text band")
-        x0 = cruns[0][0]
+        num_end = None
         if not keep_numbers and len(cruns) > 1:
-            # drop the leading "N." cluster: first gap wider than 1.5 % of the page
-            for (c0, c1), (d0, _d1) in zip(cruns, cruns[1:]):
-                if d0 - c1 > 0.015 * PAGE_W:
-                    x0 = d0
-                    break
-        x1 = cruns[-1][1]
-        m = pad * PAGE_H
+            # The list number "N." is a NARROW first cluster followed by a gap.
+            # If the writer glued the number to the first word ("2.That") the
+            # first cluster is wide and we must not drop it; such lines get the
+            # median number-column width of the other lines instead (below).
+            (c0, c1), (d0, _d1) = cruns[0], cruns[1]
+            if c1 - c0 <= 0.07 * PAGE_W and d0 - c1 >= 0.01 * PAGE_W:
+                num_end = d0
+        spans.append((cruns[0][0], num_end, cruns[-1][1]))
+    known = [e for _s, e, _x1 in spans if e is not None]
+    median_num_end = float(np.median(known)) if known else None
+    boxes = []
+    m = pad * PAGE_H
+    for (a, b), (s0, num_end, x1) in zip(bands, spans):
+        if keep_numbers or median_num_end is None:
+            x0 = s0
+        elif num_end is not None:
+            x0 = num_end
+        else:
+            # glued number, or a wrapped continuation line with no number:
+            # start where the other lines' numbers end (never cuts into text
+            # that starts further right; a glued number is partly kept, which
+            # costs a character or two of CER, consistently across conditions)
+            x0 = max(s0, median_num_end)
         boxes.append([ox + x0 - m, oy + a - m, ox + x1 + m, oy + b + m])
     return boxes
 

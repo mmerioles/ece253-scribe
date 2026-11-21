@@ -1,0 +1,11 @@
+line,reference,prediction,normalized_cer,normalized_wer
+1,This graph looks suspicious.,"This , despite this rejection",0.6666666666666666,0.75
+2,The trend took a detour.,The first look a letter .,0.391304347826087,0.6
+3,My data arrived late.,My data arrived like,0.1,0.25
+4,We measured it twice.,We managed politics .,0.5,0.75
+5,The average seems unusually happy,the change since newly happy,0.45454545454545453,0.6
+6,I misplaced a decimal point.,Participatory on technical points .,0.6666666666666666,1.0
+7,The result needs context.,the right needs in first,0.4583333333333333,0.75
+8,That sample has an attitude,that sample has run it ? it .,0.25925925925925924,0.6
+9,My spreadsheet grew overnight,1propaganda against a night,0.7241379310344828,1.0
+10,We sorted the wrong column.,the proposed life among a man .,0.6538461538461539,1.2

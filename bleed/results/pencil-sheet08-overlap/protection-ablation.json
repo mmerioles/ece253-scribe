@@ -1,0 +1,109 @@
+{
+  "pastes": 24,
+  "modes": {
+    "rowley_brooke": {
+      "tune": {
+        "pencil_recall": 0.07578001579778831,
+        "pencil_precision": 0.7002737226277372,
+        "pencil_f1": 0.13676051318602997,
+        "pencil_density_retained": 0.09998305886983871,
+        "bleed_left_visible": 0.07219033512312535,
+        "front_only_altered": 0.0024586239469972437
+      },
+      "test": {
+        "pencil_recall": 0.0753560588372636,
+        "pencil_precision": 0.7001084598698482,
+        "pencil_f1": 0.13606661045531196,
+        "pencil_density_retained": 0.11507388204336166,
+        "bleed_left_visible": 0.11923755633012002,
+        "front_only_altered": 0.002655063538866999
+      },
+      "all": {
+        "pencil_recall": 0.07558574943832246,
+        "pencil_precision": 0.7001982160555005,
+        "pencil_f1": 0.13644264194669758,
+        "pencil_density_retained": 0.10631411522626877,
+        "bleed_left_visible": 0.09850790102709273,
+        "front_only_altered": 0.002556439824589898
+      }
+    },
+    "off": {
+      "tune": {
+        "pencil_recall": 0.06580766192733017,
+        "pencil_precision": 0.6384099616858238,
+        "pencil_f1": 0.11931614751163624,
+        "pencil_density_retained": 0.07990162074565887,
+        "bleed_left_visible": 0.0829846324754675,
+        "front_only_altered": 0.0
+      },
+      "test": {
+        "pencil_recall": 0.05726126546812982,
+        "pencil_precision": 0.6337209302325582,
+        "pencil_f1": 0.1050321199143469,
+        "pencil_density_retained": 0.09023423492908478,
+        "bleed_left_visible": 0.1368548469424959,
+        "front_only_altered": 0.0
+      },
+      "all": {
+        "pencil_recall": 0.061891515994436715,
+        "pencil_precision": 0.6364136413641364,
+        "pencil_f1": 0.11281201248049921,
+        "pencil_density_retained": 0.08423646539449692,
+        "bleed_left_visible": 0.11311888659558325,
+        "front_only_altered": 0.0
+      }
+    },
+    "on": {
+      "tune": {
+        "pencil_recall": 0.6415876777251185,
+        "pencil_precision": 0.6967990992440084,
+        "pencil_f1": 0.6680545917187138,
+        "pencil_density_retained": 0.7488645315170288,
+        "bleed_left_visible": 0.09013145713756712,
+        "front_only_altered": 0.0
+      },
+      "test": {
+        "pencil_recall": 0.5366565491477936,
+        "pencil_precision": 0.5851578411405295,
+        "pencil_f1": 0.5598587260991353,
+        "pencil_density_retained": 0.6488564014434814,
+        "bleed_left_visible": 0.13697151774125332,
+        "front_only_altered": 0.0
+      },
+      "all": {
+        "pencil_recall": 0.5935059377340323,
+        "pencil_precision": 0.6457526991240579,
+        "pencil_f1": 0.6185279647670415,
+        "pencil_density_retained": 0.706908106803894,
+        "bleed_left_visible": 0.11633314026056665,
+        "front_only_altered": 0.0
+      }
+    },
+    "divide": {
+      "tune": {
+        "pencil_recall": 0.6426244075829384,
+        "pencil_precision": 0.6982245346778951,
+        "pencil_f1": 0.6692717036427671,
+        "pencil_density_retained": 0.7052984833717346,
+        "bleed_left_visible": 0.09013145713756712,
+        "front_only_altered": 0.0
+      },
+      "test": {
+        "pencil_recall": 0.5368900303525567,
+        "pencil_precision": 0.5866445564130366,
+        "pencil_f1": 0.5606656304288197,
+        "pencil_density_retained": 0.618474006652832,
+        "bleed_left_visible": 0.13697151774125332,
+        "front_only_altered": 0.0
+      },
+      "all": {
+        "pencil_recall": 0.5941746014764095,
+        "pencil_precision": 0.6472524911135714,
+        "pencil_f1": 0.6195788592943802,
+        "pencil_density_retained": 0.6688730716705322,
+        "bleed_left_visible": 0.11633314026056665,
+        "front_only_altered": 0.0
+      }
+    }
+  }
+}
