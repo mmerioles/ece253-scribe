@@ -21,7 +21,10 @@ def normalize(text):
 
 
 def read_inputs(image_path):
-    references = image_path.with_suffix(".txt").read_text(encoding="utf-8-sig").splitlines()
+    truth = image_path.with_suffix(".txt")
+    if image_path.stem.startswith("front-"):
+        truth = image_path.parent / "truth.txt"
+    references = truth.read_text(encoding="utf-8-sig").splitlines()
     boxes = json.loads(image_path.with_suffix(".boxes.json").read_text(encoding="utf-8-sig"))
     if not references or len(references) != len(boxes) or any(not normalize(r) for r in references):
         raise ValueError("Provide one nonempty reference line per crop box.")
@@ -99,6 +102,8 @@ def main():
     images = sorted(p for p in (folder / "inputs").rglob("*")
                     if p.is_file() and p.suffix.lower() in {".png", ".jpg", ".jpeg", ".tif", ".tiff", ".bmp", ".webp"}
                     and not p.stem.lower().endswith(".overlay"))  # box-overlay previews, not inputs
+    if args.artifact == "bleed":
+        images = [p for p in images if p.stem.startswith("front-")]
     if not images:
         print(f"No images in {folder / 'inputs'}. Add a photo, matching .txt, and .boxes.json.")
         return

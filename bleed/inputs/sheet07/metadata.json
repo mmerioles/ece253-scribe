@@ -1,42 +1,73 @@
 {
-  "sheet_id": "bleed-007",
-  "pairing_key": "bleed-007",
-  "artifact": "bleed_show_through",
-  "reference_image": "perfect.jpg",
-  "reference_transcription": "perfect.txt",
-  "line_boxes": "perfect.boxes.json",
-  "condition": "clean_reference",
-  "user_condition_label": "perfect",
-  "capture_type": "photograph",
-  "source_filename": "20261113_182853.jpg",
-  "sha256": "a7b00a1a697e0d9f2f4ede8eafba8b9fdbe617340112106eaa4f8e0058597fb8",
-  "width": 3000,
-  "height": 4000,
-  "line_count": 10,
-  "paper": "graph paper",
-  "transcription_source": "manually transcribed from supplied image",
-  "transcription_notes": "List numbers excluded; sentence digits retained. Original spelling and punctuation transcribed.",
-  "image_processing": "Original JPEG preserved byte-for-byte; OCR uses annotated line crops only.",
-  "split": null,
-  "distorted_slots": [
+  "sheet_id": "bleed-20261119-07",
+  "page_number": 7,
+  "legacy_sheet_id": "sheet05",
+  "truth_file": "truth.txt",
+  "user_verified": false,
+  "review_priority": [],
+  "captures": [
     {
-      "directory": "distorted-01",
-      "status": "pending",
-      "reference_image": "../perfect.jpg",
-      "severity": null
+      "file": "back.jpg",
+      "role": "reverse_noise",
+      "source_filename": "20261119_200320.jpg",
+      "sha256": "d7ebccc30e15a5aafda63fe726e42781639c0d0d89bbc09165867d8ecbe6d66e",
+      "width": 3000,
+      "height": 4000,
+      "exif_orientation": 6,
+      "additional_rotation_degrees": 0
     },
     {
-      "directory": "distorted-02",
-      "status": "pending",
-      "reference_image": "../perfect.jpg",
-      "severity": null
+      "file": "front-01.jpg",
+      "role": "foreground_with_bleed",
+      "source_filename": "20261119_200327.jpg",
+      "sha256": "1645ac613df6ee810aef1349321d51a3e9a35a512525f93b25b24ed75cc7f170",
+      "width": 3000,
+      "height": 4000,
+      "exif_orientation": 6,
+      "additional_rotation_degrees": 0,
+      "boxes": "front-01.boxes.json",
+      "box_annotation": {
+        "method": "manual base annotation"
+      }
     },
     {
-      "directory": "distorted-03",
-      "status": "pending",
-      "reference_image": "../perfect.jpg",
-      "severity": null
+      "file": "front-02.jpg",
+      "role": "foreground_with_bleed",
+      "source_filename": "20261119_200330.jpg",
+      "sha256": "97ff19e9e5de36cb647c2dc134341063711d9536ab334fc1990c7e34ae3d72ac",
+      "width": 3000,
+      "height": 4000,
+      "exif_orientation": 6,
+      "additional_rotation_degrees": 0,
+      "boxes": "front-02.boxes.json",
+      "box_annotation": {
+        "method": "base boxes mapped by same-side SIFT/RANSAC; visually reviewed",
+        "inliers": 3474
+      }
+    },
+    {
+      "file": "front-03.jpg",
+      "role": "foreground_with_bleed",
+      "source_filename": "20261119_200332.jpg",
+      "sha256": "6d333377afbceb769b3512824fd4f1b1e236799502ecb8a65e9d9975195883b2",
+      "width": 3000,
+      "height": 4000,
+      "exif_orientation": 6,
+      "additional_rotation_degrees": 0,
+      "boxes": "front-03.boxes.json",
+      "box_annotation": {
+        "method": "base boxes mapped by same-side SIFT/RANSAC; visually reviewed",
+        "inliers": 3378
+      }
     }
   ],
-  "notes": "User-designated clean reference; not asserted to be an artifact-free scanner acquisition. Keep all variants of this physical sheet in one dataset split."
+  "notes": [
+    "Target is the normal left-to-right foreground, not mirrored reverse text.",
+    "Wording visually checked against front captures; occluded letters use intended sentence context. User verification pending.",
+    "Terminal periods omitted consistently; list numbers excluded; sentence numerals retained.",
+    "No clean foreground-only photograph supplied. Back is not pixel ground truth.",
+    "Capture order does not represent increasing bleed severity; some captures also contain shadows."
+  ],
+  "split": null,
+  "split_rule": "All captures of this physical sheet, including matching legacy captures, must stay in one split."
 }

@@ -3,12 +3,12 @@
 Run from the repository root:
 
 ```powershell
-uv run bleed/remove_bleed.py bleed/samples/pencil-sheet08/front.jpg bleed/samples/pencil-sheet08/back.jpg
+uv run bleed/remove_bleed.py bleed/inputs/sheet08/front-01.jpg bleed/inputs/sheet08/back.jpg
 uv run bleed/evaluate_pair.py
 uv run python -m unittest discover -s bleed -p test_remove_bleed.py
 ```
 
-The first command writes to `bleed/outputs/pencil-sheet08/`. `filtered.png` is the conservative result. `without_protection.png` disables only the added thin-stroke protection; it still retains the two foreground classes. `strong_removal.png` is a deliberately destructive diagnostic that replaces all reverse-ink regions, including overlaps. It is **not** the paper baseline and can erase pencil. The comparison image is input / conservative / strong, left to right. All outputs are actual processing results, with no transcription or generated lettering used in restoration.
+The first command writes to `bleed/outputs/sheet08/front-01/`. `filtered.png` is the conservative result. `without_protection.png` disables only the added thin-stroke protection; it still retains the two foreground classes. `strong_removal.png` is a deliberately destructive diagnostic that replaces all reverse-ink regions, including overlaps. It is **not** the paper baseline and can erase pencil. The comparison image is input / conservative / strong, left to right. All outputs are actual processing results, with no transcription or generated lettering used in restoration.
 
 ## Reference and scope
 
@@ -26,7 +26,9 @@ Explicit implementation differences:
 
 The whole restoration is one module; the evaluator reuses `main.py` and the existing fixed TrOCR model. No restoration input includes labels, line boxes, text, or a clean reference. The OCR evaluator alone uses those annotations.
 
-## Data and interpretation
+## Historical pilot data and interpretation
+
+The following describes the November 16 pilot, now archived under `archive/2026-11-16/`. The active November 19 dataset and commands are documented in [README.md](README.md); these historical scores are not new-dataset measurements.
 
 `front.jpg` is the pencil side (`20261116_220102.jpg`); `back.jpg` is the Sharpie side (`20261116_220112.jpg`). Originals are preserved byte-for-byte. These are associated with sheet08 and must stay in the same dataset split. They live outside the clean-baseline `inputs/` so the reverse image is not accidentally counted as an independent OCR sample.
 
@@ -36,4 +38,8 @@ This pair is a **development case** used while implementing the method, not a he
 
 The expected limitation is overlap: removing all reverse ink also removes pencil passing through that ink. Conservative protection leaves interference; the stronger diagnostic makes missing strokes visible. Graph lines are retained because they are physical front-side marks, not necessarily reverse interference. A clean pre-bleed pencil capture and manually marked overlap crops are needed to measure true pencil preservation.
 
-`run.json` records input hashes, transform, registration support, image size, classifier settings and runtime. Registration residuals are inlier fit errors, not an independent measurement of alignment everywhere. `ocr-summary.json` and per-line CSVs record recognition. `bleed/results/pencil-sheet08.json` preserves the final experiment summary outside ignored outputs.
+`run.json` records input hashes, transform, registration support, image size, classifier settings and runtime. Registration residuals are inlier fit errors, not an independent measurement of alignment everywhere. `ocr-summary.json` and per-line CSVs record recognition. `bleed/archive/2026-11-16/results/pencil-sheet08.json` preserves the final experiment summary outside ignored outputs.
+
+## Multi-capture registration
+
+For the November 19 batch, failed native-resolution SIFT matching retries at a 1600-pixel maximum side. The same inlier count, ratio, coverage and residual checks apply at the feature resolution. The homography is converted back to native coordinates before warping, and run.json identifies the residual coordinate system. This wider-context fallback is an implementation adaptation, not a new restoration method. Rejected pairs are reported, never forced through.

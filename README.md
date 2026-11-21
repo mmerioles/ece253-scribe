@@ -8,13 +8,13 @@ uv run main.py blur
 uv run main.py shadow
 ```
 
-Each command evaluates **every image** in that artifact's `inputs/` folder using
+Each command evaluates input images in that artifact's `inputs/` folder using
 one shared TrOCR model. First run downloads dependencies and model weights.
 
 - Put individual work in `bleed/`, `blur/`, or `shadow/`.
-- Each input needs `photo.jpg`, `photo.txt` (one reference line per crop, no list numbers),
+- Blur/shadow: each input needs `photo.jpg`, `photo.txt` (one reference line per crop, no list numbers),
   and `photo.boxes.json` (`[left, top, right, bottom]` fractions from 0 to 1).
-- Use `bleed/inputs/sheet01/perfect.*` as the example; adjust boxes for new photos.
+- Bleed uses `inputs/sheetNN/front-NN.jpg`, matching boxes, and shared `truth.txt`; reverse `back.jpg` images are excluded. See [bleed/README.md](bleed/README.md).
 - Add `--prepare-only` to inspect crops without OCR.
 - Results: `<artifact>/outputs/<photo-name>/`; combined scores: `outputs/summary.json`
   inside that artifact. Use unique photo names. Reruns overwrite matching results.

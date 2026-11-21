@@ -1,0 +1,4086 @@
+{
+  "captures": [
+    {
+      "capture": "sheet01/front-01",
+      "method": "Rowley-Brooke structure; ICM/Telea approximations (see METHOD.md)",
+      "front_sha256": "9cb038ee515a7130e5c136463eaa33adf5444a19553580ca566b245e290b4cd6",
+      "back_sha256": "cdbf485d91c47ad44c916da573ffba3c80f0d9025ca67a804709cfd5a917053a",
+      "max_side": 4000,
+      "mirrored_back": true,
+      "working_size": [
+        3000,
+        4000
+      ],
+      "registration": {
+        "homography": [
+          [
+            0.993241331382429,
+            -0.047063133958323594,
+            210.70246553310793
+          ],
+          [
+            0.03540509548394679,
+            0.9618272509085168,
+            -54.723523043816684
+          ],
+          [
+            3.917083715242633e-06,
+            -1.147765116566376e-05,
+            1.0
+          ]
+        ],
+        "matches": 299,
+        "inliers": 188,
+        "median_error_pixels": 1.6676222085952759,
+        "coverage": [
+          0.7443094889322917,
+          0.8652749633789063
+        ],
+        "feature_max_side": 1600,
+        "error_coordinate_system": "reduced feature image",
+        "median_error_full_resolution_pixels": 4.16905552148819
+      },
+      "classification": {
+        "front_seed_threshold": 169.0,
+        "back_seed_threshold": 178.0,
+        "overlap_seed_threshold": 224.0,
+        "centers": [
+          [
+            132.0928814538073,
+            130.91418304027562
+          ],
+          [
+            208.82777420374873,
+            137.34671958652726
+          ],
+          [
+            183.3023006558962,
+            225.58272214680522
+          ],
+          [
+            235.02250631342332,
+            233.58089969751072
+          ]
+        ],
+        "histogram_bins": 21647,
+        "alpha": 0.010285977149999999,
+        "icm_changes": [
+          197,
+          13,
+          1,
+          0
+        ]
+      },
+      "removed_fraction": 0.06667634114970987,
+      "elapsed_seconds": 19.49769429996377,
+      "ground_truth": "No clean pencil image or pixel mask supplied; no PSNR/SSIM/F1 claimed.",
+      "ocr": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet01\\front-01\\input.png",
+          "line_count": 10,
+          "strict_cer": 0.8210116731517509,
+          "strict_wer": 1.3061224489795917,
+          "normalized_cer": 0.7803921568627451,
+          "normalized_wer": 1.1020408163265305,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "without_protection": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet01\\front-01\\without_protection.png",
+          "line_count": 10,
+          "strict_cer": 0.4085603112840467,
+          "strict_wer": 0.8775510204081632,
+          "normalized_cer": 0.2549019607843137,
+          "normalized_wer": 0.46938775510204084,
+          "normalized_exact_lines": 2,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "filtered": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet01\\front-01\\filtered.png",
+          "line_count": 10,
+          "strict_cer": 0.4357976653696498,
+          "strict_wer": 0.8367346938775511,
+          "normalized_cer": 0.3254901960784314,
+          "normalized_wer": 0.5510204081632653,
+          "normalized_exact_lines": 1,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "strong_removal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet01\\front-01\\strong_removal.png",
+          "line_count": 10,
+          "strict_cer": 0.6264591439688716,
+          "strict_wer": 1.1020408163265305,
+          "normalized_cer": 0.596078431372549,
+          "normalized_wer": 0.9387755102040817,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet01/front-02",
+      "method": "Rowley-Brooke structure; ICM/Telea approximations (see METHOD.md)",
+      "front_sha256": "3e371c2db750c06afe590501a54a315f522ddbb0c07157f729c9a15784af9451",
+      "back_sha256": "cdbf485d91c47ad44c916da573ffba3c80f0d9025ca67a804709cfd5a917053a",
+      "max_side": 4000,
+      "mirrored_back": true,
+      "working_size": [
+        3000,
+        4000
+      ],
+      "registration": {
+        "homography": [
+          [
+            0.9340980644646444,
+            -0.026381703418935643,
+            226.66417826346108
+          ],
+          [
+            0.018442877834886708,
+            0.9143838638372581,
+            17.98312121330688
+          ],
+          [
+            2.385523291120325e-06,
+            -7.5820877721999725e-06,
+            1.0
+          ]
+        ],
+        "matches": 274,
+        "inliers": 186,
+        "median_error_pixels": 1.3454210758209229,
+        "coverage": [
+          0.7451929219563802,
+          0.8001622772216797
+        ],
+        "feature_max_side": 1600,
+        "error_coordinate_system": "reduced feature image",
+        "median_error_full_resolution_pixels": 3.363552689552307
+      },
+      "classification": {
+        "front_seed_threshold": 143.0,
+        "back_seed_threshold": 179.0,
+        "overlap_seed_threshold": 205.0,
+        "centers": [
+          [
+            116.58687751401696,
+            131.302787314057
+          ],
+          [
+            174.26310630768162,
+            137.87750676566512
+          ],
+          [
+            163.58231667672487,
+            225.75269320921177
+          ],
+          [
+            221.6127792248032,
+            233.9049643192579
+          ]
+        ],
+        "histogram_bins": 23733,
+        "alpha": 0.011513483849999999,
+        "icm_changes": [
+          156,
+          13,
+          1,
+          0
+        ]
+      },
+      "removed_fraction": 0.06627565699650224,
+      "elapsed_seconds": 20.47613409999758,
+      "ground_truth": "No clean pencil image or pixel mask supplied; no PSNR/SSIM/F1 claimed.",
+      "ocr": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet01\\front-02\\input.png",
+          "line_count": 10,
+          "strict_cer": 0.7782101167315175,
+          "strict_wer": 1.0408163265306123,
+          "normalized_cer": 0.7098039215686275,
+          "normalized_wer": 0.8979591836734694,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "without_protection": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet01\\front-02\\without_protection.png",
+          "line_count": 10,
+          "strict_cer": 0.5914396887159533,
+          "strict_wer": 0.9183673469387755,
+          "normalized_cer": 0.5058823529411764,
+          "normalized_wer": 0.6938775510204082,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "filtered": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet01\\front-02\\filtered.png",
+          "line_count": 10,
+          "strict_cer": 0.603112840466926,
+          "strict_wer": 0.9591836734693877,
+          "normalized_cer": 0.5215686274509804,
+          "normalized_wer": 0.7346938775510204,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "strong_removal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet01\\front-02\\strong_removal.png",
+          "line_count": 10,
+          "strict_cer": 0.688715953307393,
+          "strict_wer": 1.0204081632653061,
+          "normalized_cer": 0.6745098039215687,
+          "normalized_wer": 0.9183673469387755,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet01/front-03",
+      "method": "Rowley-Brooke structure; ICM/Telea approximations (see METHOD.md)",
+      "front_sha256": "07cf0b184b30fdbdfb55e8c2755f7e343a93a7cf912d41a6f92d37af60d4600a",
+      "back_sha256": "cdbf485d91c47ad44c916da573ffba3c80f0d9025ca67a804709cfd5a917053a",
+      "max_side": 4000,
+      "mirrored_back": true,
+      "working_size": [
+        3000,
+        4000
+      ],
+      "registration": {
+        "homography": [
+          [
+            0.9515036815701573,
+            -0.010510693492701754,
+            157.05583394985973
+          ],
+          [
+            -0.04014635541420408,
+            0.9276124967603663,
+            125.9323623568342
+          ],
+          [
+            -8.826887661523409e-06,
+            -1.8337076925880343e-05,
+            1.0
+          ]
+        ],
+        "matches": 287,
+        "inliers": 175,
+        "median_error_pixels": 1.2018648386001587,
+        "coverage": [
+          0.6584540303548178,
+          0.8793943023681641
+        ],
+        "feature_max_side": 1600,
+        "error_coordinate_system": "reduced feature image",
+        "median_error_full_resolution_pixels": 3.0046620965003967
+      },
+      "classification": {
+        "front_seed_threshold": 139.0,
+        "back_seed_threshold": 178.0,
+        "overlap_seed_threshold": 205.0,
+        "centers": [
+          [
+            126.28841781555359,
+            129.72998505768194
+          ],
+          [
+            154.10122963934666,
+            134.44500212202433
+          ],
+          [
+            169.51430825221485,
+            225.0759694850604
+          ],
+          [
+            220.84755559824322,
+            234.54250962655095
+          ]
+        ],
+        "histogram_bins": 23661,
+        "alpha": 0.01147111545,
+        "icm_changes": [
+          77,
+          5,
+          0
+        ]
+      },
+      "removed_fraction": 0.06796053410286101,
+      "elapsed_seconds": 24.03365759999724,
+      "ground_truth": "No clean pencil image or pixel mask supplied; no PSNR/SSIM/F1 claimed.",
+      "ocr": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet01\\front-03\\input.png",
+          "line_count": 10,
+          "strict_cer": 0.8482490272373541,
+          "strict_wer": 1.0408163265306123,
+          "normalized_cer": 0.796078431372549,
+          "normalized_wer": 0.8979591836734694,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "without_protection": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet01\\front-03\\without_protection.png",
+          "line_count": 10,
+          "strict_cer": 0.8326848249027238,
+          "strict_wer": 1.0612244897959184,
+          "normalized_cer": 0.788235294117647,
+          "normalized_wer": 0.9387755102040817,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "filtered": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet01\\front-03\\filtered.png",
+          "line_count": 10,
+          "strict_cer": 0.8093385214007782,
+          "strict_wer": 1.0408163265306123,
+          "normalized_cer": 0.7647058823529411,
+          "normalized_wer": 0.9387755102040817,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "strong_removal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet01\\front-03\\strong_removal.png",
+          "line_count": 10,
+          "strict_cer": 0.688715953307393,
+          "strict_wer": 0.9591836734693877,
+          "normalized_cer": 0.6431372549019608,
+          "normalized_wer": 0.8571428571428571,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet02/front-01",
+      "method": "Rowley-Brooke structure; ICM/Telea approximations (see METHOD.md)",
+      "front_sha256": "ff2904e48265c15770451ff5fe68cff2c7d05a23dab489153926ff7f60e84d2a",
+      "back_sha256": "d31606908672a08f6fd696b0088552b1ac337e899a1078e4081a6eb2fb94e65d",
+      "max_side": 4000,
+      "mirrored_back": true,
+      "working_size": [
+        3000,
+        4000
+      ],
+      "registration": {
+        "homography": [
+          [
+            0.8478933519739401,
+            -0.06817534123711926,
+            271.8734576082701
+          ],
+          [
+            0.02245175602720371,
+            0.7667328350810844,
+            277.94728771816165
+          ],
+          [
+            1.869619621078676e-06,
+            -3.600426103024628e-05,
+            1.0
+          ]
+        ],
+        "matches": 263,
+        "inliers": 89,
+        "median_error_pixels": 1.8679293394088745,
+        "coverage": [
+          0.6329189453125,
+          0.7558439331054687
+        ]
+      },
+      "classification": {
+        "front_seed_threshold": 130.0,
+        "back_seed_threshold": 173.0,
+        "overlap_seed_threshold": 203.0,
+        "centers": [
+          [
+            118.7691560656697,
+            126.64429974690938
+          ],
+          [
+            142.6869729517381,
+            132.53845080734084
+          ],
+          [
+            166.89644631113484,
+            218.18798717047252
+          ],
+          [
+            217.4500309441401,
+            230.3549407477021
+          ]
+        ],
+        "histogram_bins": 22173,
+        "alpha": 0.01059550185,
+        "icm_changes": [
+          85,
+          13,
+          1,
+          0
+        ]
+      },
+      "removed_fraction": 0.07112544155477526,
+      "elapsed_seconds": 21.149747700023,
+      "ground_truth": "No clean pencil image or pixel mask supplied; no PSNR/SSIM/F1 claimed.",
+      "ocr": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet02\\front-01\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.01953125,
+          "strict_wer": 1.2127659574468086,
+          "normalized_cer": 0.9765625,
+          "normalized_wer": 1.0638297872340425,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "without_protection": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet02\\front-01\\without_protection.png",
+          "line_count": 10,
+          "strict_cer": 0.80078125,
+          "strict_wer": 1.127659574468085,
+          "normalized_cer": 0.73828125,
+          "normalized_wer": 0.9148936170212766,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "filtered": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet02\\front-01\\filtered.png",
+          "line_count": 10,
+          "strict_cer": 0.80859375,
+          "strict_wer": 1.1063829787234043,
+          "normalized_cer": 0.7578125,
+          "normalized_wer": 0.9148936170212766,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "strong_removal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet02\\front-01\\strong_removal.png",
+          "line_count": 10,
+          "strict_cer": 0.8671875,
+          "strict_wer": 1.1063829787234043,
+          "normalized_cer": 0.85546875,
+          "normalized_wer": 1.0638297872340425,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet02/front-02",
+      "method": "Rowley-Brooke structure; ICM/Telea approximations (see METHOD.md)",
+      "front_sha256": "2def1ccf67e8b189d98a55549974b8a7fc163872fa0d9eb81ab4c7e8d2a8cc85",
+      "back_sha256": "d31606908672a08f6fd696b0088552b1ac337e899a1078e4081a6eb2fb94e65d",
+      "max_side": 4000,
+      "mirrored_back": true,
+      "working_size": [
+        3000,
+        4000
+      ],
+      "registration": {
+        "homography": [
+          [
+            0.9108778364071379,
+            -0.06417822786922356,
+            183.1677068205887
+          ],
+          [
+            -0.004621026020427024,
+            0.8540975981999316,
+            42.636079564542634
+          ],
+          [
+            -1.0415192591174172e-05,
+            -3.363800917099474e-05,
+            1.0
+          ]
+        ],
+        "matches": 235,
+        "inliers": 73,
+        "median_error_pixels": 1.715985894203186,
+        "coverage": [
+          0.830055419921875,
+          0.8355626831054688
+        ]
+      },
+      "classification": {
+        "front_seed_threshold": 131.0,
+        "back_seed_threshold": 173.0,
+        "overlap_seed_threshold": 200.0,
+        "centers": [
+          [
+            120.35955500541917,
+            126.3979287408287
+          ],
+          [
+            142.9471353656472,
+            133.0202524446541
+          ],
+          [
+            164.18132893810352,
+            218.85889512720792
+          ],
+          [
+            215.08331478229323,
+            230.6105353417926
+          ]
+        ],
+        "histogram_bins": 19743,
+        "alpha": 0.009165568349999998,
+        "icm_changes": [
+          66,
+          10,
+          1,
+          0
+        ]
+      },
+      "removed_fraction": 0.07721271591690268,
+      "elapsed_seconds": 23.356075799965765,
+      "ground_truth": "No clean pencil image or pixel mask supplied; no PSNR/SSIM/F1 claimed.",
+      "ocr": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet02\\front-02\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.046875,
+          "strict_wer": 1.1063829787234043,
+          "normalized_cer": 1.0,
+          "normalized_wer": 1.0638297872340425,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "without_protection": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet02\\front-02\\without_protection.png",
+          "line_count": 10,
+          "strict_cer": 0.92578125,
+          "strict_wer": 1.0212765957446808,
+          "normalized_cer": 0.87890625,
+          "normalized_wer": 0.9361702127659575,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "filtered": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet02\\front-02\\filtered.png",
+          "line_count": 10,
+          "strict_cer": 0.953125,
+          "strict_wer": 1.0425531914893618,
+          "normalized_cer": 0.91796875,
+          "normalized_wer": 0.9787234042553191,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "strong_removal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet02\\front-02\\strong_removal.png",
+          "line_count": 10,
+          "strict_cer": 0.85546875,
+          "strict_wer": 1.0638297872340425,
+          "normalized_cer": 0.8125,
+          "normalized_wer": 1.0,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet02/front-03",
+      "method": "Rowley-Brooke structure; ICM/Telea approximations (see METHOD.md)",
+      "front_sha256": "c4674d70b5e8ccba452f729a238610e892321396c611fb866fd68895c950fb7d",
+      "back_sha256": "d31606908672a08f6fd696b0088552b1ac337e899a1078e4081a6eb2fb94e65d",
+      "max_side": 4000,
+      "mirrored_back": true,
+      "working_size": [
+        3000,
+        4000
+      ],
+      "registration": {
+        "homography": [
+          [
+            0.9225043381166291,
+            -0.06902751662988568,
+            206.42377795904747
+          ],
+          [
+            0.018161805287362647,
+            0.8942462488136639,
+            62.75653474148497
+          ],
+          [
+            -9.25258407909708e-06,
+            -1.9983200962493572e-05,
+            1.0
+          ]
+        ],
+        "matches": 299,
+        "inliers": 79,
+        "median_error_pixels": 1.7622401714324951,
+        "coverage": [
+          0.7024610188802083,
+          0.8154553833007813
+        ]
+      },
+      "classification": {
+        "front_seed_threshold": 135.0,
+        "back_seed_threshold": 173.0,
+        "overlap_seed_threshold": 213.0,
+        "centers": [
+          [
+            123.9775039779823,
+            126.36834332946029
+          ],
+          [
+            147.18140650474197,
+            133.16272240471503
+          ],
+          [
+            174.82430729702585,
+            218.4213457877128
+          ],
+          [
+            224.44460754295594,
+            231.03721047512698
+          ]
+        ],
+        "histogram_bins": 18325,
+        "alpha": 0.00833114625,
+        "icm_changes": [
+          53,
+          6,
+          0
+        ]
+      },
+      "removed_fraction": 0.07444010181818583,
+      "elapsed_seconds": 23.881130800000392,
+      "ground_truth": "No clean pencil image or pixel mask supplied; no PSNR/SSIM/F1 claimed.",
+      "ocr": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet02\\front-03\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.0703125,
+          "strict_wer": 1.1702127659574468,
+          "normalized_cer": 1.0234375,
+          "normalized_wer": 1.0851063829787233,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "without_protection": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet02\\front-03\\without_protection.png",
+          "line_count": 10,
+          "strict_cer": 0.859375,
+          "strict_wer": 1.1063829787234043,
+          "normalized_cer": 0.796875,
+          "normalized_wer": 1.0212765957446808,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "filtered": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet02\\front-03\\filtered.png",
+          "line_count": 10,
+          "strict_cer": 0.875,
+          "strict_wer": 1.1063829787234043,
+          "normalized_cer": 0.81640625,
+          "normalized_wer": 1.0212765957446808,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "strong_removal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet02\\front-03\\strong_removal.png",
+          "line_count": 10,
+          "strict_cer": 0.69921875,
+          "strict_wer": 0.9787234042553191,
+          "normalized_cer": 0.67578125,
+          "normalized_wer": 0.8297872340425532,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet03/front-01",
+      "method": "Rowley-Brooke structure; ICM/Telea approximations (see METHOD.md)",
+      "front_sha256": "b4d90cff458c8bbbc541eea2fadb316d4f49f8f4756fce22a54d681ea6bebd70",
+      "back_sha256": "4b5c485ea4df73a8aae7561d315c854f0d100bacef6eecc7fd71f9b9f271dc9d",
+      "max_side": 4000,
+      "mirrored_back": true,
+      "working_size": [
+        3000,
+        4000
+      ],
+      "registration": {
+        "homography": [
+          [
+            0.9806787589292963,
+            -0.012150853591122269,
+            43.84234062541722
+          ],
+          [
+            -0.015422374602422557,
+            0.9800535306138413,
+            25.894498666911456
+          ],
+          [
+            -8.960965949701804e-06,
+            -7.517135412757925e-06,
+            1.0
+          ]
+        ],
+        "matches": 272,
+        "inliers": 135,
+        "median_error_pixels": 1.4171327352523804,
+        "coverage": [
+          0.7100853474934896,
+          0.8209187316894532
+        ],
+        "feature_max_side": 1600,
+        "error_coordinate_system": "reduced feature image",
+        "median_error_full_resolution_pixels": 3.542831838130951
+      },
+      "classification": {
+        "front_seed_threshold": 144.0,
+        "back_seed_threshold": 180.0,
+        "overlap_seed_threshold": 217.0,
+        "centers": [
+          [
+            129.18866158885191,
+            133.20345132821294
+          ],
+          [
+            160.07998353849692,
+            138.04100447446248
+          ],
+          [
+            170.766081078198,
+            225.6185130888776
+          ],
+          [
+            229.57657213095632,
+            232.35786895394637
+          ]
+        ],
+        "histogram_bins": 20239,
+        "alpha": 0.009457439549999998,
+        "icm_changes": [
+          68,
+          7,
+          1,
+          0
+        ]
+      },
+      "removed_fraction": 0.06804139750095,
+      "elapsed_seconds": 25.927370999997947,
+      "ground_truth": "No clean pencil image or pixel mask supplied; no PSNR/SSIM/F1 claimed.",
+      "ocr": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet03\\front-01\\input.png",
+          "line_count": 10,
+          "strict_cer": 0.869198312236287,
+          "strict_wer": 1.0681818181818181,
+          "normalized_cer": 0.7805907172995781,
+          "normalized_wer": 0.9318181818181818,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "without_protection": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet03\\front-01\\without_protection.png",
+          "line_count": 10,
+          "strict_cer": 0.5527426160337553,
+          "strict_wer": 0.9772727272727273,
+          "normalized_cer": 0.46835443037974683,
+          "normalized_wer": 0.7954545454545454,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "filtered": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet03\\front-01\\filtered.png",
+          "line_count": 10,
+          "strict_cer": 0.5189873417721519,
+          "strict_wer": 0.9545454545454546,
+          "normalized_cer": 0.4177215189873418,
+          "normalized_wer": 0.75,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "strong_removal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet03\\front-01\\strong_removal.png",
+          "line_count": 10,
+          "strict_cer": 0.5443037974683544,
+          "strict_wer": 0.9090909090909091,
+          "normalized_cer": 0.5147679324894515,
+          "normalized_wer": 0.7954545454545454,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet03/front-02",
+      "method": "Rowley-Brooke structure; ICM/Telea approximations (see METHOD.md)",
+      "front_sha256": "1200724d2a793a94008ac63f5525e24ad705c1dadd01b8d4597f0b41dbdb0b5d",
+      "back_sha256": "4b5c485ea4df73a8aae7561d315c854f0d100bacef6eecc7fd71f9b9f271dc9d",
+      "max_side": 4000,
+      "mirrored_back": true,
+      "working_size": [
+        3000,
+        4000
+      ],
+      "registration": {
+        "homography": [
+          [
+            0.8732682557112572,
+            -0.058633740777637826,
+            339.22280582499747
+          ],
+          [
+            0.0054546543303668005,
+            0.8570353163401286,
+            126.1657055815999
+          ],
+          [
+            -1.2842481983026268e-05,
+            -1.69396054256536e-05,
+            0.9999999999999999
+          ]
+        ],
+        "matches": 249,
+        "inliers": 126,
+        "median_error_pixels": 1.2527236938476562,
+        "coverage": [
+          0.637758534749349,
+          0.7563423156738281
+        ],
+        "feature_max_side": 1600,
+        "error_coordinate_system": "reduced feature image",
+        "median_error_full_resolution_pixels": 3.1318092346191406
+      },
+      "classification": {
+        "front_seed_threshold": 141.0,
+        "back_seed_threshold": 181.0,
+        "overlap_seed_threshold": 211.0,
+        "centers": [
+          [
+            126.4272405504482,
+            134.28962280939214
+          ],
+          [
+            156.543676460261,
+            139.76557486614828
+          ],
+          [
+            166.06322880860435,
+            226.6056029762038
+          ],
+          [
+            223.62763258188804,
+            232.43295987303046
+          ]
+        ],
+        "histogram_bins": 21870,
+        "alpha": 0.010417201499999999,
+        "icm_changes": [
+          106,
+          4,
+          1,
+          0
+        ]
+      },
+      "removed_fraction": 0.06969818936985014,
+      "elapsed_seconds": 23.095335499965586,
+      "ground_truth": "No clean pencil image or pixel mask supplied; no PSNR/SSIM/F1 claimed.",
+      "ocr": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet03\\front-02\\input.png",
+          "line_count": 10,
+          "strict_cer": 0.919831223628692,
+          "strict_wer": 1.1363636363636365,
+          "normalized_cer": 0.8565400843881856,
+          "normalized_wer": 1.0227272727272727,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "without_protection": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet03\\front-02\\without_protection.png",
+          "line_count": 10,
+          "strict_cer": 0.5316455696202531,
+          "strict_wer": 1.0,
+          "normalized_cer": 0.4177215189873418,
+          "normalized_wer": 0.7272727272727273,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "filtered": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet03\\front-02\\filtered.png",
+          "line_count": 10,
+          "strict_cer": 0.5147679324894515,
+          "strict_wer": 0.9772727272727273,
+          "normalized_cer": 0.4177215189873418,
+          "normalized_wer": 0.7045454545454546,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "strong_removal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet03\\front-02\\strong_removal.png",
+          "line_count": 10,
+          "strict_cer": 0.5316455696202531,
+          "strict_wer": 1.0,
+          "normalized_cer": 0.5021097046413502,
+          "normalized_wer": 0.8181818181818182,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet03/front-03",
+      "method": "Rowley-Brooke structure; ICM/Telea approximations (see METHOD.md)",
+      "front_sha256": "001237836df02e1922fd1633b4014ee39a93d280a9b4979645241dc5f31964b3",
+      "back_sha256": "4b5c485ea4df73a8aae7561d315c854f0d100bacef6eecc7fd71f9b9f271dc9d",
+      "max_side": 4000,
+      "mirrored_back": true,
+      "working_size": [
+        3000,
+        4000
+      ],
+      "registration": {
+        "homography": [
+          [
+            0.8923005622935811,
+            -0.049387434727204596,
+            131.42668960353564
+          ],
+          [
+            -0.051742823948177176,
+            0.8401856691656898,
+            309.2759558926561
+          ],
+          [
+            -1.8934767410627018e-05,
+            -3.723085593169409e-05,
+            1.0
+          ]
+        ],
+        "matches": 256,
+        "inliers": 112,
+        "median_error_pixels": 1.214663028717041,
+        "coverage": [
+          0.701704610188802,
+          0.8164051818847656
+        ],
+        "feature_max_side": 1600,
+        "error_coordinate_system": "reduced feature image",
+        "median_error_full_resolution_pixels": 3.0366575717926025
+      },
+      "classification": {
+        "front_seed_threshold": 136.0,
+        "back_seed_threshold": 178.0,
+        "overlap_seed_threshold": 206.0,
+        "centers": [
+          [
+            123.60264900136656,
+            131.6535910475314
+          ],
+          [
+            150.15974881995675,
+            136.09841304243523
+          ],
+          [
+            163.17250489103546,
+            223.65163571658775
+          ],
+          [
+            224.22346224184844,
+            231.74309291226191
+          ]
+        ],
+        "histogram_bins": 22030,
+        "alpha": 0.010511353499999999,
+        "icm_changes": [
+          93,
+          17,
+          4,
+          0
+        ]
+      },
+      "removed_fraction": 0.06919357832520433,
+      "elapsed_seconds": 26.577375199995004,
+      "ground_truth": "No clean pencil image or pixel mask supplied; no PSNR/SSIM/F1 claimed.",
+      "ocr": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet03\\front-03\\input.png",
+          "line_count": 10,
+          "strict_cer": 0.919831223628692,
+          "strict_wer": 1.0909090909090908,
+          "normalized_cer": 0.810126582278481,
+          "normalized_wer": 0.9090909090909091,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "without_protection": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet03\\front-03\\without_protection.png",
+          "line_count": 10,
+          "strict_cer": 0.6160337552742616,
+          "strict_wer": 0.9772727272727273,
+          "normalized_cer": 0.5274261603375527,
+          "normalized_wer": 0.7272727272727273,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "filtered": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet03\\front-03\\filtered.png",
+          "line_count": 10,
+          "strict_cer": 0.6118143459915611,
+          "strict_wer": 1.0227272727272727,
+          "normalized_cer": 0.5063291139240507,
+          "normalized_wer": 0.7272727272727273,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "strong_removal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet03\\front-03\\strong_removal.png",
+          "line_count": 10,
+          "strict_cer": 0.5232067510548524,
+          "strict_wer": 0.9090909090909091,
+          "normalized_cer": 0.4936708860759494,
+          "normalized_wer": 0.7954545454545454,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet04/front-01",
+      "method": "Rowley-Brooke structure; ICM/Telea approximations (see METHOD.md)",
+      "front_sha256": "4f96edcd183457a4731073bb4adce120c17e6dd626ddcff8b10c4f4a7bb24ada",
+      "back_sha256": "6cb6cd1c1d46d80221e10908a68139a5f0e416926a7954971c833e7bc8a31e7e",
+      "max_side": 4000,
+      "mirrored_back": true,
+      "working_size": [
+        3000,
+        4000
+      ],
+      "registration": {
+        "homography": [
+          [
+            1.0059208597391975,
+            0.029310504383628696,
+            17.72549106416229
+          ],
+          [
+            -0.014269418157048394,
+            1.0062777699415129,
+            50.251973409638126
+          ],
+          [
+            2.7581183632642206e-06,
+            2.88529026409573e-06,
+            1.0
+          ]
+        ],
+        "matches": 192,
+        "inliers": 79,
+        "median_error_pixels": 1.1981723308563232,
+        "coverage": [
+          0.8550335693359375,
+          0.8353120422363282
+        ],
+        "feature_max_side": 1600,
+        "error_coordinate_system": "reduced feature image",
+        "median_error_full_resolution_pixels": 2.995430827140808
+      },
+      "classification": {
+        "front_seed_threshold": 163.0,
+        "back_seed_threshold": 174.0,
+        "overlap_seed_threshold": 218.0,
+        "centers": [
+          [
+            127.33529624927567,
+            124.34009865880945
+          ],
+          [
+            202.9038423596725,
+            130.16736542698365
+          ],
+          [
+            173.1391371542116,
+            223.88792626451772
+          ],
+          [
+            230.60044367568238,
+            231.3775586978274
+          ]
+        ],
+        "histogram_bins": 22364,
+        "alpha": 0.010707895799999999,
+        "icm_changes": [
+          163,
+          13,
+          2,
+          2,
+          2,
+          1,
+          2,
+          2,
+          0
+        ]
+      },
+      "removed_fraction": 0.07584392019702955,
+      "elapsed_seconds": 20.636320199992042,
+      "ground_truth": "No clean pencil image or pixel mask supplied; no PSNR/SSIM/F1 claimed.",
+      "ocr": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet04\\front-01\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.1215686274509804,
+          "strict_wer": 1.4130434782608696,
+          "normalized_cer": 1.0823529411764705,
+          "normalized_wer": 1.3478260869565217,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "without_protection": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet04\\front-01\\without_protection.png",
+          "line_count": 10,
+          "strict_cer": 0.42745098039215684,
+          "strict_wer": 0.7391304347826086,
+          "normalized_cer": 0.37254901960784315,
+          "normalized_wer": 0.6086956521739131,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "filtered": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet04\\front-01\\filtered.png",
+          "line_count": 10,
+          "strict_cer": 0.4666666666666667,
+          "strict_wer": 0.8260869565217391,
+          "normalized_cer": 0.4,
+          "normalized_wer": 0.6521739130434783,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "strong_removal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet04\\front-01\\strong_removal.png",
+          "line_count": 10,
+          "strict_cer": 0.8431372549019608,
+          "strict_wer": 1.4130434782608696,
+          "normalized_cer": 0.792156862745098,
+          "normalized_wer": 1.1304347826086956,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet04/front-02",
+      "method": "Rowley-Brooke structure; ICM/Telea approximations (see METHOD.md)",
+      "front_sha256": "3f6265ea1aa00bad4bd68e9e96d586bd67f03ad88719fc18eb1d7d0b3b445bb9",
+      "back_sha256": "6cb6cd1c1d46d80221e10908a68139a5f0e416926a7954971c833e7bc8a31e7e",
+      "max_side": 4000,
+      "mirrored_back": true,
+      "working_size": [
+        3000,
+        4000
+      ],
+      "registration": {
+        "homography": [
+          [
+            0.9260270568110821,
+            0.0036143061494313504,
+            239.72102488897644
+          ],
+          [
+            0.006590256114687426,
+            0.9364002588008268,
+            -62.73277826017207
+          ],
+          [
+            -6.348846715291786e-07,
+            8.519460139973103e-06,
+            1.0
+          ]
+        ],
+        "matches": 189,
+        "inliers": 85,
+        "median_error_pixels": 1.1325021982192993,
+        "coverage": [
+          0.8194867960611979,
+          0.5740690612792969
+        ],
+        "feature_max_side": 1600,
+        "error_coordinate_system": "reduced feature image",
+        "median_error_full_resolution_pixels": 2.8312554955482483
+      },
+      "classification": {
+        "front_seed_threshold": 154.0,
+        "back_seed_threshold": 174.0,
+        "overlap_seed_threshold": 209.0,
+        "centers": [
+          [
+            116.22786843824156,
+            124.27329014535451
+          ],
+          [
+            194.5176667263196,
+            128.30934557818972
+          ],
+          [
+            157.5104370287061,
+            223.38033753310145
+          ],
+          [
+            225.66132960058292,
+            229.42343387470999
+          ]
+        ],
+        "histogram_bins": 25025,
+        "alpha": 0.01227376125,
+        "icm_changes": [
+          266,
+          19,
+          3,
+          0
+        ]
+      },
+      "removed_fraction": 0.07326993851573728,
+      "elapsed_seconds": 21.908087500021793,
+      "ground_truth": "No clean pencil image or pixel mask supplied; no PSNR/SSIM/F1 claimed.",
+      "ocr": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet04\\front-02\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.0666666666666667,
+          "strict_wer": 1.3043478260869565,
+          "normalized_cer": 1.0431372549019609,
+          "normalized_wer": 1.2391304347826086,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "without_protection": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet04\\front-02\\without_protection.png",
+          "line_count": 10,
+          "strict_cer": 0.6431372549019608,
+          "strict_wer": 0.9565217391304348,
+          "normalized_cer": 0.5686274509803921,
+          "normalized_wer": 0.7608695652173914,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "filtered": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet04\\front-02\\filtered.png",
+          "line_count": 10,
+          "strict_cer": 0.6549019607843137,
+          "strict_wer": 1.0434782608695652,
+          "normalized_cer": 0.5607843137254902,
+          "normalized_wer": 0.782608695652174,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "strong_removal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet04\\front-02\\strong_removal.png",
+          "line_count": 10,
+          "strict_cer": 0.788235294117647,
+          "strict_wer": 1.2826086956521738,
+          "normalized_cer": 0.7215686274509804,
+          "normalized_wer": 1.108695652173913,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet04/front-03",
+      "method": "Rowley-Brooke structure; ICM/Telea approximations (see METHOD.md)",
+      "front_sha256": "2e54241b6569a256bc07e2edc25cd85aaa2cb47ceff5ee144d322d9bc95f3e56",
+      "back_sha256": "6cb6cd1c1d46d80221e10908a68139a5f0e416926a7954971c833e7bc8a31e7e",
+      "max_side": 4000,
+      "mirrored_back": true,
+      "working_size": [
+        3000,
+        4000
+      ],
+      "registration": {
+        "homography": [
+          [
+            0.9638307615736503,
+            0.02563263418067518,
+            29.454603212099848
+          ],
+          [
+            -0.03222105290899623,
+            0.9537511652937462,
+            65.92885790143865
+          ],
+          [
+            -3.6210353206716177e-07,
+            -3.7422193093664883e-06,
+            1.0
+          ]
+        ],
+        "matches": 204,
+        "inliers": 86,
+        "median_error_pixels": 1.2388274669647217,
+        "coverage": [
+          0.8367947387695313,
+          0.804676513671875
+        ],
+        "feature_max_side": 1600,
+        "error_coordinate_system": "reduced feature image",
+        "median_error_full_resolution_pixels": 3.097068667411804
+      },
+      "classification": {
+        "front_seed_threshold": 163.0,
+        "back_seed_threshold": 175.0,
+        "overlap_seed_threshold": 219.0,
+        "centers": [
+          [
+            125.94444911228321,
+            125.47459881980146
+          ],
+          [
+            203.1571504733733,
+            130.93475961579801
+          ],
+          [
+            173.3261778672484,
+            224.74278058737295
+          ],
+          [
+            231.9491269194184,
+            230.4239706481859
+          ]
+        ],
+        "histogram_bins": 22619,
+        "alpha": 0.010857950549999999,
+        "icm_changes": [
+          219,
+          16,
+          1,
+          1,
+          0
+        ]
+      },
+      "removed_fraction": 0.0755158783625796,
+      "elapsed_seconds": 20.019165200006682,
+      "ground_truth": "No clean pencil image or pixel mask supplied; no PSNR/SSIM/F1 claimed.",
+      "ocr": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet04\\front-03\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.0235294117647058,
+          "strict_wer": 1.5,
+          "normalized_cer": 0.9686274509803922,
+          "normalized_wer": 1.4130434782608696,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "without_protection": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet04\\front-03\\without_protection.png",
+          "line_count": 10,
+          "strict_cer": 0.45098039215686275,
+          "strict_wer": 0.8913043478260869,
+          "normalized_cer": 0.4,
+          "normalized_wer": 0.717391304347826,
+          "normalized_exact_lines": 1,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "filtered": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet04\\front-03\\filtered.png",
+          "line_count": 10,
+          "strict_cer": 0.4117647058823529,
+          "strict_wer": 0.8043478260869565,
+          "normalized_cer": 0.36470588235294116,
+          "normalized_wer": 0.6521739130434783,
+          "normalized_exact_lines": 1,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "strong_removal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet04\\front-03\\strong_removal.png",
+          "line_count": 10,
+          "strict_cer": 0.8117647058823529,
+          "strict_wer": 1.1956521739130435,
+          "normalized_cer": 0.7450980392156863,
+          "normalized_wer": 1.0217391304347827,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet06/front-01",
+      "method": "Rowley-Brooke structure; ICM/Telea approximations (see METHOD.md)",
+      "front_sha256": "52a41218c4dc73d372c70439410c3b0b072e0d68405e93edbed1c195da6f7de2",
+      "back_sha256": "ae5941c604c9efb0de2a75f04649ad81de52249e9eacf5a366fab34f74a456d3",
+      "max_side": 4000,
+      "mirrored_back": true,
+      "working_size": [
+        3000,
+        4000
+      ],
+      "registration": {
+        "homography": [
+          [
+            1.0128256140669392,
+            -0.033891927114432584,
+            42.26183011182228
+          ],
+          [
+            0.01990834854803947,
+            1.015186233953885,
+            -42.38263545415008
+          ],
+          [
+            -5.082602422105505e-06,
+            -2.268751505906232e-06,
+            1.0
+          ]
+        ],
+        "matches": 425,
+        "inliers": 169,
+        "median_error_pixels": 1.685045838356018,
+        "coverage": [
+          0.6078192545572917,
+          0.7983027954101563
+        ]
+      },
+      "classification": {
+        "front_seed_threshold": 136.0,
+        "back_seed_threshold": 174.0,
+        "overlap_seed_threshold": 221.0,
+        "centers": [
+          [
+            121.58428432731137,
+            124.70288759631717
+          ],
+          [
+            152.52820247323245,
+            129.1590316603922
+          ],
+          [
+            179.78028474860594,
+            221.71183597456738
+          ],
+          [
+            231.85489812949055,
+            230.83319085709633
+          ]
+        ],
+        "histogram_bins": 21239,
+        "alpha": 0.01004588955,
+        "icm_changes": [
+          77,
+          13,
+          3,
+          0
+        ]
+      },
+      "removed_fraction": 0.06054252573771321,
+      "elapsed_seconds": 23.163523800030816,
+      "ground_truth": "No clean pencil image or pixel mask supplied; no PSNR/SSIM/F1 claimed.",
+      "ocr": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet06\\front-01\\input.png",
+          "line_count": 10,
+          "strict_cer": 0.9803149606299213,
+          "strict_wer": 1.3333333333333333,
+          "normalized_cer": 0.9645669291338582,
+          "normalized_wer": 1.288888888888889,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "without_protection": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet06\\front-01\\without_protection.png",
+          "line_count": 10,
+          "strict_cer": 0.5551181102362205,
+          "strict_wer": 0.8666666666666667,
+          "normalized_cer": 0.5196850393700787,
+          "normalized_wer": 0.7555555555555555,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "filtered": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet06\\front-01\\filtered.png",
+          "line_count": 10,
+          "strict_cer": 0.5669291338582677,
+          "strict_wer": 1.0666666666666667,
+          "normalized_cer": 0.48031496062992124,
+          "normalized_wer": 0.8666666666666667,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "strong_removal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet06\\front-01\\strong_removal.png",
+          "line_count": 10,
+          "strict_cer": 0.6023622047244095,
+          "strict_wer": 0.9111111111111111,
+          "normalized_cer": 0.5708661417322834,
+          "normalized_wer": 0.8,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet06/front-02",
+      "method": "Rowley-Brooke structure; ICM/Telea approximations (see METHOD.md)",
+      "front_sha256": "34b8badb3c6c999027651a7e74a705427d2d86f585a232e409b582f651015973",
+      "back_sha256": "ae5941c604c9efb0de2a75f04649ad81de52249e9eacf5a366fab34f74a456d3",
+      "max_side": 4000,
+      "mirrored_back": true,
+      "working_size": [
+        3000,
+        4000
+      ],
+      "registration": {
+        "homography": [
+          [
+            0.9033152224642024,
+            -0.027730432813280557,
+            213.93426200293013
+          ],
+          [
+            0.012903219154871373,
+            0.9141508317128986,
+            40.461137651012756
+          ],
+          [
+            -7.424898128215016e-06,
+            5.020729394235196e-07,
+            1.0
+          ]
+        ],
+        "matches": 442,
+        "inliers": 191,
+        "median_error_pixels": 1.5785534381866455,
+        "coverage": [
+          0.6297548828125,
+          0.7334017333984375
+        ]
+      },
+      "classification": {
+        "front_seed_threshold": 158.0,
+        "back_seed_threshold": 174.0,
+        "overlap_seed_threshold": 215.0,
+        "centers": [
+          [
+            119.96499134773202,
+            125.52151151833557
+          ],
+          [
+            197.221421377589,
+            131.9182729780619
+          ],
+          [
+            173.95755218771328,
+            222.28696038391956
+          ],
+          [
+            225.86939718765913,
+            230.30745126712017
+          ]
+        ],
+        "histogram_bins": 20851,
+        "alpha": 0.00981757095,
+        "icm_changes": [
+          184,
+          10,
+          1,
+          0
+        ]
+      },
+      "removed_fraction": 0.06338929134294007,
+      "elapsed_seconds": 18.60786150000058,
+      "ground_truth": "No clean pencil image or pixel mask supplied; no PSNR/SSIM/F1 claimed.",
+      "ocr": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet06\\front-02\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.0748031496062993,
+          "strict_wer": 1.4666666666666666,
+          "normalized_cer": 1.0275590551181102,
+          "normalized_wer": 1.3777777777777778,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "without_protection": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet06\\front-02\\without_protection.png",
+          "line_count": 10,
+          "strict_cer": 0.5748031496062992,
+          "strict_wer": 0.9777777777777777,
+          "normalized_cer": 0.48031496062992124,
+          "normalized_wer": 0.7333333333333333,
+          "normalized_exact_lines": 1,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "filtered": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet06\\front-02\\filtered.png",
+          "line_count": 10,
+          "strict_cer": 0.5236220472440944,
+          "strict_wer": 0.8444444444444444,
+          "normalized_cer": 0.4409448818897638,
+          "normalized_wer": 0.6444444444444445,
+          "normalized_exact_lines": 1,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "strong_removal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet06\\front-02\\strong_removal.png",
+          "line_count": 10,
+          "strict_cer": 0.610236220472441,
+          "strict_wer": 0.8666666666666667,
+          "normalized_cer": 0.5669291338582677,
+          "normalized_wer": 0.7555555555555555,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet06/front-03",
+      "method": "Rowley-Brooke structure; ICM/Telea approximations (see METHOD.md)",
+      "front_sha256": "26b133005c574411b71f8b3191b9a1cc1305af90df986ded633f1c5d60b27ab4",
+      "back_sha256": "ae5941c604c9efb0de2a75f04649ad81de52249e9eacf5a366fab34f74a456d3",
+      "max_side": 4000,
+      "mirrored_back": true,
+      "working_size": [
+        3000,
+        4000
+      ],
+      "registration": {
+        "homography": [
+          [
+            0.8690527602479144,
+            -0.049474954918407914,
+            181.49061635255214
+          ],
+          [
+            0.0019977005103626326,
+            0.8213179724855627,
+            269.22449919362145
+          ],
+          [
+            -4.8316794282924264e-06,
+            -2.420476180269551e-05,
+            1.0
+          ]
+        ],
+        "matches": 416,
+        "inliers": 173,
+        "median_error_pixels": 1.600963830947876,
+        "coverage": [
+          0.5482237141927083,
+          0.7353547973632812
+        ]
+      },
+      "classification": {
+        "front_seed_threshold": 131.0,
+        "back_seed_threshold": 177.0,
+        "overlap_seed_threshold": 214.0,
+        "centers": [
+          [
+            117.82563933067202,
+            128.11844051945658
+          ],
+          [
+            146.3521240128131,
+            132.01896227721832
+          ],
+          [
+            172.70324143150611,
+            224.96699535084875
+          ],
+          [
+            227.09300414550984,
+            233.03121397208525
+          ]
+        ],
+        "histogram_bins": 21381,
+        "alpha": 0.01012944945,
+        "icm_changes": [
+          98,
+          8,
+          1,
+          0
+        ]
+      },
+      "removed_fraction": 0.060684909184890015,
+      "elapsed_seconds": 23.269642500032205,
+      "ground_truth": "No clean pencil image or pixel mask supplied; no PSNR/SSIM/F1 claimed.",
+      "ocr": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet06\\front-03\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.1141732283464567,
+          "strict_wer": 1.3777777777777778,
+          "normalized_cer": 1.0748031496062993,
+          "normalized_wer": 1.288888888888889,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "without_protection": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet06\\front-03\\without_protection.png",
+          "line_count": 10,
+          "strict_cer": 0.5748031496062992,
+          "strict_wer": 1.0,
+          "normalized_cer": 0.4881889763779528,
+          "normalized_wer": 0.8,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "filtered": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet06\\front-03\\filtered.png",
+          "line_count": 10,
+          "strict_cer": 0.6259842519685039,
+          "strict_wer": 1.1555555555555554,
+          "normalized_cer": 0.4409448818897638,
+          "normalized_wer": 0.7333333333333333,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "strong_removal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet06\\front-03\\strong_removal.png",
+          "line_count": 10,
+          "strict_cer": 0.5433070866141733,
+          "strict_wer": 0.9777777777777777,
+          "normalized_cer": 0.49606299212598426,
+          "normalized_wer": 0.7777777777777778,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet06/front-04",
+      "method": "Rowley-Brooke structure; ICM/Telea approximations (see METHOD.md)",
+      "front_sha256": "d811ce79f91d54dffca637fc589841712483850ed422ccb48631384586738bad",
+      "back_sha256": "ae5941c604c9efb0de2a75f04649ad81de52249e9eacf5a366fab34f74a456d3",
+      "max_side": 4000,
+      "mirrored_back": true,
+      "working_size": [
+        3000,
+        4000
+      ],
+      "registration": {
+        "homography": [
+          [
+            0.8748596039026674,
+            0.0012194111325642867,
+            85.12682466434731
+          ],
+          [
+            0.0031365221274300306,
+            0.9141315761157043,
+            482.0339175451376
+          ],
+          [
+            -6.120856300819688e-06,
+            1.4047070376110107e-05,
+            1.0
+          ]
+        ],
+        "matches": 422,
+        "inliers": 169,
+        "median_error_pixels": 1.655826449394226,
+        "coverage": [
+          0.589577392578125,
+          0.6925300903320313
+        ]
+      },
+      "classification": {
+        "front_seed_threshold": 160.0,
+        "back_seed_threshold": 173.0,
+        "overlap_seed_threshold": 217.0,
+        "centers": [
+          [
+            124.43584650400426,
+            124.6563465236132
+          ],
+          [
+            197.11301318648452,
+            130.2745674146925
+          ],
+          [
+            174.55158583978394,
+            221.13495434352504
+          ],
+          [
+            227.8465021601861,
+            230.06594106569182
+          ]
+        ],
+        "histogram_bins": 20168,
+        "alpha": 0.0094156596,
+        "icm_changes": [
+          154,
+          7,
+          3,
+          0
+        ]
+      },
+      "removed_fraction": 0.06441487722182267,
+      "elapsed_seconds": 19.13885470002424,
+      "ground_truth": "No clean pencil image or pixel mask supplied; no PSNR/SSIM/F1 claimed.",
+      "ocr": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet06\\front-04\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.0433070866141732,
+          "strict_wer": 1.288888888888889,
+          "normalized_cer": 0.9960629921259843,
+          "normalized_wer": 1.1777777777777778,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "without_protection": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet06\\front-04\\without_protection.png",
+          "line_count": 10,
+          "strict_cer": 0.531496062992126,
+          "strict_wer": 0.9111111111111111,
+          "normalized_cer": 0.42913385826771655,
+          "normalized_wer": 0.6888888888888889,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "filtered": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet06\\front-04\\filtered.png",
+          "line_count": 10,
+          "strict_cer": 0.5393700787401575,
+          "strict_wer": 1.0444444444444445,
+          "normalized_cer": 0.4015748031496063,
+          "normalized_wer": 0.7111111111111111,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "strong_removal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet06\\front-04\\strong_removal.png",
+          "line_count": 10,
+          "strict_cer": 0.5590551181102362,
+          "strict_wer": 0.8444444444444444,
+          "normalized_cer": 0.5354330708661418,
+          "normalized_wer": 0.7333333333333333,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet07/front-01",
+      "method": "Rowley-Brooke structure; ICM/Telea approximations (see METHOD.md)",
+      "front_sha256": "1645ac613df6ee810aef1349321d51a3e9a35a512525f93b25b24ed75cc7f170",
+      "back_sha256": "d7ebccc30e15a5aafda63fe726e42781639c0d0d89bbc09165867d8ecbe6d66e",
+      "max_side": 4000,
+      "mirrored_back": true,
+      "working_size": [
+        3000,
+        4000
+      ],
+      "registration": {
+        "homography": [
+          [
+            0.9389250223562695,
+            0.042945433361922906,
+            -47.82418603449166
+          ],
+          [
+            -0.11997044720170236,
+            0.9996320847932744,
+            34.237952946068326
+          ],
+          [
+            -3.853109465294255e-05,
+            1.1982655941786047e-06,
+            1.0
+          ]
+        ],
+        "matches": 279,
+        "inliers": 123,
+        "median_error_pixels": 1.1393259763717651,
+        "coverage": [
+          0.7409829711914062,
+          0.8425034332275391
+        ],
+        "feature_max_side": 1600,
+        "error_coordinate_system": "reduced feature image",
+        "median_error_full_resolution_pixels": 2.848314940929413
+      },
+      "classification": {
+        "front_seed_threshold": 161.0,
+        "back_seed_threshold": 177.0,
+        "overlap_seed_threshold": 214.0,
+        "centers": [
+          [
+            127.3239714284065,
+            129.58896631946382
+          ],
+          [
+            197.03927010015192,
+            132.74650398437257
+          ],
+          [
+            165.79859272178982,
+            223.55872944959526
+          ],
+          [
+            226.99244213868485,
+            230.85798816568047
+          ]
+        ],
+        "histogram_bins": 21894,
+        "alpha": 0.0104313243,
+        "icm_changes": [
+          180,
+          15,
+          1,
+          0
+        ]
+      },
+      "removed_fraction": 0.07732855912770804,
+      "elapsed_seconds": 20.364537200017367,
+      "ground_truth": "No clean pencil image or pixel mask supplied; no PSNR/SSIM/F1 claimed.",
+      "ocr": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet07\\front-01\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.1583011583011582,
+          "strict_wer": 1.3404255319148937,
+          "normalized_cer": 1.1081081081081081,
+          "normalized_wer": 1.2553191489361701,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "without_protection": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet07\\front-01\\without_protection.png",
+          "line_count": 10,
+          "strict_cer": 0.7142857142857143,
+          "strict_wer": 1.148936170212766,
+          "normalized_cer": 0.5945945945945946,
+          "normalized_wer": 0.8936170212765957,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "filtered": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet07\\front-01\\filtered.png",
+          "line_count": 10,
+          "strict_cer": 0.6872586872586872,
+          "strict_wer": 1.0851063829787233,
+          "normalized_cer": 0.5791505791505791,
+          "normalized_wer": 0.8723404255319149,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "strong_removal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet07\\front-01\\strong_removal.png",
+          "line_count": 10,
+          "strict_cer": 0.7258687258687259,
+          "strict_wer": 1.127659574468085,
+          "normalized_cer": 0.6563706563706564,
+          "normalized_wer": 1.0,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet07/front-02",
+      "method": "Rowley-Brooke structure; ICM/Telea approximations (see METHOD.md)",
+      "front_sha256": "97ff19e9e5de36cb647c2dc134341063711d9536ab334fc1990c7e34ae3d72ac",
+      "back_sha256": "d7ebccc30e15a5aafda63fe726e42781639c0d0d89bbc09165867d8ecbe6d66e",
+      "max_side": 4000,
+      "mirrored_back": true,
+      "working_size": [
+        3000,
+        4000
+      ],
+      "registration": {
+        "homography": [
+          [
+            0.9032615304864976,
+            0.036060969484351516,
+            78.37828628829021
+          ],
+          [
+            -0.07289951306146679,
+            0.9513287333778774,
+            91.01189592603974
+          ],
+          [
+            -2.430804319863522e-05,
+            5.84200717029011e-06,
+            1.0
+          ]
+        ],
+        "matches": 263,
+        "inliers": 137,
+        "median_error_pixels": 1.264133095741272,
+        "coverage": [
+          0.7125079345703125,
+          0.7767640686035157
+        ],
+        "feature_max_side": 1600,
+        "error_coordinate_system": "reduced feature image",
+        "median_error_full_resolution_pixels": 3.16033273935318
+      },
+      "classification": {
+        "front_seed_threshold": 160.0,
+        "back_seed_threshold": 177.0,
+        "overlap_seed_threshold": 212.0,
+        "centers": [
+          [
+            126.60737555683804,
+            130.22671059005472
+          ],
+          [
+            195.58254241293463,
+            134.30819241485813
+          ],
+          [
+            167.40916190789525,
+            224.1305806876131
+          ],
+          [
+            225.39401736009376,
+            231.79381226193965
+          ]
+        ],
+        "histogram_bins": 20505,
+        "alpha": 0.00961396725,
+        "icm_changes": [
+          158,
+          13,
+          4,
+          0
+        ]
+      },
+      "removed_fraction": 0.07572425542780453,
+      "elapsed_seconds": 18.717869399988558,
+      "ground_truth": "No clean pencil image or pixel mask supplied; no PSNR/SSIM/F1 claimed.",
+      "ocr": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet07\\front-02\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.3011583011583012,
+          "strict_wer": 1.8085106382978724,
+          "normalized_cer": 1.2625482625482625,
+          "normalized_wer": 1.7659574468085106,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "without_protection": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet07\\front-02\\without_protection.png",
+          "line_count": 10,
+          "strict_cer": 0.5907335907335908,
+          "strict_wer": 1.0851063829787233,
+          "normalized_cer": 0.5057915057915058,
+          "normalized_wer": 0.851063829787234,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "filtered": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet07\\front-02\\filtered.png",
+          "line_count": 10,
+          "strict_cer": 0.583011583011583,
+          "strict_wer": 0.9787234042553191,
+          "normalized_cer": 0.5173745173745173,
+          "normalized_wer": 0.8085106382978723,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "strong_removal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet07\\front-02\\strong_removal.png",
+          "line_count": 10,
+          "strict_cer": 0.806949806949807,
+          "strict_wer": 1.0212765957446808,
+          "normalized_cer": 0.6447876447876448,
+          "normalized_wer": 0.9574468085106383,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet07/front-03",
+      "method": "Rowley-Brooke structure; ICM/Telea approximations (see METHOD.md)",
+      "front_sha256": "6d333377afbceb769b3512824fd4f1b1e236799502ecb8a65e9d9975195883b2",
+      "back_sha256": "d7ebccc30e15a5aafda63fe726e42781639c0d0d89bbc09165867d8ecbe6d66e",
+      "max_side": 4000,
+      "mirrored_back": true,
+      "working_size": [
+        3000,
+        4000
+      ],
+      "registration": {
+        "homography": [
+          [
+            0.911557450811934,
+            0.07097692116297623,
+            -12.373550568852067
+          ],
+          [
+            -0.08998088287201966,
+            1.0104428415945197,
+            189.69589160982022
+          ],
+          [
+            -3.1217461775199285e-05,
+            2.6072774907401413e-05,
+            1.0
+          ]
+        ],
+        "matches": 260,
+        "inliers": 113,
+        "median_error_pixels": 1.3058487176895142,
+        "coverage": [
+          0.6950626627604166,
+          0.75973876953125
+        ],
+        "feature_max_side": 1600,
+        "error_coordinate_system": "reduced feature image",
+        "median_error_full_resolution_pixels": 3.2646217942237854
+      },
+      "classification": {
+        "front_seed_threshold": 157.0,
+        "back_seed_threshold": 177.0,
+        "overlap_seed_threshold": 209.0,
+        "centers": [
+          [
+            122.77033064227953,
+            129.33998213541466
+          ],
+          [
+            192.87185819981903,
+            133.57973066482143
+          ],
+          [
+            160.34853140768564,
+            224.3548610451561
+          ],
+          [
+            223.33926765122396,
+            231.26264874110313
+          ]
+        ],
+        "histogram_bins": 22156,
+        "alpha": 0.0105854982,
+        "icm_changes": [
+          160,
+          13,
+          2,
+          0
+        ]
+      },
+      "removed_fraction": 0.07819305357684304,
+      "elapsed_seconds": 18.580459100019652,
+      "ground_truth": "No clean pencil image or pixel mask supplied; no PSNR/SSIM/F1 claimed.",
+      "ocr": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet07\\front-03\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.16988416988417,
+          "strict_wer": 1.4680851063829787,
+          "normalized_cer": 1.1274131274131274,
+          "normalized_wer": 1.3829787234042554,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "without_protection": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet07\\front-03\\without_protection.png",
+          "line_count": 10,
+          "strict_cer": 0.7027027027027027,
+          "strict_wer": 1.1063829787234043,
+          "normalized_cer": 0.61003861003861,
+          "normalized_wer": 0.8936170212765957,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "filtered": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet07\\front-03\\filtered.png",
+          "line_count": 10,
+          "strict_cer": 0.6988416988416989,
+          "strict_wer": 1.1914893617021276,
+          "normalized_cer": 0.5907335907335908,
+          "normalized_wer": 0.9361702127659575,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "strong_removal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet07\\front-03\\strong_removal.png",
+          "line_count": 10,
+          "strict_cer": 0.6718146718146718,
+          "strict_wer": 0.8723404255319149,
+          "normalized_cer": 0.6254826254826255,
+          "normalized_wer": 0.851063829787234,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet08/front-01",
+      "method": "Rowley-Brooke structure; ICM/Telea approximations (see METHOD.md)",
+      "front_sha256": "6f9b589a5555ca3932af02718c31bdebeab271095ad7ca224defdfb76296f8ea",
+      "back_sha256": "16139cae77461556b955873b6cf51eb58b6f54e4fc8dad3daf55bbfd1d733d0e",
+      "max_side": 4000,
+      "mirrored_back": true,
+      "working_size": [
+        3000,
+        4000
+      ],
+      "registration": {
+        "homography": [
+          [
+            0.9869035524301545,
+            -0.04512618005490741,
+            108.75546710631767
+          ],
+          [
+            0.04976133035381087,
+            0.9587672028173807,
+            6.9851008341157685
+          ],
+          [
+            8.316191130775303e-06,
+            -8.279873852714554e-06,
+            1.0
+          ]
+        ],
+        "matches": 272,
+        "inliers": 72,
+        "median_error_pixels": 1.4528359174728394,
+        "coverage": [
+          0.822962646484375,
+          0.7938970336914063
+        ]
+      },
+      "classification": {
+        "front_seed_threshold": 134.0,
+        "back_seed_threshold": 177.0,
+        "overlap_seed_threshold": 211.0,
+        "centers": [
+          [
+            120.05951360134299,
+            128.62378053465093
+          ],
+          [
+            148.45453569004582,
+            133.40313098680622
+          ],
+          [
+            168.15527357249638,
+            224.1241490272867
+          ],
+          [
+            222.69363352013553,
+            232.14567313958034
+          ]
+        ],
+        "histogram_bins": 20281,
+        "alpha": 0.009482154449999999,
+        "icm_changes": [
+          78,
+          9,
+          3,
+          1,
+          0
+        ]
+      },
+      "removed_fraction": 0.08064770847321208,
+      "elapsed_seconds": 22.62311560002854,
+      "ground_truth": "No clean pencil image or pixel mask supplied; no PSNR/SSIM/F1 claimed.",
+      "ocr": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet08\\front-01\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.02734375,
+          "strict_wer": 1.4666666666666666,
+          "normalized_cer": 0.96875,
+          "normalized_wer": 1.3111111111111111,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "without_protection": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet08\\front-01\\without_protection.png",
+          "line_count": 10,
+          "strict_cer": 0.7890625,
+          "strict_wer": 1.0444444444444445,
+          "normalized_cer": 0.7109375,
+          "normalized_wer": 0.8666666666666667,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "filtered": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet08\\front-01\\filtered.png",
+          "line_count": 10,
+          "strict_cer": 0.83984375,
+          "strict_wer": 1.1111111111111112,
+          "normalized_cer": 0.7578125,
+          "normalized_wer": 0.9333333333333333,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "strong_removal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet08\\front-01\\strong_removal.png",
+          "line_count": 10,
+          "strict_cer": 0.69921875,
+          "strict_wer": 1.0666666666666667,
+          "normalized_cer": 0.64453125,
+          "normalized_wer": 0.9111111111111111,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet08/front-02",
+      "method": "Rowley-Brooke structure; ICM/Telea approximations (see METHOD.md)",
+      "front_sha256": "8aaf230c1eda9a504fb32b40107c08a7523f4f557f0fc6c4545b287c15342a82",
+      "back_sha256": "16139cae77461556b955873b6cf51eb58b6f54e4fc8dad3daf55bbfd1d733d0e",
+      "max_side": 4000,
+      "mirrored_back": true,
+      "working_size": [
+        3000,
+        4000
+      ],
+      "registration": {
+        "homography": [
+          [
+            0.9657873318405636,
+            -0.045640815421719154,
+            100.30692160158932
+          ],
+          [
+            0.11815010943228672,
+            0.8339776660465266,
+            219.3407573841331
+          ],
+          [
+            5.254290214290622e-05,
+            -3.065843502239058e-05,
+            1.0
+          ]
+        ],
+        "matches": 241,
+        "inliers": 152,
+        "median_error_pixels": 1.3986679315567017,
+        "coverage": [
+          0.7598789469401042,
+          0.7107673645019531
+        ],
+        "feature_max_side": 1600,
+        "error_coordinate_system": "reduced feature image",
+        "median_error_full_resolution_pixels": 3.496669828891754
+      },
+      "classification": {
+        "front_seed_threshold": 131.0,
+        "back_seed_threshold": 174.0,
+        "overlap_seed_threshold": 206.0,
+        "centers": [
+          [
+            117.58469565399677,
+            125.98037314911616
+          ],
+          [
+            144.86410198116982,
+            131.68431240531896
+          ],
+          [
+            162.64337560198177,
+            222.22936111977273
+          ],
+          [
+            218.82906106886048,
+            228.65870236442382
+          ]
+        ],
+        "histogram_bins": 20286,
+        "alpha": 0.009485096699999999,
+        "icm_changes": [
+          88,
+          7,
+          0
+        ]
+      },
+      "removed_fraction": 0.07880839810465337,
+      "elapsed_seconds": 23.118398700025864,
+      "ground_truth": "No clean pencil image or pixel mask supplied; no PSNR/SSIM/F1 claimed.",
+      "ocr": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet08\\front-02\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.06640625,
+          "strict_wer": 1.3555555555555556,
+          "normalized_cer": 1.02734375,
+          "normalized_wer": 1.2222222222222223,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "without_protection": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet08\\front-02\\without_protection.png",
+          "line_count": 10,
+          "strict_cer": 0.80859375,
+          "strict_wer": 1.1555555555555554,
+          "normalized_cer": 0.74609375,
+          "normalized_wer": 1.0222222222222221,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "filtered": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet08\\front-02\\filtered.png",
+          "line_count": 10,
+          "strict_cer": 0.87109375,
+          "strict_wer": 1.1777777777777778,
+          "normalized_cer": 0.8359375,
+          "normalized_wer": 1.0444444444444445,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "strong_removal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet08\\front-02\\strong_removal.png",
+          "line_count": 10,
+          "strict_cer": 0.7890625,
+          "strict_wer": 1.0222222222222221,
+          "normalized_cer": 0.74609375,
+          "normalized_wer": 0.9777777777777777,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet08/front-03",
+      "method": "Rowley-Brooke structure; ICM/Telea approximations (see METHOD.md)",
+      "front_sha256": "e376de9c85804ea337ceb1e81f2372b2dabfc4a28b87041b959f9997942fca9c",
+      "back_sha256": "16139cae77461556b955873b6cf51eb58b6f54e4fc8dad3daf55bbfd1d733d0e",
+      "max_side": 4000,
+      "mirrored_back": true,
+      "working_size": [
+        3000,
+        4000
+      ],
+      "registration": {
+        "homography": [
+          [
+            0.8109681270461269,
+            -0.08636159475504702,
+            223.14432850461054
+          ],
+          [
+            -0.0156660117779607,
+            0.7782021678664865,
+            394.70787404154527
+          ],
+          [
+            -2.200858970476534e-05,
+            -3.297514683913581e-05,
+            1.0
+          ]
+        ],
+        "matches": 271,
+        "inliers": 160,
+        "median_error_pixels": 1.374467134475708,
+        "coverage": [
+          0.830126698811849,
+          0.7915423583984375
+        ],
+        "feature_max_side": 1600,
+        "error_coordinate_system": "reduced feature image",
+        "median_error_full_resolution_pixels": 3.43616783618927
+      },
+      "classification": {
+        "front_seed_threshold": 131.0,
+        "back_seed_threshold": 177.0,
+        "overlap_seed_threshold": 208.0,
+        "centers": [
+          [
+            118.01814541478014,
+            128.42149678873162
+          ],
+          [
+            145.18976656334755,
+            133.84638802789615
+          ],
+          [
+            165.68579739637522,
+            224.87768371810208
+          ],
+          [
+            220.18707441207442,
+            231.66999824499825
+          ]
+        ],
+        "histogram_bins": 20643,
+        "alpha": 0.009695173349999999,
+        "icm_changes": [
+          91,
+          6,
+          1,
+          0
+        ]
+      },
+      "removed_fraction": 0.07977992617647563,
+      "elapsed_seconds": 23.572811699996237,
+      "ground_truth": "No clean pencil image or pixel mask supplied; no PSNR/SSIM/F1 claimed.",
+      "ocr": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet08\\front-03\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.0078125,
+          "strict_wer": 1.3555555555555556,
+          "normalized_cer": 0.953125,
+          "normalized_wer": 1.2222222222222223,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "without_protection": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet08\\front-03\\without_protection.png",
+          "line_count": 10,
+          "strict_cer": 0.83203125,
+          "strict_wer": 1.1111111111111112,
+          "normalized_cer": 0.7890625,
+          "normalized_wer": 0.9333333333333333,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "filtered": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet08\\front-03\\filtered.png",
+          "line_count": 10,
+          "strict_cer": 0.8515625,
+          "strict_wer": 1.2444444444444445,
+          "normalized_cer": 0.79296875,
+          "normalized_wer": 1.0222222222222221,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "strong_removal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet08\\front-03\\strong_removal.png",
+          "line_count": 10,
+          "strict_cer": 0.73046875,
+          "strict_wer": 1.1111111111111112,
+          "normalized_cer": 0.6640625,
+          "normalized_wer": 0.9111111111111111,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet09/front-01",
+      "method": "Rowley-Brooke structure; ICM/Telea approximations (see METHOD.md)",
+      "front_sha256": "c4d65b27579b88a830d5abe00f43654c8aa18dde4adf8824f535ee88173061a2",
+      "back_sha256": "aee1731057387e2a489cc47bde2aa8016a4858573988e4b395ccf0435ec92498",
+      "max_side": 4000,
+      "mirrored_back": true,
+      "working_size": [
+        3000,
+        4000
+      ],
+      "registration": {
+        "homography": [
+          [
+            0.9542692288395744,
+            0.013750493377111062,
+            26.936388930686604
+          ],
+          [
+            -0.05286844803761253,
+            0.9410222218601428,
+            37.05405909946797
+          ],
+          [
+            -8.887315431309171e-06,
+            -1.4245886666666855e-05,
+            1.0
+          ]
+        ],
+        "matches": 262,
+        "inliers": 94,
+        "median_error_pixels": 1.3603880405426025,
+        "coverage": [
+          0.726785634358724,
+          0.7595925140380859
+        ],
+        "feature_max_side": 1600,
+        "error_coordinate_system": "reduced feature image",
+        "median_error_full_resolution_pixels": 3.4009701013565063
+      },
+      "classification": {
+        "front_seed_threshold": 160.0,
+        "back_seed_threshold": 175.0,
+        "overlap_seed_threshold": 214.0,
+        "centers": [
+          [
+            127.97027760811004,
+            125.8840209189114
+          ],
+          [
+            194.4061318051576,
+            129.17639571708642
+          ],
+          [
+            161.08743511845566,
+            224.40845060828576
+          ],
+          [
+            227.3968572409917,
+            232.22513738837193
+          ]
+        ],
+        "histogram_bins": 22908,
+        "alpha": 0.0110280126,
+        "icm_changes": [
+          215,
+          28,
+          7,
+          1,
+          0
+        ]
+      },
+      "removed_fraction": 0.07576163533345637,
+      "elapsed_seconds": 19.980071800004225,
+      "ground_truth": "No clean pencil image or pixel mask supplied; no PSNR/SSIM/F1 claimed.",
+      "ocr": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet09\\front-01\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.0932835820895523,
+          "strict_wer": 1.5319148936170213,
+          "normalized_cer": 1.0485074626865671,
+          "normalized_wer": 1.4042553191489362,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "without_protection": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet09\\front-01\\without_protection.png",
+          "line_count": 10,
+          "strict_cer": 1.0,
+          "strict_wer": 1.4680851063829787,
+          "normalized_cer": 0.9253731343283582,
+          "normalized_wer": 1.2553191489361701,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "filtered": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet09\\front-01\\filtered.png",
+          "line_count": 10,
+          "strict_cer": 0.9813432835820896,
+          "strict_wer": 1.425531914893617,
+          "normalized_cer": 0.9104477611940298,
+          "normalized_wer": 1.1914893617021276,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "strong_removal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet09\\front-01\\strong_removal.png",
+          "line_count": 10,
+          "strict_cer": 0.9402985074626866,
+          "strict_wer": 1.4680851063829787,
+          "normalized_cer": 0.8917910447761194,
+          "normalized_wer": 1.3191489361702127,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet09/front-02",
+      "method": "Rowley-Brooke structure; ICM/Telea approximations (see METHOD.md)",
+      "front_sha256": "98bcf84d51c2decf67cee42809d3cdfa5412264b859961b138aa587d1bf0124e",
+      "back_sha256": "aee1731057387e2a489cc47bde2aa8016a4858573988e4b395ccf0435ec92498",
+      "max_side": 4000,
+      "mirrored_back": true,
+      "working_size": [
+        3000,
+        4000
+      ],
+      "registration": {
+        "homography": [
+          [
+            0.8692276664555161,
+            0.009195075161884522,
+            276.9844984443455
+          ],
+          [
+            -0.015882804275796997,
+            0.7952630607954234,
+            282.8477169927988
+          ],
+          [
+            1.3176219476290726e-05,
+            -2.761368681883643e-05,
+            1.0
+          ]
+        ],
+        "matches": 206,
+        "inliers": 105,
+        "median_error_pixels": 1.6043009757995605,
+        "coverage": [
+          0.705174560546875,
+          0.7450663757324218
+        ],
+        "feature_max_side": 1600,
+        "error_coordinate_system": "reduced feature image",
+        "median_error_full_resolution_pixels": 4.010752439498901
+      },
+      "classification": {
+        "front_seed_threshold": 156.0,
+        "back_seed_threshold": 174.0,
+        "overlap_seed_threshold": 206.0,
+        "centers": [
+          [
+            121.13600578208182,
+            124.71916925638453
+          ],
+          [
+            192.869799114062,
+            128.55966582339235
+          ],
+          [
+            156.00235738923482,
+            224.25444874761527
+          ],
+          [
+            221.0666599728902,
+            229.399869471359
+          ]
+        ],
+        "histogram_bins": 24010,
+        "alpha": 0.011676484499999999,
+        "icm_changes": [
+          237,
+          25,
+          1,
+          0
+        ]
+      },
+      "removed_fraction": 0.07589885805527871,
+      "elapsed_seconds": 20.119727300014347,
+      "ground_truth": "No clean pencil image or pixel mask supplied; no PSNR/SSIM/F1 claimed.",
+      "ocr": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet09\\front-02\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.007462686567164,
+          "strict_wer": 1.553191489361702,
+          "normalized_cer": 0.9701492537313433,
+          "normalized_wer": 1.425531914893617,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "without_protection": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet09\\front-02\\without_protection.png",
+          "line_count": 10,
+          "strict_cer": 0.8544776119402985,
+          "strict_wer": 1.297872340425532,
+          "normalized_cer": 0.7686567164179104,
+          "normalized_wer": 1.0851063829787233,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "filtered": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet09\\front-02\\filtered.png",
+          "line_count": 10,
+          "strict_cer": 0.832089552238806,
+          "strict_wer": 1.2765957446808511,
+          "normalized_cer": 0.7313432835820896,
+          "normalized_wer": 1.0425531914893618,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "strong_removal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet09\\front-02\\strong_removal.png",
+          "line_count": 10,
+          "strict_cer": 0.8507462686567164,
+          "strict_wer": 1.1702127659574468,
+          "normalized_cer": 0.7723880597014925,
+          "normalized_wer": 1.0425531914893618,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet09/front-03",
+      "method": "Rowley-Brooke structure; ICM/Telea approximations (see METHOD.md)",
+      "front_sha256": "8727f35a434499bb9a1c0c9221c039a2eb107e0a2071d5efbaba92f6d6f37038",
+      "back_sha256": "aee1731057387e2a489cc47bde2aa8016a4858573988e4b395ccf0435ec92498",
+      "max_side": 4000,
+      "mirrored_back": true,
+      "working_size": [
+        3000,
+        4000
+      ],
+      "registration": {
+        "homography": [
+          [
+            0.7533453059589598,
+            -0.024086848182348172,
+            307.5603653064509
+          ],
+          [
+            -0.04845226514254122,
+            0.7236996224494585,
+            533.1937820340354
+          ],
+          [
+            -1.6414634017669585e-05,
+            -2.61092000238741e-05,
+            0.9999999999999999
+          ]
+        ],
+        "matches": 217,
+        "inliers": 94,
+        "median_error_pixels": 1.4808709621429443,
+        "coverage": [
+          0.6810445658365886,
+          0.6433528137207031
+        ],
+        "feature_max_side": 1600,
+        "error_coordinate_system": "reduced feature image",
+        "median_error_full_resolution_pixels": 3.702177405357361
+      },
+      "classification": {
+        "front_seed_threshold": 158.0,
+        "back_seed_threshold": 177.0,
+        "overlap_seed_threshold": 209.0,
+        "centers": [
+          [
+            123.95780730277211,
+            127.15729921626864
+          ],
+          [
+            193.32051176952805,
+            132.3200374751142
+          ],
+          [
+            159.6824235819877,
+            226.67721714052988
+          ],
+          [
+            222.5576983876067,
+            232.71675733426363
+          ]
+        ],
+        "histogram_bins": 23891,
+        "alpha": 0.011606458949999999,
+        "icm_changes": [
+          200,
+          14,
+          2,
+          1,
+          1,
+          0
+        ]
+      },
+      "removed_fraction": 0.07794182016661329,
+      "elapsed_seconds": 20.118660099979024,
+      "ground_truth": "No clean pencil image or pixel mask supplied; no PSNR/SSIM/F1 claimed.",
+      "ocr": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet09\\front-03\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.0970149253731343,
+          "strict_wer": 1.5106382978723405,
+          "normalized_cer": 1.037313432835821,
+          "normalized_wer": 1.3191489361702127,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "without_protection": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet09\\front-03\\without_protection.png",
+          "line_count": 10,
+          "strict_cer": 0.8880597014925373,
+          "strict_wer": 1.4042553191489362,
+          "normalized_cer": 0.7388059701492538,
+          "normalized_wer": 1.0425531914893618,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "filtered": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet09\\front-03\\filtered.png",
+          "line_count": 10,
+          "strict_cer": 0.9365671641791045,
+          "strict_wer": 1.3404255319148937,
+          "normalized_cer": 0.8059701492537313,
+          "normalized_wer": 1.0851063829787233,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "strong_removal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet09\\front-03\\strong_removal.png",
+          "line_count": 10,
+          "strict_cer": 0.8582089552238806,
+          "strict_wer": 1.2765957446808511,
+          "normalized_cer": 0.8283582089552238,
+          "normalized_wer": 1.148936170212766,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet10/front-01",
+      "method": "Rowley-Brooke structure; ICM/Telea approximations (see METHOD.md)",
+      "front_sha256": "618caf43e0e547987d5508deda80e2d896467d5e991de1ca28094fc86c21d244",
+      "back_sha256": "55800a873284921dc2df5b4977651113e9d7ee2c1ba3081678a1e207182044c7",
+      "max_side": 4000,
+      "mirrored_back": true,
+      "working_size": [
+        3000,
+        4000
+      ],
+      "registration": {
+        "homography": [
+          [
+            1.0027814859868893,
+            0.03464595222801347,
+            -33.91566637851958
+          ],
+          [
+            -0.05797785624499348,
+            1.0798877605857127,
+            51.43786854406079
+          ],
+          [
+            -2.3443089403994332e-05,
+            1.7882614224583985e-05,
+            1.0
+          ]
+        ],
+        "matches": 260,
+        "inliers": 143,
+        "median_error_pixels": 1.3985451459884644,
+        "coverage": [
+          0.7428053792317708,
+          0.8607807159423828
+        ],
+        "feature_max_side": 1600,
+        "error_coordinate_system": "reduced feature image",
+        "median_error_full_resolution_pixels": 3.496362864971161
+      },
+      "classification": {
+        "front_seed_threshold": 144.0,
+        "back_seed_threshold": 175.0,
+        "overlap_seed_threshold": 217.0,
+        "centers": [
+          [
+            129.28499513242846,
+            126.33331276982393
+          ],
+          [
+            160.04236366432787,
+            131.11727412881396
+          ],
+          [
+            174.48528563105563,
+            222.64923666967636
+          ],
+          [
+            230.33890120838154,
+            229.81827677079315
+          ]
+        ],
+        "histogram_bins": 20732,
+        "alpha": 0.0097475454,
+        "icm_changes": [
+          76,
+          7,
+          1,
+          0
+        ]
+      },
+      "removed_fraction": 0.07375558736290418,
+      "elapsed_seconds": 24.29778449999867,
+      "ground_truth": "No clean pencil image or pixel mask supplied; no PSNR/SSIM/F1 claimed.",
+      "ocr": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet10\\front-01\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.1187739463601531,
+          "strict_wer": 1.3529411764705883,
+          "normalized_cer": 1.0766283524904214,
+          "normalized_wer": 1.2352941176470589,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "without_protection": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet10\\front-01\\without_protection.png",
+          "line_count": 10,
+          "strict_cer": 0.7777777777777778,
+          "strict_wer": 1.0392156862745099,
+          "normalized_cer": 0.7049808429118773,
+          "normalized_wer": 0.8627450980392157,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "filtered": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet10\\front-01\\filtered.png",
+          "line_count": 10,
+          "strict_cer": 0.7701149425287356,
+          "strict_wer": 1.0588235294117647,
+          "normalized_cer": 0.685823754789272,
+          "normalized_wer": 0.8431372549019608,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "strong_removal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet10\\front-01\\strong_removal.png",
+          "line_count": 10,
+          "strict_cer": 0.7509578544061303,
+          "strict_wer": 1.0392156862745099,
+          "normalized_cer": 0.7126436781609196,
+          "normalized_wer": 0.9215686274509803,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet10/front-02",
+      "method": "Rowley-Brooke structure; ICM/Telea approximations (see METHOD.md)",
+      "front_sha256": "174418bf26cf0d05adbbde5d6f0fbda5cb8508b202bc5dfc8d912b0a4fc0c2e3",
+      "back_sha256": "55800a873284921dc2df5b4977651113e9d7ee2c1ba3081678a1e207182044c7",
+      "max_side": 4000,
+      "mirrored_back": true,
+      "working_size": [
+        3000,
+        4000
+      ],
+      "registration": {
+        "homography": [
+          [
+            0.963840941443133,
+            0.006296051661213733,
+            192.07124475431226
+          ],
+          [
+            0.017490978411705865,
+            0.9725743053143374,
+            150.6043690287085
+          ],
+          [
+            5.974071326596603e-06,
+            6.767189547767478e-06,
+            1.0
+          ]
+        ],
+        "matches": 271,
+        "inliers": 154,
+        "median_error_pixels": 1.1902704238891602,
+        "coverage": [
+          0.8698049926757813,
+          0.7583366394042969
+        ],
+        "feature_max_side": 1600,
+        "error_coordinate_system": "reduced feature image",
+        "median_error_full_resolution_pixels": 2.9756760597229004
+      },
+      "classification": {
+        "front_seed_threshold": 136.0,
+        "back_seed_threshold": 174.0,
+        "overlap_seed_threshold": 208.0,
+        "centers": [
+          [
+            119.89434116590452,
+            126.49244795676394
+          ],
+          [
+            152.6663668962377,
+            130.7836378469653
+          ],
+          [
+            165.23657692698484,
+            221.88254398896242
+          ],
+          [
+            222.335629082647,
+            229.19105773522134
+          ]
+        ],
+        "histogram_bins": 20229,
+        "alpha": 0.00945155505,
+        "icm_changes": [
+          91,
+          4,
+          0
+        ]
+      },
+      "removed_fraction": 0.06894573349928003,
+      "elapsed_seconds": 21.90152000001399,
+      "ground_truth": "No clean pencil image or pixel mask supplied; no PSNR/SSIM/F1 claimed.",
+      "ocr": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet10\\front-02\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.0651340996168583,
+          "strict_wer": 1.392156862745098,
+          "normalized_cer": 1.0076628352490422,
+          "normalized_wer": 1.2352941176470589,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "without_protection": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet10\\front-02\\without_protection.png",
+          "line_count": 10,
+          "strict_cer": 0.6475095785440613,
+          "strict_wer": 1.0196078431372548,
+          "normalized_cer": 0.6130268199233716,
+          "normalized_wer": 0.9215686274509803,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "filtered": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet10\\front-02\\filtered.png",
+          "line_count": 10,
+          "strict_cer": 0.6168582375478927,
+          "strict_wer": 0.9607843137254902,
+          "normalized_cer": 0.5632183908045977,
+          "normalized_wer": 0.8235294117647058,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "strong_removal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet10\\front-02\\strong_removal.png",
+          "line_count": 10,
+          "strict_cer": 0.735632183908046,
+          "strict_wer": 1.0980392156862746,
+          "normalized_cer": 0.6628352490421456,
+          "normalized_wer": 0.8823529411764706,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    },
+    {
+      "capture": "sheet10/front-03",
+      "method": "Rowley-Brooke structure; ICM/Telea approximations (see METHOD.md)",
+      "front_sha256": "e37bb56157c6a346ff66eb446c951e5339d2c2f21f1b878a61feee1417ea29f2",
+      "back_sha256": "55800a873284921dc2df5b4977651113e9d7ee2c1ba3081678a1e207182044c7",
+      "max_side": 4000,
+      "mirrored_back": true,
+      "working_size": [
+        3000,
+        4000
+      ],
+      "registration": {
+        "homography": [
+          [
+            0.7932541623970925,
+            0.04132368192330984,
+            35.74184337599012
+          ],
+          [
+            -0.06875285531796106,
+            0.8619375711169468,
+            715.4456431080106
+          ],
+          [
+            -1.968779803676025e-05,
+            1.4507631820503563e-05,
+            1.0
+          ]
+        ],
+        "matches": 311,
+        "inliers": 95,
+        "median_error_pixels": 1.6565150022506714,
+        "coverage": [
+          0.5128421223958334,
+          0.6712842407226562
+        ]
+      },
+      "classification": {
+        "front_seed_threshold": 132.0,
+        "back_seed_threshold": 174.0,
+        "overlap_seed_threshold": 207.0,
+        "centers": [
+          [
+            117.68121962596395,
+            126.3847164784349
+          ],
+          [
+            147.14521127694476,
+            130.5735714265122
+          ],
+          [
+            163.15574969874334,
+            221.80352402352068
+          ],
+          [
+            221.24848602233843,
+            229.78114791142102
+          ]
+        ],
+        "histogram_bins": 22177,
+        "alpha": 0.01059785565,
+        "icm_changes": [
+          120,
+          14,
+          1,
+          0
+        ]
+      },
+      "removed_fraction": 0.0714301130938314,
+      "elapsed_seconds": 22.002618599974085,
+      "ground_truth": "No clean pencil image or pixel mask supplied; no PSNR/SSIM/F1 claimed.",
+      "ocr": {
+        "input": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet10\\front-03\\input.png",
+          "line_count": 10,
+          "strict_cer": 1.1494252873563218,
+          "strict_wer": 1.5098039215686274,
+          "normalized_cer": 1.10727969348659,
+          "normalized_wer": 1.3725490196078431,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "without_protection": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet10\\front-03\\without_protection.png",
+          "line_count": 10,
+          "strict_cer": 0.7624521072796935,
+          "strict_wer": 1.2156862745098038,
+          "normalized_cer": 0.6743295019157088,
+          "normalized_wer": 0.9215686274509803,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "filtered": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet10\\front-03\\filtered.png",
+          "line_count": 10,
+          "strict_cer": 0.7854406130268199,
+          "strict_wer": 1.3137254901960784,
+          "normalized_cer": 0.6666666666666666,
+          "normalized_wer": 1.0196078431372548,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        },
+        "strong_removal": {
+          "model": "microsoft/trocr-base-handwritten",
+          "model_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+          "image": "C:\\Users\\matth\\Desktop\\repos\\ece253-scribe\\bleed\\outputs\\sheet10\\front-03\\strong_removal.png",
+          "line_count": 10,
+          "strict_cer": 0.7701149425287356,
+          "strict_wer": 1.1372549019607843,
+          "normalized_cer": 0.7088122605363985,
+          "normalized_wer": 0.9411764705882353,
+          "normalized_exact_lines": 0,
+          "normalization": "NFKC, lowercase, remove Unicode punctuation, collapse whitespace",
+          "decoding": {
+            "num_beams": 1,
+            "do_sample": false,
+            "max_new_tokens": 128
+          }
+        }
+      }
+    }
+  ],
+  "failures": [
+    {
+      "capture": "sheet05/front-01",
+      "error": "Unreliable registration; do not use reverse-side guidance."
+    },
+    {
+      "capture": "sheet05/front-02",
+      "error": "Unreliable registration; do not use reverse-side guidance."
+    },
+    {
+      "capture": "sheet05/front-03",
+      "error": "Unreliable registration; do not use reverse-side guidance."
+    }
+  ],
+  "scores": {
+    "input": {
+      "line_count": 280,
+      "normalized_cer": 0.98714545200503,
+      "normalized_wer": 1.224006116207951,
+      "exact_lines": 0
+    },
+    "without_protection": {
+      "line_count": 280,
+      "normalized_cer": 0.6101718597177589,
+      "normalized_wer": 0.8524464831804281,
+      "exact_lines": 4
+    },
+    "filtered": {
+      "line_count": 280,
+      "normalized_cer": 0.6087746262400447,
+      "normalized_wer": 0.8577981651376146,
+      "exact_lines": 3
+    },
+    "strong_removal": {
+      "line_count": 280,
+      "normalized_cer": 0.6720693027804946,
+      "normalized_wer": 0.9373088685015291,
+      "exact_lines": 0
+    }
+  },
+  "model": "microsoft/trocr-base-handwritten",
+  "revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+  "interpretation": "Development comparison; 28 accepted captures (280 lines), excluding 3 rejected sheet05 registrations. Provisional text labels; no clean pixel ground truth."
+}

@@ -1,0 +1,42 @@
+{
+  "sheet_id": "bleed-005",
+  "pairing_key": "bleed-005",
+  "artifact": "bleed_show_through",
+  "reference_image": "perfect.jpg",
+  "reference_transcription": "perfect.txt",
+  "line_boxes": "perfect.boxes.json",
+  "condition": "clean_reference",
+  "user_condition_label": "perfect",
+  "capture_type": "photograph",
+  "source_filename": "20261113_182837.jpg",
+  "sha256": "81b57640af20da0ba1824b75d3818d9aecb068451fced9f7ca36cbfcf1a2cd09",
+  "width": 3000,
+  "height": 4000,
+  "line_count": 10,
+  "paper": "graph paper",
+  "transcription_source": "manually transcribed from supplied image",
+  "transcription_notes": "List numbers excluded; sentence digits retained. Original spelling and punctuation transcribed.",
+  "image_processing": "Original JPEG preserved byte-for-byte; OCR uses annotated line crops only.",
+  "split": null,
+  "distorted_slots": [
+    {
+      "directory": "distorted-01",
+      "status": "pending",
+      "reference_image": "../perfect.jpg",
+      "severity": null
+    },
+    {
+      "directory": "distorted-02",
+      "status": "pending",
+      "reference_image": "../perfect.jpg",
+      "severity": null
+    },
+    {
+      "directory": "distorted-03",
+      "status": "pending",
+      "reference_image": "../perfect.jpg",
+      "severity": null
+    }
+  ],
+  "notes": "User-designated clean reference; not asserted to be an artifact-free scanner acquisition. Keep all variants of this physical sheet in one dataset split."
+}

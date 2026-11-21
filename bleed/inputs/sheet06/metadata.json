@@ -1,42 +1,94 @@
 {
-  "sheet_id": "bleed-006",
-  "pairing_key": "bleed-006",
-  "artifact": "bleed_show_through",
-  "reference_image": "perfect.jpg",
-  "reference_transcription": "perfect.txt",
-  "line_boxes": "perfect.boxes.json",
-  "condition": "clean_reference",
-  "user_condition_label": "perfect",
-  "capture_type": "photograph",
-  "source_filename": "20261113_182846.jpg",
-  "sha256": "862c5825c3935e6f8f7f4537776cde22e99b0a2cad6040cf01db7ec7ecca9b42",
-  "width": 3000,
-  "height": 4000,
-  "line_count": 10,
-  "paper": "graph paper",
-  "transcription_source": "manually transcribed from supplied image",
-  "transcription_notes": "List numbers excluded; sentence digits retained. Original spelling and punctuation transcribed.",
-  "image_processing": "Original JPEG preserved byte-for-byte; OCR uses annotated line crops only.",
-  "split": null,
-  "distorted_slots": [
+  "sheet_id": "bleed-20261119-06",
+  "page_number": 6,
+  "legacy_sheet_id": "sheet06",
+  "truth_file": "truth.txt",
+  "user_verified": false,
+  "review_priority": [
     {
-      "directory": "distorted-01",
-      "status": "pending",
-      "reference_image": "../perfect.jpg",
-      "severity": null
-    },
-    {
-      "directory": "distorted-02",
-      "status": "pending",
-      "reference_image": "../perfect.jpg",
-      "severity": null
-    },
-    {
-      "directory": "distorted-03",
-      "status": "pending",
-      "reference_image": "../perfect.jpg",
-      "severity": null
+      "line": 6,
+      "text": "This fan sounds concerned",
+      "note": "Foreground repeats line 7; do NOT use the reverse-side battery sentence."
     }
   ],
-  "notes": "User-designated clean reference; not asserted to be an artifact-free scanner acquisition. Keep all variants of this physical sheet in one dataset split."
+  "captures": [
+    {
+      "file": "back.jpg",
+      "role": "reverse_noise",
+      "source_filename": "20261119_200254.jpg",
+      "sha256": "ae5941c604c9efb0de2a75f04649ad81de52249e9eacf5a366fab34f74a456d3",
+      "width": 3000,
+      "height": 4000,
+      "exif_orientation": 6,
+      "additional_rotation_degrees": 0
+    },
+    {
+      "file": "front-01.jpg",
+      "role": "foreground_with_bleed",
+      "source_filename": "20261119_200300.jpg",
+      "sha256": "52a41218c4dc73d372c70439410c3b0b072e0d68405e93edbed1c195da6f7de2",
+      "width": 3000,
+      "height": 4000,
+      "exif_orientation": 6,
+      "additional_rotation_degrees": 0,
+      "boxes": "front-01.boxes.json",
+      "box_annotation": {
+        "method": "manual base annotation"
+      }
+    },
+    {
+      "file": "front-02.jpg",
+      "role": "foreground_with_bleed",
+      "source_filename": "20261119_200304.jpg",
+      "sha256": "34b8badb3c6c999027651a7e74a705427d2d86f585a232e409b582f651015973",
+      "width": 3000,
+      "height": 4000,
+      "exif_orientation": 6,
+      "additional_rotation_degrees": 0,
+      "boxes": "front-02.boxes.json",
+      "box_annotation": {
+        "method": "base boxes mapped by same-side SIFT/RANSAC; visually reviewed",
+        "inliers": 2970
+      }
+    },
+    {
+      "file": "front-03.jpg",
+      "role": "foreground_with_bleed",
+      "source_filename": "20261119_200308.jpg",
+      "sha256": "26b133005c574411b71f8b3191b9a1cc1305af90df986ded633f1c5d60b27ab4",
+      "width": 3000,
+      "height": 4000,
+      "exif_orientation": 6,
+      "additional_rotation_degrees": 0,
+      "boxes": "front-03.boxes.json",
+      "box_annotation": {
+        "method": "base boxes mapped by same-side SIFT/RANSAC; visually reviewed",
+        "inliers": 2953
+      }
+    },
+    {
+      "file": "front-04.jpg",
+      "role": "foreground_with_bleed",
+      "source_filename": "20261119_200312.jpg",
+      "sha256": "d811ce79f91d54dffca637fc589841712483850ed422ccb48631384586738bad",
+      "width": 3000,
+      "height": 4000,
+      "exif_orientation": 6,
+      "additional_rotation_degrees": 0,
+      "boxes": "front-04.boxes.json",
+      "box_annotation": {
+        "method": "base boxes mapped by same-side SIFT/RANSAC; visually reviewed",
+        "inliers": 2742
+      }
+    }
+  ],
+  "notes": [
+    "Target is the normal left-to-right foreground, not mirrored reverse text.",
+    "Wording visually checked against front captures; occluded letters use intended sentence context. User verification pending.",
+    "Terminal periods omitted consistently; list numbers excluded; sentence numerals retained.",
+    "No clean foreground-only photograph supplied. Back is not pixel ground truth.",
+    "Capture order does not represent increasing bleed severity; some captures also contain shadows."
+  ],
+  "split": null,
+  "split_rule": "All captures of this physical sheet, including matching legacy captures, must stay in one split."
 }

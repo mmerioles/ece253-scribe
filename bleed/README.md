@@ -1,52 +1,47 @@
-# Pencil / Sharpie handoff
+# Bleed dataset and handoff
 
-## Goal and current status
+Extract normal left-to-right foreground pencil/pen text. The reverse-side Sharpie is noise, not ground truth. The current filter still loses strokes at overlaps; this import does not improve restoration.
 
-Extract front-side pencil from mirrored Sharpie bleed-through. Keep the architecture simple and use the proposal's Rowley-Brooke CVPR 2013 method as the reference.
+## Data
 
-The current prototype removes much of the Sharpie, but **erases pencil at overlaps and is not a successful pencil-only recovery**. The latest request is to improve filtering or reconnect missing strokes. That follow-up has not been implemented yet; only a source-image crop was inspected after the first experiment.
+`inputs/sheet01/` through `sheet10/` follow the handwritten page numbers in Data.zip. Each contains:
 
-## Run
+- `back.jpg`: reverse-side noise reference; mirror only during registration.
+- `front-01.jpg`, etc.: foreground with bleed, photographed several times.
+- `truth.txt`: ten foreground sentences shared by all captures, without list numbers.
+- `front-01.boxes.json`, etc.: ten crop rectangles in EXIF-oriented image coordinates, normalized to 0–1.
+- `metadata.json`: original filenames, hashes, roles and review notes.
 
-From the repository root, with Python 3.11 and `uv` installed:
+There are 41 original JPEGs: 10 backs and 31 fronts (sheet06 has four fronts; others have three). Original bytes and EXIF are preserved; the loaders and previews apply EXIF orientation. Use an EXIF-aware viewer. Capture order is not a severity ranking.
+
+Start your review at [REVIEW.md](REVIEW.md): it links all photo/box previews and transcriptions. Labels are provisional wherever bleed obscures letters. Check sheet03 line4 spelling and sheet06 line6, which repeats the fan sentence instead of the reverse-side battery sentence. Sheet05 has bold foreground and scribbled reverse noise. After checking a sheet, edit its truth file and set `user_verified` in its metadata to true. REVIEW.md is an import-time snapshot; truth.txt is authoritative.
+
+`dataset.json` records the import inventory. Old inputs, pilot samples and scores are preserved under `archive/2026-11-16/`; legacy sheets05/07 correspond to new sheets07/05. Archive data is excluded from evaluation. Keep every capture of a physical sheet in the same train/test split, including its legacy captures.
+
+No clean foreground-only photos or pixel masks were supplied: truth.txt is an OCR reference, not a clean image target.
+
+## Run from repository root
 
 ```sh
 uv sync --locked
-uv run bleed/remove_bleed.py bleed/samples/pencil-sheet08/front.jpg bleed/samples/pencil-sheet08/back.jpg
-uv run bleed/evaluate_pair.py
-uv run python -m unittest discover -s bleed -p test_remove_bleed.py
+uv run main.py bleed --prepare-only
+uv run main.py bleed
+uv run bleed/run_dataset.py --ocr
+uv run bleed/remove_bleed.py bleed/inputs/sheet08/front-01.jpg bleed/inputs/sheet08/back.jpg
+uv run bleed/evaluate_pair.py --sample bleed/inputs/sheet08 --capture front-01
+uv run python -m unittest discover -s bleed -p "test_*.py"
 ```
 
-The OCR command downloads the pinned TrOCR weights on its first run. It uses CPU inference. Generated files go to `bleed/outputs/pencil-sheet08/` and are gitignored; rerunning overwrites them. The source JPEGs are preserved. No absolute local paths are needed.
+The first command after setup creates 310 crops without loading OCR. `main.py bleed` evaluates only fronts using shared truth; backs are excluded. OCR downloads pinned TrOCR weights on its first run. Outputs are gitignored under `bleed/outputs/sheetNN/front-NN/`; reruns overwrite matching files. Old generated output folders may remain locally and are not new-dataset measurements.
 
-## Files to start with
+## Implementation
 
-- `remove_bleed.py`: registration, detrending, four-class joint histogram, component refinement, background filling and foreground protection; one module.
-- `evaluate_pair.py`: compares input, protection off/on, and strong removal using the existing root `main.py` recognizer and identical line crops.
-- `samples/pencil-sheet08/`: original pair, intended transcription, line boxes and provenance. `front.jpg` is pencil; `back.jpg` is Sharpie. Only the back is mirrored during processing.
-- [METHOD.md](METHOD.md): algorithm details, paper link, and explicit implementation deviations. This is a modified prototype: ICM replaces QPBO and Telea replaces exemplar synthesis. Do not call it an exact paper reproduction.
-- [Saved comparison](results/pencil-sheet08/comparison.png): input / conservative / strong removal, left to right.
-- [Filtered preview](results/pencil-sheet08/filtered-preview.png), [metrics](results/pencil-sheet08.json), and per-line CSVs in `results/pencil-sheet08/`: committed review artifacts; full-resolution outputs can be regenerated.
+`remove_bleed.py` contains the restoration; `evaluate_pair.py` reuses root `main.py` to compare input and filtered variants with identical crops. [METHOD.md](METHOD.md) describes the Rowley-Brooke reference and deviations: ICM replaces QPBO and Telea replaces exemplar synthesis. This is a modified prototype, not an exact reproduction. Restoration never uses the truth text to redraw letters.
 
-## Latest measurements
+Next: finish manual label/box review, then improve overlap preservation and evaluate on sheet-level held-out data. Archived pilot scores do not measure this new dataset.
 
-One development sheet, ten lines; lower error is better:
+`run_dataset.py` applies the existing filter to all front/back pairs, then optionally scores all four variants with one OCR model load. It records failures explicitly in `outputs/dataset-run.json`; rejected registrations receive no filtered result. Matching retries at 1600 pixels if native-resolution features fail, retaining the same support and coverage checks. Outputs remain full resolution.
 
-| Variant | Character error | Word error |
-| --- | ---: | ---: |
-| Input | 93.75% | 126.67% |
-| Protection off | 76.56% | 97.78% |
-| Conservative filter | 73.44% | 100.00% |
-| Strong removal | 80.86% | 97.78% |
+Open `outputs/review.html` after the batch to browse every successful comparison and the failure list. Columns are input / conservative / strong removal. The `--ocr` summary scores only successfully registered captures, so always report the failure count alongside CER/WER. It is a development-set comparison with provisional labels, not a held-out accuracy claim.
 
-No variant recognizes any entire line correctly. Errors can exceed 100% because insertions count. Four tests cover mirroring, rejecting blank registration, keeping dark interior ink valid, and preserving foreground/invalid pixels.
-
-## Next experiment
-
-1. Start from the original front/back pair, not the already erased result. Try estimating and subtracting the bleed contribution within overlaps instead of replacing the entire region with paper. Keep this as a clearly labeled adaptation alongside the current baseline.
-2. Test only small, local stroke-gap repair as a separate ablation. Large missing sections cannot be verified from these photos; do not redraw letters from the known transcription and claim recovery.
-3. Inspect overlap crops and rerun the fixed OCR evaluation. Preserve the baseline comparison and report failures as well as gains.
-
-There is no clean pre-bleed pencil image or pixel foreground mask, so PSNR/SSIM and foreground F1 are unavailable. The Sharpie photo and `inputs/sheet08/perfect.jpg` are **not** clean pencil ground truth. Keep this pair with sheet08 in any dataset split. The ten existing clean sheets and shared OCR baseline should remain intact; the duplicate baseline folder was already removed.
-
-Do not push without the user's instruction. No restoration or gap-repair success should be inferred from the current passing safeguard tests.
+Latest completed batch: [November 19 results](results/2026-11-19/README.md), with the failure list, metrics and a saved example.

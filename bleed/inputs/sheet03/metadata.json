@@ -1,42 +1,79 @@
 {
-  "sheet_id": "bleed-003",
-  "pairing_key": "bleed-003",
-  "artifact": "bleed_show_through",
-  "reference_image": "perfect.jpg",
-  "reference_transcription": "perfect.txt",
-  "line_boxes": "perfect.boxes.json",
-  "condition": "clean_reference",
-  "user_condition_label": "perfect",
-  "capture_type": "photograph",
-  "source_filename": "20261113_182811.jpg",
-  "sha256": "1d9d6190efc1f036158e3bcd76dc9c179c4710cec081c9966f7501bc58bce4b6",
-  "width": 3000,
-  "height": 4000,
-  "line_count": 10,
-  "paper": "graph paper",
-  "transcription_source": "manually transcribed from supplied image",
-  "transcription_notes": "List numbers excluded; sentence digits retained. Original spelling and punctuation transcribed.",
-  "image_processing": "Original JPEG preserved byte-for-byte; OCR uses annotated line crops only.",
-  "split": null,
-  "distorted_slots": [
+  "sheet_id": "bleed-20261119-03",
+  "page_number": 3,
+  "legacy_sheet_id": "sheet03",
+  "truth_file": "truth.txt",
+  "user_verified": false,
+  "review_priority": [
     {
-      "directory": "distorted-01",
-      "status": "pending",
-      "reference_image": "../perfect.jpg",
-      "severity": null
-    },
-    {
-      "directory": "distorted-02",
-      "status": "pending",
-      "reference_image": "../perfect.jpg",
-      "severity": null
-    },
-    {
-      "directory": "distorted-03",
-      "status": "pending",
-      "reference_image": "../perfect.jpg",
-      "severity": null
+      "line": 4,
+      "text": "I clicked save twice",
+      "note": "Check spelling of clicked: foreground may read cliked; current label uses intended spelling."
     }
   ],
-  "notes": "User-designated clean reference; not asserted to be an artifact-free scanner acquisition. Keep all variants of this physical sheet in one dataset split."
+  "captures": [
+    {
+      "file": "back.jpg",
+      "role": "reverse_noise",
+      "source_filename": "20261119_195649.jpg",
+      "sha256": "4b5c485ea4df73a8aae7561d315c854f0d100bacef6eecc7fd71f9b9f271dc9d",
+      "width": 3000,
+      "height": 4000,
+      "exif_orientation": 6,
+      "additional_rotation_degrees": 0
+    },
+    {
+      "file": "front-01.jpg",
+      "role": "foreground_with_bleed",
+      "source_filename": "20261119_195658.jpg",
+      "sha256": "b4d90cff458c8bbbc541eea2fadb316d4f49f8f4756fce22a54d681ea6bebd70",
+      "width": 3000,
+      "height": 4000,
+      "exif_orientation": 6,
+      "additional_rotation_degrees": 0,
+      "boxes": "front-01.boxes.json",
+      "box_annotation": {
+        "method": "manual base annotation"
+      }
+    },
+    {
+      "file": "front-02.jpg",
+      "role": "foreground_with_bleed",
+      "source_filename": "20261119_195711.jpg",
+      "sha256": "1200724d2a793a94008ac63f5525e24ad705c1dadd01b8d4597f0b41dbdb0b5d",
+      "width": 3000,
+      "height": 4000,
+      "exif_orientation": 6,
+      "additional_rotation_degrees": 0,
+      "boxes": "front-02.boxes.json",
+      "box_annotation": {
+        "method": "base boxes mapped by same-side SIFT/RANSAC; visually reviewed",
+        "inliers": 2630
+      }
+    },
+    {
+      "file": "front-03.jpg",
+      "role": "foreground_with_bleed",
+      "source_filename": "20261119_195717.jpg",
+      "sha256": "001237836df02e1922fd1633b4014ee39a93d280a9b4979645241dc5f31964b3",
+      "width": 3000,
+      "height": 4000,
+      "exif_orientation": 6,
+      "additional_rotation_degrees": 0,
+      "boxes": "front-03.boxes.json",
+      "box_annotation": {
+        "method": "base boxes mapped by same-side SIFT/RANSAC; visually reviewed",
+        "inliers": 2323
+      }
+    }
+  ],
+  "notes": [
+    "Target is the normal left-to-right foreground, not mirrored reverse text.",
+    "Wording visually checked against front captures; occluded letters use intended sentence context. User verification pending.",
+    "Terminal periods omitted consistently; list numbers excluded; sentence numerals retained.",
+    "No clean foreground-only photograph supplied. Back is not pixel ground truth.",
+    "Capture order does not represent increasing bleed severity; some captures also contain shadows."
+  ],
+  "split": null,
+  "split_rule": "All captures of this physical sheet, including matching legacy captures, must stay in one split."
 }

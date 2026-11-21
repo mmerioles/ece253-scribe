@@ -1,11 +1,30 @@
 """Small invariants for geometric and destructive-mask errors; no OCR required."""
 import unittest
+from unittest.mock import patch
+import remove_bleed
 import cv2
 import numpy as np
 from remove_bleed import register, restore, page_mask, BG, FRONT, BACK, BOTH
 
 
 class BleedTests(unittest.TestCase):
+    def test_registration_fallback_keeps_native_coordinates(self):
+        image = np.full((1800, 1200, 3), 180, np.uint8)
+        report = dict(homography=np.eye(3).tolist(), median_error_pixels=0.5)
+        with patch.object(remove_bleed, '_register', side_effect=[ValueError('native failed'), (None, None, report)]) as matching:
+            aligned, valid, result = register(image, image, already_mirrored=True)
+        self.assertEqual(matching.call_count, 2)
+        self.assertEqual(aligned.shape, image.shape)
+        self.assertTrue(valid.all())
+        np.testing.assert_allclose(result['homography'], np.eye(3), atol=1e-12)
+        self.assertEqual(result['feature_max_side'], 1600)
+
+    def test_registration_fallback_rejects_weak_matches(self):
+        image = np.full((1800, 1200, 3), 180, np.uint8)
+        with patch.object(remove_bleed, '_register', side_effect=ValueError('weak')):
+            with self.assertRaises(ValueError):
+                register(image, image)
+
     def test_dark_ink_inside_page_remains_valid(self):
         image=np.zeros((120,100,3),np.uint8)
         image[10:110,10:90]=180

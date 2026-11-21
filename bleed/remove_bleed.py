@@ -23,7 +23,7 @@ def read_image(path, max_side):
     return cv2.resize(image, None, fx=scale, fy=scale, interpolation=cv2.INTER_AREA)
 
 
-def register(front, back, already_mirrored=False):
+def _register(front, back, already_mirrored=False):
     """Map reverse to front coordinates; reject weak or collapsed registrations."""
     if not already_mirrored:
         back = back[:, ::-1].copy()
@@ -51,6 +51,33 @@ def register(front, back, already_mirrored=False):
     valid = cv2.warpPerspective(np.ones(back.shape[:2], np.uint8), H, (w, h), flags=cv2.INTER_NEAREST) > 0
     return aligned, valid, dict(homography=H.tolist(), matches=len(good), inliers=int(selected.sum()),
                                median_error_pixels=float(np.median(error[selected])), coverage=span.tolist())
+
+
+def register(front, back, already_mirrored=False):
+    """Try native matching, then wider-context features at 1600 pixels."""
+    try:
+        return _register(front, back, already_mirrored)
+    except ValueError:
+        if max(front.shape[:2]) <= 1600:
+            raise
+    def reduced(image):
+        h, w = image.shape[:2]
+        scale = min(1, 1600 / max(h, w))
+        small = cv2.resize(image, (round(w*scale), round(h*scale)), interpolation=cv2.INTER_AREA)
+        return small, np.diag([small.shape[1]/w, small.shape[0]/h, 1.0])
+    # Mirror before resizing so pixel-center rounding cannot change mirror geometry.
+    source = back if already_mirrored else back[:, ::-1].copy()
+    f, sf = reduced(front)
+    b, sb = reduced(source)
+    _, _, report = _register(f, b, True)
+    H = np.linalg.inv(sf) @ np.array(report['homography']) @ sb
+    h, w = front.shape[:2]
+    aligned = cv2.warpPerspective(source, H, (w, h), borderValue=(255,255,255))
+    valid = cv2.warpPerspective(np.ones(source.shape[:2], np.uint8), H, (w,h), flags=cv2.INTER_NEAREST) > 0
+    report.update(homography=H.tolist(), feature_max_side=1600,
+                  error_coordinate_system='reduced feature image',
+                  median_error_full_resolution_pixels=report['median_error_pixels']/min(sf[0,0],sf[1,1]))
+    return aligned, valid, report
 
 
 def detrend(image, block=200, overlap=50):
@@ -273,9 +300,11 @@ def run(front_path, back_path, output, max_side=4000, already_mirrored=False):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('front',type=Path); parser.add_argument('back',type=Path)
-    parser.add_argument('--output',type=Path,default=Path('bleed/outputs/pencil-sheet08'))
+    parser.add_argument('--output',type=Path,default=None)
     parser.add_argument('--max-side',type=int,default=4000)
     parser.add_argument('--already-mirrored',action='store_true')
     args = parser.parse_args()
     if args.max_side < 400: parser.error('--max-side must be at least 400')
+    if args.output is None:
+        args.output = Path(__file__).resolve().parent/'outputs'/args.front.parent.name/args.front.stem
     run(args.front,args.back,args.output,args.max_side,args.already_mirrored)

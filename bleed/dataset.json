@@ -1,0 +1,69 @@
+{
+  "source_archive": "Data.zip",
+  "source_sha256": "1639e780866c5109a2b07a8e2121cd2453eeed77a27c5c4bbe5178e3c82f41aa",
+  "sheet_count": 10,
+  "front_count": 31,
+  "back_count": 10,
+  "sheets": [
+    {
+      "sheet": "sheet01",
+      "front_count": 3,
+      "legacy_sheet": "sheet01",
+      "review": "review/sheet01.jpg"
+    },
+    {
+      "sheet": "sheet02",
+      "front_count": 3,
+      "legacy_sheet": "sheet02",
+      "review": "review/sheet02.jpg"
+    },
+    {
+      "sheet": "sheet03",
+      "front_count": 3,
+      "legacy_sheet": "sheet03",
+      "review": "review/sheet03.jpg"
+    },
+    {
+      "sheet": "sheet04",
+      "front_count": 3,
+      "legacy_sheet": "sheet04",
+      "review": "review/sheet04.jpg"
+    },
+    {
+      "sheet": "sheet05",
+      "front_count": 3,
+      "legacy_sheet": "sheet07",
+      "review": "review/sheet05.jpg"
+    },
+    {
+      "sheet": "sheet06",
+      "front_count": 4,
+      "legacy_sheet": "sheet06",
+      "review": "review/sheet06.jpg"
+    },
+    {
+      "sheet": "sheet07",
+      "front_count": 3,
+      "legacy_sheet": "sheet05",
+      "review": "review/sheet07.jpg"
+    },
+    {
+      "sheet": "sheet08",
+      "front_count": 3,
+      "legacy_sheet": "sheet08",
+      "review": "review/sheet08.jpg"
+    },
+    {
+      "sheet": "sheet09",
+      "front_count": 3,
+      "legacy_sheet": "sheet09",
+      "review": "review/sheet09.jpg"
+    },
+    {
+      "sheet": "sheet10",
+      "front_count": 3,
+      "legacy_sheet": "sheet10",
+      "review": "review/sheet10.jpg"
+    }
+  ]
+}

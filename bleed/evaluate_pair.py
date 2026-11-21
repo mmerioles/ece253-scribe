@@ -6,21 +6,23 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from main import MODEL, REVISION, evaluate
+from main import MODEL, REVISION, evaluate, read_inputs
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--sample', type=Path, default=ROOT/'bleed/samples/pencil-sheet08')
-    parser.add_argument('--output', type=Path, default=ROOT/'bleed/outputs/pencil-sheet08')
+    parser.add_argument('--sample', type=Path, default=ROOT/'bleed/inputs/sheet08')
+    parser.add_argument('--capture', default='front-01')
+    parser.add_argument('--output', type=Path)
     args = parser.parse_args()
+    if args.output is None:
+        args.output = ROOT/'bleed/outputs'/args.sample.name/args.capture
+    refs, boxes = read_inputs(args.sample/f'{args.capture}.jpg')
     import torch
     from transformers import TrOCRProcessor, VisionEncoderDecoderModel
     torch.set_num_threads(4)
     processor = TrOCRProcessor.from_pretrained(MODEL,revision=REVISION,use_fast=False)
     model = VisionEncoderDecoderModel.from_pretrained(MODEL,revision=REVISION,use_safetensors=True).eval()
-    refs = (args.sample/'front.txt').read_text(encoding='utf-8-sig').splitlines()
-    boxes = json.loads((args.sample/'front.boxes.json').read_text(encoding='utf-8-sig'))
     summary = {}
     for name in ['input','without_protection','filtered','strong_removal']:
         directory = args.output/'ocr'/name
